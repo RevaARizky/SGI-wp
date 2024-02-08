@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-image-overlay",
+    "title": "SGI - Image Overlay",
+    "description": "Image Overlay for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "image", "overlay"],
+    "viewScript": ["blocks/sgi-image-overlay"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+  }
+  

@@ -1,0 +1,11 @@
+.bg-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('./images/about-mobile.png');
+  background-position: bottom right;
+
+  @screen lg {
+    background-position: top right;
+    background-image: url('./images/about.png');
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-about-team",
+    "title": "About Team",
+    "description": "List of team. Specifically for about us page",
+    "category": "SGI",
+    "keywords": ["about", "team"],
+    "viewScript": ["blocks/sgi-about-team"],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "block.php"
+    }
+  }
+  

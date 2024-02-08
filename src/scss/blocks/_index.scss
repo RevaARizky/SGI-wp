@@ -1,0 +1,28 @@
+@import 'text';
+@import 'hero';
+@import 'about';
+@import 'image';
+@import 'carousel-text';
+@import 'instagram';
+@import 'room-list';
+@import 'carousel';
+@import 'carousel-full';
+@import 'gallery';
+@import 'testimonials';
+@import 'sgi-home';
+@import 'sgi-header-unit';
+@import 'sgi-slider-unit';
+@import 'sgi-our-fleet';
+@import 'sgi-image-overlay';
+@import 'sgi-about-team';
+@import 'sgi-slider-fleet';
+@import 'animation';
+
+.block-contact a {
+  @apply underline hover:no-underline;
+}
+
+section {
+  background-color: rgb(99, 101, 105);
+}
+

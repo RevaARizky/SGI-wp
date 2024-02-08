@@ -1,0 +1,24 @@
+.block-slider {
+    .hover-target, .item-wrapper .top-line {
+        transition: all .1s ease;
+    }
+    .item-wrapper .top-line {
+        height: 1px!important;
+        top: 0px;
+    }
+    .item-wrapper.active .top-line {
+        height: 3px!important;
+        top: -2px;
+    }
+    .item-wrapper .active-wrapper, .item-wrapper .logo-wrapper {
+        height: 0;
+    }
+    .item-wrapper.active .active-wrapper, .item-wrapper.active .logo-wrapper {
+        height: auto;
+    }
+    .content-wrapper .button-link:hover {
+        background-color: #fff!important;
+        color: #000!important;
+    }
+
+}

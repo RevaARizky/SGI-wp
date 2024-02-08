@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    // @apply text-gray-2;
+    @apply font-sans;
+  }
+  @media(max-width: 768px) {
+    .text-hero, .text-title {
+      font-size: 22px;
+      @apply font-montserrat;
+    }
+    .text-subtitle, .text-desc-big {
+      font-size: 16px;
+    }
+    .text-desc-small {
+      font-size: 14px;
+    }
+  }
+  @media(min-width: 768px) {
+    .text-hero {
+      font-size: 44px;
+      @apply font-montserrat;
+    }
+    .text-title {
+      font-size: 36px;
+      @apply font-montserrat;
+    }
+    .text-subtitle {
+      font-size: 24px;
+    }
+    .text-desc-big {
+      font-size: 36px;
+    }
+    .text-desc-small {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@layer components {
+  .button {
+    @apply border border-white py-4 px-10 uppercase hover:bg-white hover:text-gray-2 duration-100 leading-none text-center;
+  }
+
+  .fake-underline {
+    @apply relative pb-2 w-max overflow-hidden;
+
+    &::before {
+      @apply absolute left-0 bottom-0 w-full h-px bg-gray-2;
+
+      content: '';
+    }
+
+    &:hover::before {
+      @apply opacity-0;
+    }
+  }
+
+  .overlay {
+    @apply absolute w-full h-full left-0 top-0;
+
+    opacity: 0.75;
+    background: linear-gradient(45deg, #000 0%, rgba(0, 0, 0, 0.00) 50%);
+  }
+}
+
+@import '~swiper/scss';
+@import '~swiper/scss/effect-fade';
+@import 'fonts';
+@import 'header';
+@import 'footer';
+@import 'blocks/index';
+
+.is--menu-open {
+  overflow-y: hidden;
+}
+
+.antialiased {
+  -webkif-font-smoothing: antialiased;
+}
+
+.image-test {
+  @apply w-80 h-80 bg-cover;
+  background-image: url('./images/image.jpg');
+}
+
+header#header .menu-wrapper .hamburger-menu, header#header .menu-wrapper .close-menu {
+  transition: all .4s ease;
+}
+
+header#header .menu-wrapper .hamburger-menu, header#header .menu-wrapper.active .close-menu {
+  transform: translateY(0);
+}
+
+header#header .menu-wrapper.active .hamburger-menu {
+  transform: translateY(-120%);
+}
+
+header#header .menu-wrapper .close-menu {
+  transform: translateY(120%);
+}
+
+aside#nav .link-dropdown {
+  height: 0;
+  overflow: hidden;
+}
+
+aside#nav .link-dropdown.active {
+  height: auto;
+}
+
+aside#nav .link .dropdown svg {
+  rotate: 0;
+  transition: all .4s ease;
+}
+aside#nav .link .dropdown.active svg {
+  rotate: 90deg;
+}

@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-slider-unit",
+    "title": "Slider for Units Page",
+    "description": "Slider Unit",
+    "category": "SGI",
+    "keywords": ["slider", "unit"],
+    "viewScript": ["blocks/sgi-slider-unit"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

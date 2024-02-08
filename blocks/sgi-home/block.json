@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-home",
+    "title": "SGI - Home",
+    "description": "Home for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "home"],
+    "viewScript": ["blocks/sgi-home"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+  }
+  

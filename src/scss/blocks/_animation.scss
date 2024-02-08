@@ -1,0 +1,28 @@
+// .animate-text {
+//     visibility: hidden;
+// }
+
+// .animate-text.loaded {
+//     visibility: visible;
+// }
+
+.animate-hover-link {
+    position: relative;
+}
+
+.animate-hover-link::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+
+    background-color: #fff;
+
+    transition: all .2s ease;
+
+    height: 1px;
+    width: 0;
+}
+
+.animate-hover-link:hover::before {
+    width: 100%;
+}

@@ -1,0 +1,19 @@
+.block-slider-fleet {
+    .specification-wrapper {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    ul.use-border {
+        border-bottom: .6px solid #fff;
+    }
+    .specification-wrapper ul {
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+    }
+    .specification-wrapper li {
+        list-style-type: disc; 
+        list-style-position: inside; 
+        padding-left: 12px;
+    }
+}

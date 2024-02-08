@@ -1,0 +1,22 @@
+.block-image-overlay {
+    .navigation-slider .navigation.active svg circle {
+        fill: #D75C00;
+    }
+
+    .overlay-item .overlay-content-wrapper {
+        opacity: 0;
+        transition: opacity .4s ease;
+    }
+
+    .overlay-item.active .overlay-content-wrapper {
+        opacity: 1;
+    }
+
+    .overlay-item .overlay-button-wrapper {
+        rotate: 0deg;
+        transition: all .4s ease;
+    }
+    .overlay-item.active .overlay-button-wrapper {
+        rotate: 45deg;
+    }
+}

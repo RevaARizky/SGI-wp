@@ -1,0 +1,40 @@
+.block-hero {
+  @apply text-white overflow-hidden;
+
+  &.h-hero {
+    @apply h-screen;
+
+    min-height: 600px;
+
+    @media screen and (min-height: 1440px) {
+      max-height: 1440px;
+    }
+  }
+
+  video {
+    @apply absolute inset-0;
+  }
+
+  .gradient-top,
+  .gradient-bottom {
+    @apply absolute w-full left-0;
+  }
+
+  .gradient-top {
+    @apply top-0;
+    height: 18%;
+    opacity: 0.8999999761581421;
+    background: linear-gradient(180deg, #273D3D 0%, rgba(39, 61, 61, 0.00) 100%);
+  }
+
+  .gradient-bottom {
+    @apply bottom-0;
+    height: 39%;
+    opacity: 0.699999988079071;
+    background: linear-gradient(360deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+  }
+
+  .content {
+    @apply relative z-10 text-center h-full flex flex-col justify-end items-center pb-24;
+  }
+}

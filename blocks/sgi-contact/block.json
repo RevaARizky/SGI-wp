@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-contact",
+    "title": "SGI - Contact",
+    "description": "Contact for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "contact"],
+    "viewScript": ["blocks/sgi-contact"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+}
+  

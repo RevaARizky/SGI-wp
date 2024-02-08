@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-logo-list",
+    "title": "SGI - Logo List",
+    "description": "Logo List for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "image", "overlay"],
+    "viewScript": ["blocks/sgi-logo-list"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+  }
+  

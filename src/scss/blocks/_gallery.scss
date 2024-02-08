@@ -1,0 +1,19 @@
+.block-gallery {
+  .categories a {
+    @extend .fake-underline;
+    @apply tracking-widest uppercase min-w-max;
+
+    &::before {
+      content: none;
+    }
+
+    &.active::before {
+      content: '';
+    }
+
+    &:hover::before {
+      content: '';
+      opacity: 1;
+    }
+  }
+}

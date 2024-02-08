@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-header-unit",
+    "title": "Header for Units Page",
+    "description": "Header Unit",
+    "category": "SGI",
+    "keywords": ["header", "unit"],
+    "viewScript": ["blocks/sgi-header-unit"],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "block.php"
+    }
+  }
+  

@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-about-logo",
+    "title": "About Logo",
+    "description": "Section for about logo",
+    "category": "SGI",
+    "keywords": ["about", "logo", "sgi"],
+    "viewScript": ["blocks/sgi-about-logo"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-about-section",
+    "title": "About Section",
+    "description": "Section with 1 column text",
+    "category": "SGI",
+    "keywords": ["about", "sgi"],
+    "viewScript": ["blocks/sgi-about-section"],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "block.php"
+    }
+  }
+  

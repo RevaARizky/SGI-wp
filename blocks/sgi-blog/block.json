@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-blog",
+    "title": "SGI - Blog",
+    "description": "Blog Archive",
+    "category": "SGI",
+    "keywords": ["blog"],
+    "viewScript": ["blocks/sgi-blog"],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "block.php"
+    }
+}  
