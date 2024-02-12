@@ -25,6 +25,7 @@ if ( ! empty( $block['align'] ) ) {
 }
 $title = get_field('title');
 $icon = get_field('icon');
+$svg = get_field('svg');
 $description = get_field('description');
 $center = get_field('text_center');
 ?>
@@ -33,9 +34,9 @@ $center = get_field('text_center');
     <div class="inner-animation">
         <div class="container md:min-h-screen">
             <div class="content-wrapper md:py-32 md:mb-32 mb-12 py-12 custom-border-anim border-white<?= $center ? ' text-center' : '' ?>">
-                <?php if($icon) : ?>
+                <?php if($svg) : ?>
                 <div class="icon-wrapper">
-                    <img src="<?= $icon['url'] ?>" class="w-full" alt="">
+                    <?= $svg ?>
                 </div>
                 <?php endif; ?>
                 <?php if($title) : ?>

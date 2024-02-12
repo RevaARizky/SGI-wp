@@ -19,7 +19,7 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
         }
 
         document.querySelector('header#header .hamburger-menu').addEventListener('click', openNav)
-        document.querySelector('aside .close-menu').addEventListener('click', closeNav)
+        document.querySelector('aside#nav .close-menu').addEventListener('click', closeNav)
 
         document.querySelectorAll('aside#nav .link .dropdown').forEach(el => {
             el.addEventListener('click', function(e) {
