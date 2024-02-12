@@ -35,7 +35,7 @@ $center = get_field('text_center');
         <div class="container md:min-h-screen">
             <div class="content-wrapper md:py-32 md:mb-32 mb-12 py-12 custom-border-anim border-white<?= $center ? ' text-center' : '' ?>">
                 <?php if($svg) : ?>
-                <div class="icon-wrapper">
+                <div class="icon-wrapper text-center mb-8">
                     <?= $svg ?>
                 </div>
                 <?php endif; ?>
