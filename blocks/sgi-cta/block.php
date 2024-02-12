@@ -29,15 +29,16 @@ $cta = get_field('cta');
 ?>
 
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
-
-    <div class="container">
-        <div class="content-wrapper flex justify-center items-center md:py-28 py-16" style="background-image: url('<?= $bgImage['url'] ?>'); background-position: center; background-size: cover;">
-            <div class="wrapper">
-                <div class="title-wrapper text-center md:mb-8 mb-4">
-                    <p class="font-montserrat text-title text-white md:leading-relaxed"><?= $title ?></p>
-                </div>
-                <div class="button-wrapper text-center">
-                    <a href="<?= $cta['url'] ?>" class="md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-xs text-[10px] text-white"><?= $cta['text'] ?></a>
+    <div class="inner-animation">
+        <div class="container">
+            <div class="content-wrapper flex justify-center items-center md:py-28 py-16" style="background-image: url('<?= $bgImage['url'] ?>'); background-position: center; background-size: cover;">
+                <div class="wrapper">
+                    <div class="title-wrapper text-center md:mb-8 mb-4">
+                        <p class="font-montserrat text-title text-white md:leading-relaxed"><?= $title ?></p>
+                    </div>
+                    <div class="button-wrapper text-center">
+                        <a href="<?= $cta['url'] ?>" class="md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-xs text-[10px] text-white"><?= $cta['text'] ?></a>
+                    </div>
                 </div>
             </div>
         </div>

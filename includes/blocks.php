@@ -21,7 +21,7 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-contact');
     register_block_type($dir . '/blocks/sgi-gallery');
     register_block_type($dir . '/blocks/sgi-blog');
-    // register_block_type($dir . '/blocks/sgi-about-logo');
+    register_block_type($dir . '/blocks/sgi-about-logo');
 }, 5);
 
 /**
@@ -45,7 +45,7 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-contact',
                 'acf/sgi-gallery',
                 'acf/sgi-blog',
-                // 'acf/sgi-about-logo',
+                'acf/sgi-about-logo',
             ];
             break;
     }

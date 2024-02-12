@@ -17,6 +17,13 @@ add_action('after_setup_theme', function () {
         'footer_navigation_2' => __('Footer Navigation 2'),
     ]);
 
+	if (function_exists('acf_add_options_page')) {
+        acf_add_options_page([
+            'page_title' => 'Header',
+            'menu_slug' => 'header-options',
+        ]);
+    }
+
 });
 
 /**

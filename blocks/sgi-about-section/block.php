@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-about-section bg-gray-theme';
+$classes = 'acf-block block-about-section bg-gray-theme relative';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -30,26 +30,27 @@ $center = get_field('text_center');
 ?>
 
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
-
-    <div class="container md:min-h-screen">
-        <div class="content-wrapper md:py-32 md:mb-32 mb-12 py-12 border-b border-white<?= $center ? ' text-center' : '' ?>">
-            <?php if($icon) : ?>
-            <div class="icon-wrapper">
-                <img src="<?= $icon['url'] ?>" class="w-full" alt="">
+    <div class="inner-animation">
+        <div class="container md:min-h-screen">
+            <div class="content-wrapper md:py-32 md:mb-32 mb-12 py-12 custom-border-anim border-white<?= $center ? ' text-center' : '' ?>">
+                <?php if($icon) : ?>
+                <div class="icon-wrapper">
+                    <img src="<?= $icon['url'] ?>" class="w-full" alt="">
+                </div>
+                <?php endif; ?>
+                <?php if($title) : ?>
+                <div class="title-wrapper mb-5">
+                    <h5 class="text-desc-small text-white font-sans animate-text" data-text-type="lines"><?= $title ?></h5>
+                </div>
+                <?php endif; ?>
+                <?php if($description) : ?>
+                <div class="description-wrapper">
+                    <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light animate-text" data-text-type="lines"><?= $description ?></p>
+                </div>
+                <?php endif; ?>
             </div>
-            <?php endif; ?>
-            <?php if($title) : ?>
-            <div class="title-wrapper mb-5">
-                <h5 class="text-desc-small text-white font-sans animate-text" data-text-type="lines"><?= $title ?></h5>
-            </div>
-            <?php endif; ?>
-            <?php if($description) : ?>
-            <div class="description-wrapper">
-                <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light animate-text" data-text-type="lines"><?= $description ?></p>
-            </div>
-            <?php endif; ?>
+    
         </div>
-
     </div>
 
 </section>
