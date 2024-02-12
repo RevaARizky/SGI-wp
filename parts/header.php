@@ -1,7 +1,7 @@
 <aside id="nav" class="fixed inset-0 bg-gray-theme z-50">
     <div class="container grid grid-cols-12 md:py-28 py-16 h-full relative">
         <div class="image-wrapper col-span-12 hidden lg:block md:col-span-5 relative overflow-hidden">
-            <img src="/wp-content/uploads/2023/10/nav.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+            <img src="<?= get_field('menu_image', 'option')['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
         </div>
         <div class="link-wrapper col-span-12 lg:col-start-7 lg:col-span-5 relative">
             <div class="link-list flex flex-col md:justify-between justify-center text-center md:text-left h-full">
