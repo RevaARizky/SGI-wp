@@ -24,6 +24,7 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-blog');
     register_block_type($dir . '/blocks/sgi-about-logo');
     register_block_type($dir . '/blocks/sgi-icare');
+    register_block_type($dir . '/blocks/sgi-spacer');
     register_block_type($dir . '/blocks/sgi-number-counter');
     register_block_type($dir . '/blocks/sgi-button-hover');
 }, 5);
@@ -51,6 +52,7 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-blog',
                 'acf/sgi-about-logo',
                 'acf/sgi-icare',
+                'acf/sgi-spacer',
                 'acf/sgi-number-counter',
                 'acf/sgi-button-hover',
             ];
