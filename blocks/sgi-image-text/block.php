@@ -36,9 +36,9 @@ $icon = get_field('logo');
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="container">
         <div class="grid grid-cols-12 relative md:gap-x-16 items-center">
-            <div class="md:col-span-6 col-span-12<?= $imageRight ? ' md:order-1' : 'md:order-0' ?>">
+            <div class="md:col-span-6 col-span-12<?= $imageRight ? ' md:order-1' : ' md:order-0' ?>">
             <?php if($image) : ?>
-                <div class="image-wrapper relative pt-[100%]" data-speed="1.1">
+                <div class="image-wrapper relative pt-[100%]" data-speed=".92">
                     <img src="<?= $image['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
                 </div>
             <?php endif; ?>

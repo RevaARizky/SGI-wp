@@ -23,7 +23,6 @@ import gsap from "gsap"
                 })
                 el.classList.add('active')
                 el.anim.play()
-
             })
         })
     })
