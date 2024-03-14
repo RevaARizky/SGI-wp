@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-number-counter",
+    "title": "SGI - Number Counter",
+    "description": "Number Counter for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "number", "counter"],
+    "viewScript": ["blocks/sgi-number-counter"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+}
+  

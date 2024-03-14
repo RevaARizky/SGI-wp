@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-button-hover",
+    "title": "SGI - Button Hover",
+    "description": "Button Hover for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "button", "hover"],
+    "viewScript": ["blocks/sgi-button-hover"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+}
+  

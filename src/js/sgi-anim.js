@@ -64,22 +64,23 @@ window.addEventListener('DOMContentLoaded', function() {
         smooth: 1,
         effects: true,
         normalizeScroll: true,
-        ease: 'power3.out'
+        // ease: 'power3.out'
       });
 
+      smoother
     const borderEl = gsap.utils.toArray('.custom-border-anim')
-    borderEl.forEach(el => {
-        const bordertl = gsap.timeline({
-            scrollTrigger: {
-                start: 'center center',
-                once: true,
-            }
-        })
-        bordertl.to(el, {
-            borderBottom: '1px solid #fff',
-            duration: 1,
-        })
-    })
+    // borderEl.forEach(el => {
+    //     const bordertl = gsap.timeline({
+    //         scrollTrigger: {
+    //             start: 'center center',
+    //             once: true,
+    //         }
+    //     })
+    //     bordertl.to(el, {
+    //         borderBottom: '1px solid #fff',
+    //         duration: 1,
+    //     })
+    // })
 
 })
 

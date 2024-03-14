@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-spacer",
+    "title": "Spacer",
+    "description": "Spacer",
+    "category": "SGI",
+    "keywords": ["slider", "unit"],
+    "viewScript": ["blocks/sgi-spacer"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

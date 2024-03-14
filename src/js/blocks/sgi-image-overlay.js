@@ -1,4 +1,8 @@
 import gsap from "gsap"
+import ScrollTrigger from "gsap/ScrollTrigger"
+import CSSPlugin from "gsap/CSSPlugin"
+import CSSRulePlugin from "gsap/CSSRulePlugin"
+
 
 (() => {
 
@@ -18,6 +22,19 @@ import gsap from "gsap"
         const imgArr = gsap.utils.toArray('.block-image-overlay .image-wrapper')
         imgArr.forEach(el => {
             let img = el.querySelector('img')
+            if(el.classList.contains('scroll-reveal-image')) {
+                el.scroll = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top center",
+                        ease: "power3.in"
+                    }
+                })
+                el.scroll.to(el, {
+                    '--topScrollTrigger': '100%',
+                    duration: .4,
+                })
+            }
             let tl = gsap.timeline({
                 paused: true,
             })

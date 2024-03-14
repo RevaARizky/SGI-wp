@@ -79,7 +79,7 @@ $subtitle = get_field('subtitle');
                     <?php foreach($items as $index => $item) : ?>
                         <?php if($index % 2 == 1) : ?>
                             <div class="overlay-item" data-overlay="<?= $index ?>">
-                                <div class="image-wrapper relative pt-[75%] mb-5 overflow-hidden cursor-pointer" data-target="<?= $index ?>">
+                                <div class="scroll-reveal-image image-wrapper relative pt-[75%] mb-5 overflow-hidden cursor-pointer" data-target="<?= $index ?>">
                                     <?php if($item['overlay']) : ?>
                                     <div class="overlay-button-wrapper absolute bottom-4 right-4 cursor-pointer z-20" data-target="<?= $index ?>">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
@@ -113,7 +113,7 @@ $subtitle = get_field('subtitle');
                     <?php foreach($items as $index => $item) : ?>
                         <?php if($index % 2 == 0) : ?>
                             <div class="overlay-item" data-overlay="<?= $index ?>">
-                                <div class="image-wrapper relative pt-[75%] mb-5 overflow-hidden cursor-pointer" data-target="<?= $index ?>">
+                                <div class="scroll-reveal-image image-wrapper relative pt-[75%] mb-5 overflow-hidden cursor-pointer" data-target="<?= $index ?>">
                                     <?php if($item['overlay']) : ?>
                                     <div class="overlay-button-wrapper absolute bottom-4 right-4 cursor-pointer z-20" data-target="<?= $index ?>">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">

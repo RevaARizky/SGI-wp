@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-slider';
+$classes = 'acf-block block-slider-unit';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -78,6 +78,7 @@ $contents = get_field('slider');
                                 </div>
                                 <!-- </a> -->
                         </div>
+                        <link rel="preload" as="image" href="<?= $content['image']['url'] ?>">
                     <?php endforeach ?>
                 </div>
             </div>
