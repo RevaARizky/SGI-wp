@@ -23,9 +23,14 @@ if ( ! empty( $block['className'] ) ) {
 if ( ! empty( $block['align'] ) ) {
     $classes .= ' align' . $block['align'];
 }
-$bgImage = get_field('bg_image');
-$title = get_field('title');
-$cta = get_field('cta');
+$useGlobal = get_field('use_global');
+$opt = false;
+if($useGlobal) {
+    $opt = 'option';
+}
+$bgImage = get_field('bg_image', $opt);
+$title = get_field('title', $opt);
+$cta = get_field('cta', $opt);
 ?>
 
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">

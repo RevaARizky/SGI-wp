@@ -23,6 +23,12 @@ add_action('after_setup_theme', function () {
             'menu_slug' => 'header-options',
         ]);
     }
+	if (function_exists('acf_add_options_page')) {
+        acf_add_options_page([
+            'page_title' => 'CTA Global',
+            'menu_slug' => 'cta-global',
+        ]);
+    }
 
 });
 

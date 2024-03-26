@@ -48,7 +48,7 @@ $description = get_field('description');
             </div>
         </div>
         <div class="description-wrapper text-center">
-            <p><?= $description ?></p>
+            <p class="text-lg"><?= $description ?></p>
         </div>
     </div>
 
