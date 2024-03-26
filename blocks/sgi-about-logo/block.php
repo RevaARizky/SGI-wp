@@ -28,7 +28,7 @@ $logos = get_field('logos');
 $bg = get_field('bg');
 ?>
 
-<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?> md:pb-32">
+<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?>">
     <div class="container">
         <div class="md:py-48 relative z-10">
             <div class="bg-overlay"><img src="<?= $bg['url'] ?>" class="absolute inset-0 w-full h-full object-cover -z-10" alt=""></div>
