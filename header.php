@@ -35,7 +35,7 @@
 <?php get_template_part('parts/header'); ?>
 <main id="primary" class="font-sans">
     <div id="smooth-wrapper">
-        <div id="smooth-content" class="bg-gray-theme">
+        <div id="smooth-content" class="bg-gray-theme md:overflow-visible overflow-hidden">
 
         <header id="header" class="absolute top-0 left-0 right-0 md:pt-[40px] pt-[20px]">
             <div class="container">

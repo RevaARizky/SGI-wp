@@ -60,14 +60,19 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.animate-text').forEach(el => {
         animateText(el)
     })
-    const smoother = ScrollSmoother.create({
-        smooth: 1,
-        effects: true,
-        normalizeScroll: true,
-        // ease: 'power3.out'
-      });
+    window.addEventListener('resize', () => {
 
-      smoother
+    })
+    const mm = gsap.matchMedia()
+    mm.add('(min-width: 768px)', () => {
+        const smoother = ScrollSmoother.create({
+            smooth: 1,
+            effects: true,
+            normalizeScroll: true,
+            // ease: 'power3.out'
+        });
+        smoother
+    })
     const borderEl = gsap.utils.toArray('.custom-border-anim')
     // borderEl.forEach(el => {
     //     const bordertl = gsap.timeline({

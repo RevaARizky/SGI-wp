@@ -5,7 +5,6 @@
  */
 add_action('init', function () {
     $dir = get_template_directory();
-    // var_dump($dir . '/blocks/sgi-home');
 
     /** SGI Blocks */
     register_block_type($dir . '/blocks/sgi-home');
@@ -27,6 +26,7 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-spacer');
     register_block_type($dir . '/blocks/sgi-number-counter');
     register_block_type($dir . '/blocks/sgi-button-hover');
+    register_block_type($dir . '/blocks/sgi-scope');
 }, 5);
 
 /**
@@ -55,6 +55,7 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-spacer',
                 'acf/sgi-number-counter',
                 'acf/sgi-button-hover',
+                'acf/sgi-scope',
             ];
             break;
     }

@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-scope",
+    "title": "SGI - Scope",
+    "description": "Scope of operations",
+    "category": "SGI",
+    "keywords": ["scope", "sgi"],
+    "viewScript": ["blocks/sgi-scope"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

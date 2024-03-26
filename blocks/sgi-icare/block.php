@@ -31,7 +31,7 @@ $description = get_field('description');
 
 ?>
 <section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?> md:pt-32 md:pb-16">
-    <div class="container">
+    <div class="md:container">
         <div class="subtitle-wrapper mb-4 text-center">
             <p class="text-lg"><?= $subtitle ?></p>
         </div>
