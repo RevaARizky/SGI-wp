@@ -29,6 +29,7 @@ $icon = get_field('icon');
 $svg = get_field('svg');
 $description = get_field('description');
 $descriptionSize = get_field('description_size');
+$isAnimate = get_field('animate');
 $center = get_field('text_center');
 $cta = get_field('cta');
 ?>
@@ -55,9 +56,9 @@ $cta = get_field('cta');
                 <?php if($description) : ?>
                 <div class="description-wrapper">
                     <?php if($descriptionSize) : ?>
-                        <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light animate-text" data-text-type="lines" style="font-size: <?= $descriptionSize ?>px!important;"><?= $description ?></p>
+                        <p class="text-white md:leading-relaxed leading-relaxed tracking-wide font-light<?= $isAnimate ? ' animate-text' : '' ?>" data-text-type="lines" style="font-size: <?= $descriptionSize ?>px!important;"><?= $description ?></p>
                     <?php else : ?>
-                        <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light animate-text" data-text-type="lines"><?= $description ?></p>
+                        <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light<?= $isAnimate ? ' animate-text' : '' ?>" data-text-type="lines"><?= $description ?></p>
                     <?php endif; ?>
                 </div>
                 <?php endif; ?>
