@@ -28,7 +28,7 @@ $bg = get_field('bg');
 $scope = get_field('scope');
 
 ?>
-<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?> mb-32">
+<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?>">
     <div class="inner-wrapper py-32 relative">
         <div class="bg-wrapper">
             <img src="<?= $bg['url'] ?>" class="absolute inset-0 object-cover w-full h-full" alt="">
@@ -53,6 +53,8 @@ $scope = get_field('scope');
             </div>
         </div>
     </div>
-    <div class="container border-b border-white md:mb-32"></div>
+    <div class="container">
+        <div class="border-b border-white md:py-16"></div>
+    </div>
 
 </section>
