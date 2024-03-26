@@ -28,6 +28,7 @@ $subtitle = get_field('subtitle');
 $icon = get_field('icon');
 $svg = get_field('svg');
 $description = get_field('description');
+$descriptionSize = get_field('description_size');
 $center = get_field('text_center');
 $cta = get_field('cta');
 ?>
@@ -53,7 +54,11 @@ $cta = get_field('cta');
                 <?php endif; ?>
                 <?php if($description) : ?>
                 <div class="description-wrapper">
-                    <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light animate-text" data-text-type="lines"><?= $description ?></p>
+                    <?php if($descriptionSize) : ?>
+                        <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light animate-text" data-text-type="lines" style="font-size: <?= $descriptionSize ?>px!important;"><?= $description ?></p>
+                    <?php else : ?>
+                        <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light animate-text" data-text-type="lines"><?= $description ?></p>
+                    <?php endif; ?>
                 </div>
                 <?php endif; ?>
                 <?php if($cta) : ?>
