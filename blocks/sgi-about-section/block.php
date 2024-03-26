@@ -24,10 +24,12 @@ if ( ! empty( $block['align'] ) ) {
     $classes .= ' text-' . $block['align'];
 }
 $title = get_field('title');
+$subtitle = get_field('subtitle');
 $icon = get_field('icon');
 $svg = get_field('svg');
 $description = get_field('description');
 $center = get_field('text_center');
+$cta = get_field('cta');
 ?>
 
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
@@ -44,9 +46,19 @@ $center = get_field('text_center');
                     <h5 class="text-desc-small text-white font-sans animate-text" data-text-type="lines"><?= $title ?></h5>
                 </div>
                 <?php endif; ?>
+                <?php if($subtitle) : ?>
+                <div class="subtitle-wrapper mb-5">
+                    <h5 class="text-title text-white font-sans animate-text" data-text-type="lines"><?= $subtitle ?></h5>
+                </div>
+                <?php endif; ?>
                 <?php if($description) : ?>
                 <div class="description-wrapper">
                     <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light animate-text" data-text-type="lines"><?= $description ?></p>
+                </div>
+                <?php endif; ?>
+                <?php if($cta) : ?>
+                <div class="button-wrapper mt-9">
+                    <a href="<?= $cta['url'] ?>" class="md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-xs text-[12px] text-white"><?= $cta['title'] ?></a>
                 </div>
                 <?php endif; ?>
             </div>
