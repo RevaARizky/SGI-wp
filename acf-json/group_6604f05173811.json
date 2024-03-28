@@ -1,31 +1,11 @@
 {
-    "key": "group_6601437da6720",
-    "title": "Block : Scope",
+    "key": "group_6604f05173811",
+    "title": "Block : SGI - Icon Highlight",
     "fields": [
         {
-            "key": "field_6601437d63dd3",
-            "label": "Title",
-            "name": "title",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_6601438f63dd4",
+            "key": "field_6604f05119e3d",
             "label": "Background Image",
-            "name": "bg",
+            "name": "bg_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -48,9 +28,9 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_660143b163dd5",
-            "label": "Scope",
-            "name": "scope",
+            "key": "field_6604f0a419e3e",
+            "label": "Content",
+            "name": "content",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -70,54 +50,12 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_660143b963dd6",
-                    "label": "Text",
-                    "name": "text",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_660143b163dd5"
-                },
-                {
-                    "key": "field_6603cb0dbd072",
+                    "key": "field_6604f0b519e3f",
                     "label": "Icon",
                     "name": "icon",
                     "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": "",
-                    "parent_repeater": "field_660143b163dd5"
-                },
-                {
-                    "key": "field_6604f105bd533",
-                    "label": "Image",
-                    "name": "image",
-                    "aria-label": "",
                     "type": "image",
-                    "instructions": "",
+                    "instructions": "PNG highly recomended",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -135,7 +73,49 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium",
-                    "parent_repeater": "field_660143b163dd5"
+                    "parent_repeater": "field_6604f0a419e3e"
+                },
+                {
+                    "key": "field_6604f0da19e40",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6604f0a419e3e"
+                },
+                {
+                    "key": "field_6604f0e219e41",
+                    "label": "Description",
+                    "name": "description",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_6604f0a419e3e"
                 }
             ]
         }
@@ -145,21 +125,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/sgi-scope"
-            }
-        ],
-        [
-            {
-                "param": "block",
-                "operator": "==",
-                "value": "acf\/sgi-scope-v2"
-            }
-        ],
-        [
-            {
-                "param": "block",
-                "operator": "==",
-                "value": "acf\/sgi-scope-v3"
+                "value": "acf\/sgi-icon-highlight"
             }
         ]
     ],
@@ -172,5 +138,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711599890
+    "modified": 1711599853
 }

@@ -1,0 +1,11 @@
+.block-icare-v2 {
+    .item:not(:last-child)::before {
+        content: "";
+        position: absolute;
+        top: 33%;
+        bottom: 33%;
+        width: 1px;
+        background-color: #fff;
+        right: 0;
+    }
+}

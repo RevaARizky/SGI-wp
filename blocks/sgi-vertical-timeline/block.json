@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-vertical-timeline",
+    "title": "SGI - Vertical Timeline",
+    "description": "Timeline vertically",
+    "category": "sgi",
+    "keywords": ["sgi", "timeline", "vertical"],
+    "viewScript": ["blocks/sgi-vertical-timeline"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+}
+  

@@ -51,6 +51,10 @@ module.exports = {
     './src/js/**/*.js',
     // './src/js/*.js',
   ],
+  safelist: [
+    'py-24',
+    'py-32'
+  ],
   theme: {
     container: {
       center: true,

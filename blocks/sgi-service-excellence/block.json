@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-service-excellence",
+    "title": "SGI - Service Excellence",
+    "description": "Excellence Services",
+    "category": "SGI",
+    "keywords": ["service", "excellence", "sgi"],
+    "viewScript": ["blocks/sgi-service-excellence"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

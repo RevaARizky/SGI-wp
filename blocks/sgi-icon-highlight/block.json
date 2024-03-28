@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-icon-highlight",
+    "title": "SGI - Icon Highlight",
+    "description": "Highlight with icon and text",
+    "category": "SGI",
+    "keywords": ["icon", "Highlight", "sgi"],
+    "viewScript": ["blocks/sgi-icon-highlight"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

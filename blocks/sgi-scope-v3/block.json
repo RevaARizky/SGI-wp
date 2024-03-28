@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-scope-v3",
+    "title": "SGI - Scope V3",
+    "description": "Scope V3",
+    "category": "SGI",
+    "keywords": ["scope", "sgi"],
+    "viewScript": ["blocks/sgi-scope-v3"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

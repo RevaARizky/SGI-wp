@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-image-title",
+    "title": "SGI - Image Title",
+    "description": "Image with title",
+    "category": "sgi",
+    "keywords": ["sgi", "image", "title"],
+    "viewScript": ["blocks/sgi-image-title"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+}
+  

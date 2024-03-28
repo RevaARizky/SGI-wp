@@ -16,6 +16,7 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-image-overlay');
     register_block_type($dir . '/blocks/sgi-logo-list');
     register_block_type($dir . '/blocks/sgi-image-text');
+    register_block_type($dir . '/blocks/sgi-image-title');
     register_block_type($dir . '/blocks/sgi-about-team');
     register_block_type($dir . '/blocks/sgi-slider-fleet');
     register_block_type($dir . '/blocks/sgi-contact');
@@ -23,13 +24,18 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-blog');
     register_block_type($dir . '/blocks/sgi-about-logo');
     register_block_type($dir . '/blocks/sgi-icare');
+    register_block_type($dir . '/blocks/sgi-icare-v2');
     register_block_type($dir . '/blocks/sgi-spacer');
     register_block_type($dir . '/blocks/sgi-number-counter');
     register_block_type($dir . '/blocks/sgi-button-hover');
     register_block_type($dir . '/blocks/sgi-scope');
     register_block_type($dir . '/blocks/sgi-scope-v2');
+    register_block_type($dir . '/blocks/sgi-scope-v3');
     register_block_type($dir . '/blocks/sgi-capability');
     register_block_type($dir . '/blocks/sgi-introduction');
+    register_block_type($dir . '/blocks/sgi-icon-highlight');
+    register_block_type($dir . '/blocks/sgi-service-excellence');
+    register_block_type($dir . '/blocks/sgi-vertical-timeline');
 }, 5);
 
 /**
@@ -48,6 +54,7 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-image-overlay',
                 'acf/sgi-logo-list',
                 'acf/sgi-image-text',
+                'acf/sgi-image-title',
                 'acf/sgi-about-team',
                 'acf/sgi-slider-fleet',
                 'acf/sgi-contact',
@@ -55,13 +62,18 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-blog',
                 'acf/sgi-about-logo',
                 'acf/sgi-icare',
+                'acf/sgi-icare-v2',
                 'acf/sgi-spacer',
                 'acf/sgi-number-counter',
                 'acf/sgi-button-hover',
                 'acf/sgi-scope',
                 'acf/sgi-scope-v2',
+                'acf/sgi-scope-v3',
                 'acf/sgi-capability',
                 'acf/sgi-introduction',
+                'acf/sgi-icon-highlight',
+                'acf/sgi-service-excellence',
+                'acf/sgi-vertical-timeline',
             ];
             break;
     }

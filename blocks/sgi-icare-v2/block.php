@@ -11,36 +11,36 @@
  */
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'about-logo-' . $block['id'];
+$id = 'icare-v2-' . $block['id'];
 if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-about-logo text-white relative';
+$classes = 'acf-block block-icare-v2';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
 if ( ! empty( $block['align'] ) ) {
     $classes .= ' align' . $block['align'];
 }
-$main = get_field('main');
-$logos = get_field('logos');
+$content = get_field('content');
 $bg = get_field('bg');
-?>
 
+?>
 <section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?>">
-    <div class="inner">
-        <div class="md:py-48 relative z-10">
+    <div class="inner text-white">
+        <div class="md:py-48 relative z-10 mb-16">
             <div class="bg-overlay"><img src="<?= $bg['url'] ?>" class="absolute inset-0 w-full h-full object-cover -z-10" alt=""></div>
-            <div class="inner text-center flex flex-col justify-center items-center">
-                <div class="main-logo text-center mb-12">
-                    <img src="<?= $main['url'] ?>" alt="">
-                </div>
-                <div class="logos flex items-center gap-x-8">
-                    <?php foreach($logos as $logo) : ?>
-                        <div class="logo-wrapper" style="height: <?= $logo['logo']['height'] ?>px;">
-                            <!-- <img src="<?= $logo['logo']['url'] ?>" class="w-full h-auto" alt=""> -->
-                            <?= $logo['svg'] ?>
+            <div class="container">
+                <div class="inner text-center grid grid-cols-12 justify-center items-center">
+                    <?php foreach($content as $data) : ?>
+                        <div class="item col-span-4 relative px-6 h-full justify-center flex flex-col">
+                            <div class="logo-wrapper mb-10 text-center">
+                                <img src="<?= $data['image']['url'] ?>" class="w-3/5 object-cover mx-auto" alt="">
+                            </div>
+                            <div class="text-wrapper">
+                                <p class="text-lg"><?= $data['description'] ?></p>
+                            </div>
                         </div>
                     <?php endforeach; ?>
                 </div>

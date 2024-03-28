@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-icare-v2",
+    "title": "SGI - Icare V2",
+    "description": "Icare v2 for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "icare"],
+    "viewScript": ["blocks/sgi-icare-v2"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+}
+  
