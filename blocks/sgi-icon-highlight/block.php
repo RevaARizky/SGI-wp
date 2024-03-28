@@ -38,10 +38,10 @@ $contents = get_field('content');
                                 <img src="<?= $content['icon']['url'] ?>" class="w-full h-auto" alt="">
                             </div>
                             <div class="title-wrapper mb-4">
-                                <p class="text-white"><?= $content['title'] ?></p>
+                                <p class="text-white text-5xl font-montserrat"><?= $content['title'] ?></p>
                             </div>
                             <div class="description-wrapper">
-                                <p class="text-white capitalize"><?= $content['description'] ?></p>
+                                <p class="text-white capitalize text-lg"><?= $content['description'] ?></p>
                             </div>
                         </div>
                     <?php endforeach; ?>
