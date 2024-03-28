@@ -27,14 +27,6 @@ $bgImage = get_field('bg_image');
 $title = get_field('title');
 $logo = get_field('logo');
 ?>
-<?php if($logo) : ?>
-<!-- Overide default header behavior -->
-<style>
-    header#header .logo-wrapper {
-        visibility: hidden!important;
-    }
-</style>
-<?php endif; ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="inner-animation" data-speed="0.9">
         <div class="outer-wrapper relative md:h-screen py-60 md:py-0 w-full parallax-bg" style="background-image: url(<?= $bgImage['url'] ?>); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
@@ -50,11 +42,11 @@ $logo = get_field('logo');
                 </a>
             </div>
     
-            <div class="logo-wrapper absolute top-[50px] md:top-[60px] left-1/2 -translate-x-1/2 z-40 -translate-y-1/2">
+            <!-- <div class="logo-wrapper absolute top-[50px] md:top-[60px] left-1/2 -translate-x-1/2 z-40 -translate-y-1/2">
                 <a href="/sgi">
                     <img src="<?= $logo['url'] ?>" class="w-24 md:w-44 lg:w-56" class="" alt="">
                 </a>
-            </div>
+            </div> -->
             
         </div>
     </div>

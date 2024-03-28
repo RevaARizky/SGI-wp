@@ -1,10 +1,10 @@
 {
-    "name": "acf/sgi-cta",
+    "name": "acf/sgi-cta-v2",
     "title": "SGI - CTA",
     "description": "Cta Sgi",
     "category": "SGI",
     "keywords": ["cta", "sgi"],
-    "viewScript": ["blocks/sgi-cta"],
+    "viewScript": ["blocks/sgi-cta-v2"],
     "acf": {
         "mode": "preview",
         "renderTemplate": "block.php"

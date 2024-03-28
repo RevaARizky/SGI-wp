@@ -1,11 +1,36 @@
 {
-    "key": "group_65407538c4df9",
-    "title": "Block: SGI Our Fleet",
+    "key": "group_660239ad58b0a",
+    "title": "Option : CTA Global",
     "fields": [
         {
-            "key": "field_6540753b2f428",
-            "label": "Subtitle",
-            "name": "subtitle",
+            "key": "field_660239ad7f8b1",
+            "label": "Image",
+            "name": "bg_image",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_66023c737f8b2",
+            "label": "Title",
+            "name": "title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -23,11 +48,11 @@
             "append": ""
         },
         {
-            "key": "field_654075822f429",
-            "label": "Title",
-            "name": "title",
+            "key": "field_66023c847f8b3",
+            "label": "CTA",
+            "name": "cta",
             "aria-label": "",
-            "type": "textarea",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,38 +61,12 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": "br"
-        },
-        {
-            "key": "field_6540758f2f42a",
-            "label": "Slides",
-            "name": "slides",
-            "aria-label": "",
-            "type": "repeater",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "row",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Add Row",
-            "rows_per_page": 20,
+            "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_654075992f42b",
-                    "label": "Title",
-                    "name": "title",
+                    "key": "field_66023c9d7f8b4",
+                    "label": "URL",
+                    "name": "url",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -82,15 +81,14 @@
                     "maxlength": "",
                     "placeholder": "",
                     "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_6540758f2f42a"
+                    "append": ""
                 },
                 {
-                    "key": "field_654075a82f42c",
-                    "label": "Image",
-                    "name": "image",
+                    "key": "field_66023ca37f8b5",
+                    "label": "Text",
+                    "name": "text",
                     "aria-label": "",
-                    "type": "image",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -99,17 +97,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_6540758f2f42a"
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
                 }
             ]
         }
@@ -117,9 +109,9 @@
     "location": [
         [
             {
-                "param": "block",
+                "param": "options_page",
                 "operator": "==",
-                "value": "acf\/sgi-our-fleet"
+                "value": "general-global"
             }
         ]
     ],
@@ -132,5 +124,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698723302
+    "modified": 1711443707
 }

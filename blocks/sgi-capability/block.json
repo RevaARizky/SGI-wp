@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-capability",
+    "title": "SGI - Capability",
+    "description": "Capability for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "capability"],
+    "viewScript": ["blocks/sgi-capability"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+}
+  

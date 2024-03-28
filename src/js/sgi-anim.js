@@ -2,6 +2,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { ScrollSmoother } from "gsap/ScrollSmoother"
 import { SplitText } from "gsap/SplitText"
 import {gsap} from "gsap"
+import $ from "jquery"
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText)
 
@@ -54,24 +55,29 @@ const animateText = (el) => {
         )
     }
 }
+var eventName
+if(window.cp_loadingpage) {
+    eventName = 'loadingScreenCompleted'
+} else {
+    eventName = 'DOMContentLoaded'
+}
 
-
-window.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.animate-text').forEach(el => {
-        animateText(el)
-    })
-    window.addEventListener('resize', () => {
-
-    })
+$(document).on(eventName, () => {
     const mm = gsap.matchMedia()
     mm.add('(min-width: 768px)', () => {
         const smoother = ScrollSmoother.create({
             smooth: 1,
             effects: true,
             normalizeScroll: true,
-            // ease: 'power3.out'
         });
         smoother
+    })
+})
+
+
+window.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.animate-text').forEach(el => {
+        animateText(el)
     })
     const borderEl = gsap.utils.toArray('.custom-border-anim')
     // borderEl.forEach(el => {

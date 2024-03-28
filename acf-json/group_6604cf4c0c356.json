@@ -1,29 +1,9 @@
 {
-    "key": "group_653b5c6ae894e",
-    "title": "Block: Header 2col",
+    "key": "group_6604cf4c0c356",
+    "title": "Block : SGI - Introduction",
     "fields": [
         {
-            "key": "field_653b5c6bb2baa",
-            "label": "Subtitle",
-            "name": "subtitle",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_653b5c7eb2bab",
+            "key": "field_6604cf4cbf22b",
             "label": "Title",
             "name": "title",
             "aria-label": "",
@@ -43,11 +23,11 @@
             "append": ""
         },
         {
-            "key": "field_653b5c85b2bac",
-            "label": "Description",
-            "name": "description",
+            "key": "field_6604cfb3bf22c",
+            "label": "Subtitle",
+            "name": "subtitle",
             "aria-label": "",
-            "type": "textarea",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -58,16 +38,17 @@
             },
             "default_value": "",
             "maxlength": "",
-            "rows": "",
             "placeholder": "",
-            "new_lines": ""
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
         [
             {
-                "param": "post",
-                "operator": "=="
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/sgi-introduction"
             }
         ]
     ],
@@ -80,5 +61,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698389263
+    "modified": 1711591379
 }

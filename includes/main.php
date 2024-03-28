@@ -26,7 +26,7 @@ add_action('after_setup_theme', function () {
 	if (function_exists('acf_add_options_page')) {
         acf_add_options_page([
             'page_title' => 'CTA Global',
-            'menu_slug' => 'cta-global',
+            'menu_slug' => 'general-global',
         ]);
     }
 

@@ -28,15 +28,31 @@ $logos = get_field('logos');
 <?php if($logos) : ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="container">
-        <div class="grid grid-cols-5 relative md:py-24 py-16 gap-x-36 items-center">
-            <?php foreach($logos as $index => $logo) : ?>
-                <div class="col-span-1">
-                    <div class="logo-wrapper">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <?php foreach($logos as $index=>$logo) : ?>
+                <div class="swiper-slide !h-auto">
+                    <div class="logo-wrapper h-full flex items-center">
                         <img src="<?= $logo['image']['url'] ?>" class="w-full h-auto object-cover" alt="">
                     </div>
                 </div>
-            <?php endforeach; ?>
+                <?php endforeach; ?>
+                <?php foreach($logos as $index=>$logo) : ?>
+                <div class="swiper-slide !h-auto">
+                    <div class="logo-wrapper h-full flex items-center">
+                        <img src="<?= $logo['image']['url'] ?>" class="w-full h-auto object-cover" alt="">
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
         </div>
+        <!-- <?php foreach($logos as $index => $logo) : ?>
+            <div class="col-span-1">
+                <div class="logo-wrapper">
+                    <img src="<?= $logo['image']['url'] ?>" class="w-full h-auto object-cover" alt="">
+                </div>
+            </div>
+        <?php endforeach; ?> -->
     </div>
 </section>
 <?php endif; ?>

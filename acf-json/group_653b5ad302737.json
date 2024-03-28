@@ -5,7 +5,7 @@
         {
             "key": "field_653b5ad30ee1b",
             "label": "Image Background",
-            "name": "image_background",
+            "name": "bg_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -66,7 +66,7 @@
                 {
                     "key": "field_653b5b11b63bc",
                     "label": "Link",
-                    "name": "link",
+                    "name": "url",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -104,6 +104,26 @@
                     "append": ""
                 }
             ]
+        },
+        {
+            "key": "field_66023e9afd320",
+            "label": "Use Global",
+            "name": "global_option",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -111,7 +131,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/cta"
+                "value": "acf\/sgi-cta"
             }
         ]
     ],
@@ -124,5 +144,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698388770
+    "modified": 1711442549
 }

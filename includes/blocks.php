@@ -11,8 +11,8 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-about-section');
     register_block_type($dir . '/blocks/sgi-header-unit');
     register_block_type($dir . '/blocks/sgi-slider-unit');
-    register_block_type($dir . '/blocks/sgi-cta');
     register_block_type($dir . '/blocks/sgi-our-fleet');
+    register_block_type($dir . '/blocks/sgi-cta-v2');
     register_block_type($dir . '/blocks/sgi-image-overlay');
     register_block_type($dir . '/blocks/sgi-logo-list');
     register_block_type($dir . '/blocks/sgi-image-text');
@@ -27,6 +27,9 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-number-counter');
     register_block_type($dir . '/blocks/sgi-button-hover');
     register_block_type($dir . '/blocks/sgi-scope');
+    register_block_type($dir . '/blocks/sgi-scope-v2');
+    register_block_type($dir . '/blocks/sgi-capability');
+    register_block_type($dir . '/blocks/sgi-introduction');
 }, 5);
 
 /**
@@ -40,8 +43,8 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-about-section',
                 'acf/sgi-header-unit',
                 'acf/sgi-slider-unit',
-                'acf/sgi-cta',
                 'acf/sgi-our-fleet',
+                'acf/sgi-cta-v2',
                 'acf/sgi-image-overlay',
                 'acf/sgi-logo-list',
                 'acf/sgi-image-text',
@@ -56,6 +59,9 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-number-counter',
                 'acf/sgi-button-hover',
                 'acf/sgi-scope',
+                'acf/sgi-scope-v2',
+                'acf/sgi-capability',
+                'acf/sgi-introduction',
             ];
             break;
     }

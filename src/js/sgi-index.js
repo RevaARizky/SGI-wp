@@ -4,30 +4,35 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
     document.addEventListener('DOMContentLoaded', function() {
         gsap.registerPlugin(ScrollToPlugin)
         window.isNavOpen = false;
-        const openNav = () => {
-            document.querySelector('aside#nav').classList.add('active')
-            document.querySelector('header#header .menu-wrapper').classList.add('active')
-            window.isNavOpen = true;
-        }
+        // const openNav = () => {
+        //     document.querySelector('aside#nav').classList.add('active')
+        //     document.querySelector('header#header .menu-wrapper').classList.add('active')
+        //     window.isNavOpen = true;
+        // }
 
-        const closeNav = () => {
-            document.querySelector('aside#nav').classList.remove('active')
-            document.querySelector('header#header .menu-wrapper').classList.remove('active')
-            document.querySelectorAll('aside#nav .link-dropdown').forEach(el => {el.classList.remove('active')})
-            document.querySelectorAll('aside#nav .link .dropdown').forEach(el => {el.classList.remove('active')})
-            window.isNavOpen = false;
-        }
+        // const closeNav = () => {
+        //     document.querySelector('aside#nav').classList.remove('active')
+        //     document.querySelector('header#header .menu-wrapper').classList.remove('active')
+        //     document.querySelectorAll('aside#nav .link-dropdown').forEach(el => {el.classList.remove('active')})
+        //     document.querySelectorAll('aside#nav .link .dropdown').forEach(el => {el.classList.remove('active')})
+        //     window.isNavOpen = false;
+        // }
 
-        document.querySelector('header#header .hamburger-menu').addEventListener('click', openNav)
-        document.querySelector('aside#nav .close-menu').addEventListener('click', closeNav)
+        // document.querySelector('header#header .hamburger-menu').addEventListener('click', openNav)
+        // document.querySelector('aside#nav .close-menu').addEventListener('click', closeNav)
 
-        document.querySelectorAll('aside#nav .link .dropdown').forEach(el => {
-            el.addEventListener('click', function(e) {
-                e.preventDefault()
-                el.classList.add('active')
-                el.parentElement.querySelector('.link-dropdown').classList.add('active')
-            })
-        })
+        // document.querySelectorAll('aside#nav .link .dropdown').forEach(el => {
+        //     el.addEventListener('click', function(e) {
+        //         e.preventDefault()
+        //         if(el.classList.contains('active')) {
+        //             el.classList.remove('active')
+        //             el.parentElement.querySelector('.link-dropdown').classList.remove('active')
+        //         } else {
+        //             el.classList.add('active')
+        //             el.parentElement.querySelector('.link-dropdown').classList.add('active')
+        //         }
+        //     })
+        // })
 
         document.addEventListener('keydown', function(e) {
             e = e || window.event

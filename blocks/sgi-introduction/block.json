@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-introduction",
+    "title": "SGI - Introduction",
+    "description": "Introduction title",
+    "category": "SGI",
+    "keywords": ["introduction", "intro", "sgi"],
+    "viewScript": ["blocks/sgi-introduction"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

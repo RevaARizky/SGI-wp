@@ -1,9 +1,49 @@
 {
-    "key": "group_6540738ed8da6",
-    "title": "Block: SGI CTA",
+    "key": "group_6603c686e0045",
+    "title": "Block : SGI - CTA v2",
     "fields": [
         {
-            "key": "field_65407391b2967",
+            "key": "field_6603c68aadaf5",
+            "label": "Global Option",
+            "name": "global_option",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_6603c6b5adaf6",
+            "label": "Text",
+            "name": "title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6603c6d4adaf7",
             "label": "Background Image",
             "name": "bg_image",
             "aria-label": "",
@@ -28,27 +68,7 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_654073d7b2968",
-            "label": "Title",
-            "name": "title",
-            "aria-label": "",
-            "type": "textarea",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "Discover Our\r\nPassion for Flying",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": "br"
-        },
-        {
-            "key": "field_65407457b2969",
+            "key": "field_6603c6e3adaf8",
             "label": "CTA",
             "name": "cta",
             "aria-label": "",
@@ -64,8 +84,8 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_65407461b296a",
-                    "label": "url",
+                    "key": "field_6603c6eeadaf9",
+                    "label": "URL",
                     "name": "url",
                     "aria-label": "",
                     "type": "text",
@@ -84,7 +104,7 @@
                     "append": ""
                 },
                 {
-                    "key": "field_65407467b296b",
+                    "key": "field_6603c6f6adafa",
                     "label": "Text",
                     "name": "text",
                     "aria-label": "",
@@ -97,7 +117,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "Contact Us",
+                    "default_value": "",
                     "maxlength": "",
                     "placeholder": "",
                     "prepend": "",
@@ -111,7 +131,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/sgi-cta"
+                "value": "acf\/sgi-cta-v2"
             }
         ]
     ],
@@ -124,5 +144,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698723103
+    "modified": 1711523589
 }

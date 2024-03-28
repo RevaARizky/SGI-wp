@@ -1,11 +1,11 @@
 {
-    "key": "group_65407538c4df9",
-    "title": "Block: SGI Our Fleet",
+    "key": "group_6601437da6720",
+    "title": "Block : Scope",
     "fields": [
         {
-            "key": "field_6540753b2f428",
-            "label": "Subtitle",
-            "name": "subtitle",
+            "key": "field_6601437d63dd3",
+            "label": "Title",
+            "name": "title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -23,11 +23,11 @@
             "append": ""
         },
         {
-            "key": "field_654075822f429",
-            "label": "Title",
-            "name": "title",
+            "key": "field_6601438f63dd4",
+            "label": "Background Image",
+            "name": "bg",
             "aria-label": "",
-            "type": "textarea",
+            "type": "image",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,16 +36,21 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "rows": "",
-            "placeholder": "",
-            "new_lines": "br"
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
-            "key": "field_6540758f2f42a",
-            "label": "Slides",
-            "name": "slides",
+            "key": "field_660143b163dd5",
+            "label": "Scope",
+            "name": "scope",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -56,7 +61,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "row",
+            "layout": "table",
             "pagination": 0,
             "min": 0,
             "max": 0,
@@ -65,9 +70,9 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_654075992f42b",
-                    "label": "Title",
-                    "name": "title",
+                    "key": "field_660143b963dd6",
+                    "label": "Text",
+                    "name": "text",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -83,14 +88,14 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_6540758f2f42a"
+                    "parent_repeater": "field_660143b163dd5"
                 },
                 {
-                    "key": "field_654075a82f42c",
-                    "label": "Image",
-                    "name": "image",
+                    "key": "field_6603cb0dbd072",
+                    "label": "Icon",
+                    "name": "icon",
                     "aria-label": "",
-                    "type": "image",
+                    "type": "textarea",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -99,17 +104,12 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "preview_size": "medium",
-                    "parent_repeater": "field_6540758f2f42a"
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_660143b163dd5"
                 }
             ]
         }
@@ -119,7 +119,14 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/sgi-our-fleet"
+                "value": "acf\/sgi-scope"
+            }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/sgi-scope-v2"
             }
         ]
     ],
@@ -132,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698723302
+    "modified": 1711524633
 }

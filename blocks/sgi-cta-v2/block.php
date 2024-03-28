@@ -16,14 +16,14 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-home md:py-16 py-8';
+$classes = 'acf-block block-cta md:py-16 py-8';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
 if ( ! empty( $block['align'] ) ) {
     $classes .= ' align' . $block['align'];
 }
-$useGlobal = get_field('use_global');
+$useGlobal = get_field('global_option');
 $opt = false;
 if($useGlobal) {
     $opt = 'option';
