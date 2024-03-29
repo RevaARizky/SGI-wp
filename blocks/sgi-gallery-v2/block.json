@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-gallery-v2",
+    "title": "SGI - Gallery V2",
+    "description": "Gallery V2 for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "gallery"],
+    "viewScript": ["blocks/sgi-gallery-v2"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+}
+  

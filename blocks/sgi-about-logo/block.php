@@ -24,17 +24,22 @@ if ( ! empty( $block['align'] ) ) {
     $classes .= ' align' . $block['align'];
 }
 $main = get_field('main');
+$main_logo = get_field('main_logo');
 $logos = get_field('logos');
 $bg = get_field('bg');
 ?>
 
 <section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?>">
     <div class="inner">
-        <div class="md:py-48 relative z-10">
+        <div class="md:py-36 relative z-10">
             <div class="bg-overlay"><img src="<?= $bg['url'] ?>" class="absolute inset-0 w-full h-full object-cover -z-10" alt=""></div>
             <div class="inner text-center flex flex-col justify-center items-center">
                 <div class="main-logo text-center mb-12">
-                    <img src="<?= $main['url'] ?>" alt="">
+                    <?php if($main_logo) : ?>
+                        <?= $main_logo ?>
+                    <?php else : ?>
+                        <img src="<?= $main['url'] ?>" alt="">
+                    <?php endif; ?>
                 </div>
                 <div class="logos flex items-center gap-x-8">
                     <?php foreach($logos as $logo) : ?>

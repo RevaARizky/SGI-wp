@@ -12,15 +12,18 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-header-unit');
     register_block_type($dir . '/blocks/sgi-slider-unit');
     register_block_type($dir . '/blocks/sgi-our-fleet');
+    register_block_type($dir . '/blocks/sgi-our-fleet-v2');
     register_block_type($dir . '/blocks/sgi-cta-v2');
     register_block_type($dir . '/blocks/sgi-image-overlay');
     register_block_type($dir . '/blocks/sgi-logo-list');
     register_block_type($dir . '/blocks/sgi-image-text');
+    register_block_type($dir . '/blocks/sgi-image-text-v2');
     register_block_type($dir . '/blocks/sgi-image-title');
     register_block_type($dir . '/blocks/sgi-about-team');
     register_block_type($dir . '/blocks/sgi-slider-fleet');
     register_block_type($dir . '/blocks/sgi-contact');
     register_block_type($dir . '/blocks/sgi-gallery');
+    register_block_type($dir . '/blocks/sgi-gallery-v2');
     register_block_type($dir . '/blocks/sgi-blog');
     register_block_type($dir . '/blocks/sgi-about-logo');
     register_block_type($dir . '/blocks/sgi-icare');
@@ -50,15 +53,18 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-header-unit',
                 'acf/sgi-slider-unit',
                 'acf/sgi-our-fleet',
+                'acf/sgi-our-fleet-v2',
                 'acf/sgi-cta-v2',
                 'acf/sgi-image-overlay',
                 'acf/sgi-logo-list',
                 'acf/sgi-image-text',
+                'acf/sgi-image-text-v2',
                 'acf/sgi-image-title',
                 'acf/sgi-about-team',
                 'acf/sgi-slider-fleet',
                 'acf/sgi-contact',
                 'acf/sgi-gallery',
+                'acf/sgi-gallery-v2',
                 'acf/sgi-blog',
                 'acf/sgi-about-logo',
                 'acf/sgi-icare',

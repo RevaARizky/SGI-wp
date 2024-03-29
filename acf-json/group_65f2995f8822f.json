@@ -43,6 +43,26 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_660679857b75f",
+            "label": "Line Width",
+            "name": "line_width",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_65f29985371a6",
             "label": "Space",
             "name": "space",
@@ -70,6 +90,26 @@
             "ui": 0,
             "ajax": 0,
             "placeholder": ""
+        },
+        {
+            "key": "field_660679a250d7a",
+            "label": "Use Footer Color",
+            "name": "use_footer_bg",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -90,5 +130,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711618756
+    "modified": 1711700405
 }

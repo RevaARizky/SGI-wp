@@ -43,12 +43,13 @@ $scope = get_field('scope');
                     <div class="swiper-slide !h-auto">
                         <div class="inner-slide flex items-center justify-center h-full w-full">
                             <div class="content-wrapper text-center text-white w-full h-full">
-                                <div class="image-wrapper mb-6 flex justify-center relative pt-[125%] w-full">
+                                <div class="image-wrapper flex justify-center relative pt-[125%] w-full">
                                     <img src="<?= $content['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
                                 </div>
-                                <div class="text-wrapper absolute bottom-16 left-0 right-0 px-8">
+                                <div class="text-wrapper absolute bottom-12 left-0 right-0 px-8 z-10">
                                     <p class="text-2xl font-montserrat text-white"><?= $content['text'] ?></p>
                                 </div>
+                                <div class="overlay-bg absolute top-[calc(100%-8rem)] bottom-0 w-full left-0 right-0"></div>
                             </div>
                         </div>
                     </div>

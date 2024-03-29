@@ -53,7 +53,11 @@ module.exports = {
   ],
   safelist: [
     'py-24',
-    'py-32'
+    'py-32',
+    {
+      pattern: /grid-cols-(1|2|3|4)/,
+      variants: ['md']
+    }
   ],
   theme: {
     container: {
@@ -90,6 +94,9 @@ module.exports = {
         'sgi-orange': '#D75C00',
         'sgi-footer': '#414A50',
       },
+      fontSize: {
+        "3xl": "1.625rem"
+      }
     },
   },
   plugins: [

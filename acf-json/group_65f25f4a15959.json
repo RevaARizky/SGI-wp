@@ -1,11 +1,11 @@
 {
-    "key": "group_66053629e7566",
-    "title": "Block : SGI - Icare v2",
+    "key": "group_65f25f4a15959",
+    "title": "Block: About Logo",
     "fields": [
         {
-            "key": "field_6605362a727b2",
-            "label": "Background Image",
-            "name": "bg",
+            "key": "field_65f25f4864907",
+            "label": "Main",
+            "name": "main",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -28,9 +28,29 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_66053662727b3",
-            "label": "Content",
-            "name": "content",
+            "key": "field_66065b3589d03",
+            "label": "Main Icon",
+            "name": "main_icon",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": "",
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_65f25f5964908",
+            "label": "Logos",
+            "name": "logos",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -50,9 +70,9 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_6605366a727b4",
-                    "label": "Image",
-                    "name": "image",
+                    "key": "field_65f25f6864909",
+                    "label": "Logo",
+                    "name": "logo",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -73,12 +93,12 @@
                     "max_size": "",
                     "mime_types": "",
                     "preview_size": "medium",
-                    "parent_repeater": "field_66053662727b3"
+                    "parent_repeater": "field_65f25f5964908"
                 },
                 {
-                    "key": "field_66065ab24a86a",
-                    "label": "Icon",
-                    "name": "icon",
+                    "key": "field_65f25f6f6490a",
+                    "label": "SVG",
+                    "name": "svg",
                     "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
@@ -94,30 +114,34 @@
                     "rows": "",
                     "placeholder": "",
                     "new_lines": "",
-                    "parent_repeater": "field_66053662727b3"
-                },
-                {
-                    "key": "field_66053674727b5",
-                    "label": "Description",
-                    "name": "description",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": "",
-                    "parent_repeater": "field_66053662727b3"
+                    "parent_repeater": "field_65f25f5964908"
                 }
             ]
+        },
+        {
+            "key": "field_65f25f7c6490b",
+            "label": "Background Image",
+            "name": "bg",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
         }
     ],
     "location": [
@@ -125,7 +149,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/sgi-icare-v2"
+                "value": "acf\/sgi-about-logo"
             }
         ]
     ],
@@ -138,5 +162,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711692473
+    "modified": 1711692610
 }

@@ -1,0 +1,13 @@
+{
+    "name": "acf/sgi-image-text-v2",
+    "title": "SGI - Image Text V2",
+    "description": "Image Text V2 for SGI",
+    "category": "sgi",
+    "keywords": ["sgi", "image", "text"],
+    "viewScript": ["blocks/sgi-image-text-v2"],
+    "acf": {
+      "mode": "preview",    
+      "renderTemplate": "block.php"
+    }
+  }
+  

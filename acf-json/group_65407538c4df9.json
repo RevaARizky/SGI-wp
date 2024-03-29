@@ -121,6 +121,13 @@
                 "operator": "==",
                 "value": "acf\/sgi-our-fleet"
             }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/sgi-our-fleet-v2"
+            }
         ]
     ],
     "menu_order": 0,
@@ -132,5 +139,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698723302
+    "modified": 1711702704
 }

@@ -96,3 +96,11 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
 	return $mimes;
   }
   add_filter( 'upload_mimes', 'cc_mime_types' );
+
+add_filter( 'acf/load_attachment', 'custom_load_attachment', 10, 3);
+function custom_load_attachment ($response, $attachment, $meta){
+  if ($response['type'] == 'image'){
+    $response['icon'] = $response['sizes']['thumbnail'];
+  }
+  return $response;
+}

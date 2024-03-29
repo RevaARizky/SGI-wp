@@ -1,4 +1,5 @@
 import Swiper from "swiper"
+import gsap from "gsap"
 (() => {
 
     document.addEventListener("DOMContentLoaded", () => {

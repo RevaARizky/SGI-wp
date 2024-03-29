@@ -72,6 +72,14 @@ import gsap from "gsap"
             } else {
                 reverseAnim()
             }
+            el.main.addEventListener('mouseenter', () => {
+                if(el.main.classList.contains('active')) return false
+                el.anims[1].play()
+            })
+            el.main.addEventListener('mouseleave', () => {
+                if(el.main.classList.contains('active')) return false
+                el.anims[1].reverse()
+            })
             el.main.addEventListener('click', () => {
                 if(el.main.classList.contains('active')) return false
 

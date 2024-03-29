@@ -36,11 +36,19 @@ $content = get_field('content');
         <div class="grid grid-cols-12 gap-y-14">
             <?php foreach($content as $index => $data) : ?>
                 <div class="col-span-4">
-                    <div class="title-wrapper pb-8 pl-5 border-l border-l-sgi-orange">
-                        <p class="text-lg font-montserrat text-white"><?= $data['title'] ?></p>
-                    </div>
-                    <div class="image-wrapper pt-[77%] w-full relative">
-                        <img src="<?= $data['image']['url'] ?>" class="absolute inset-0 object-cover w-full h-full" alt="">
+                    <div class="content-wrapper<?= $data['description'] ? ' has-desc' : '' ?>">
+                        <div class="title-wrapper pb-8 pl-5 border-l border-l-sgi-orange">
+                            <p class="text-lg font-montserrat text-white"><?= $data['title'] ?></p>
+                        </div>
+                        <div class="image-wrapper pt-[77%] w-full relative overflow-y-hidden">
+                            <img src="<?= $data['image']['url'] ?>" class="absolute inset-0 object-cover w-full h-full" alt="">
+                            <?php if($data['description']) : ?>
+                            <div class="overlay-bg absolute inset-0"></div>
+                            <div class="description-wrapper absolute left-0 right-0 px-8">
+                                <p class="text-lg text-white"><?= $data['description'] ?></p>
+                            </div>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
             <?php endforeach; ?>

@@ -1,0 +1,143 @@
+{
+    "key": "group_6606639595976",
+    "title": "Block : Gallery - V2",
+    "fields": [
+        {
+            "key": "field_66066398f3bab",
+            "label": "Row",
+            "name": "row",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6606687bf3bae",
+                    "label": "File Width",
+                    "name": "file_width",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_660663a7f3bac",
+                                "operator": ">",
+                                "value": "1"
+                            },
+                            {
+                                "field": "field_660663a7f3bac",
+                                "operator": "<",
+                                "value": "3"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "equal": "Equal width",
+                        "left": "Bigger Left",
+                        "right": "Bigger Right"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_66066398f3bab"
+                },
+                {
+                    "key": "field_660663a7f3bac",
+                    "label": "Media",
+                    "name": "media",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_66066398f3bab",
+                                "operator": ">",
+                                "value": "0"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "row",
+                    "min": 0,
+                    "max": 4,
+                    "collapsed": "",
+                    "button_label": "Add Image \/ Video",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_660669fef3baf",
+                            "label": "File",
+                            "name": "file",
+                            "aria-label": "",
+                            "type": "file",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array",
+                            "library": "all",
+                            "min_size": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "parent_repeater": "field_660663a7f3bac"
+                        }
+                    ],
+                    "parent_repeater": "field_66066398f3bab"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/sgi-gallery-v2"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1711697533
+}

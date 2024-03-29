@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-our-fleet-v2",
+    "title": "SGI - Our Fleet V2",
+    "description": "Our fleet section for unit page",
+    "category": "SGI",
+    "keywords": ["our", "fleet"],
+    "viewScript": ["blocks/sgi-our-fleet-v2"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}
