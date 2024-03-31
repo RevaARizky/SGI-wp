@@ -23,15 +23,14 @@ if ( ! empty( $block['className'] ) ) {
 if ( ! empty( $block['align'] ) ) {
     $classes .= ' align' . $block['align'];
 }
+$bg = get_field('bg_image');
 $slides = get_field('slides');
 ?>
 
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
-    <div class="inner-animation">
-        <div class="container relative overflow-hidden">
-    
+    <div class="inner relative">
+        <div class="container relative overflow-hidden z-20">
             <div class="content-wrapper flex md:flex-nowrap flex-wrap justify-center items-center">
-        
                 <div class="slider-outer w-full relative">
                     <div class="slider-wrapper fleet-slider md:mb-16 mb-8">
                         <div class="swiper-container">
@@ -56,12 +55,10 @@ $slides = get_field('slides');
                         <?php endforeach; ?>
                     </div>
                 </div>
-        
-        
-    
             </div>
-    
-            
+        </div>
+        <div class="bg-wrapper">
+            <img src="<?= $bg['url'] ?>" class="absolute inset-0 w-full h-full object-cover z-10" alt="">
         </div>
     </div>
 
