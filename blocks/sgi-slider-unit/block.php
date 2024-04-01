@@ -23,7 +23,13 @@ if ( ! empty( $block['className'] ) ) {
 if ( ! empty( $block['align'] ) ) {
     $classes .= ' align' . $block['align'];
 }
-$contents = get_field('slider');
+$useGlobal = get_field('use_global_options');
+$option = false;
+if($useGlobal) {
+    $option = 'option';
+}
+
+$contents = get_field('slider', $option);
 ?>
 <?php if(count($contents) > 1 ) : ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
