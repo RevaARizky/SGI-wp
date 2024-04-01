@@ -31,7 +31,7 @@ $slides = get_field('slides');
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="inner relative">
         <div class="container relative overflow-hidden z-20">
-            <div class="title-wrapper mb-10">
+            <div class="title-wrapper text-center text-white mb-10">
                 <p class="text-4xl">
                     <?= $title ?>
                 </p>

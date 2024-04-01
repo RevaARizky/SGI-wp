@@ -38,9 +38,11 @@ $icon = get_field('logo');
 ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?> <?= $bg ? 'bg-sgi-footer' : '' ?>">
 <div class="inner-wrapper">
+    <?php if($bgimage) : ?>
     <div class="bg-overlay">
         <img src="<?= $bgimage['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
     </div>
+    <?php endif; ?>
 </div>
     <div class="container">
         <div class="grid grid-cols-12 relative md:gap-x-16 items-center">
