@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-image-text text-white';
+$classes = 'acf-block block-image-text text-white relative';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
