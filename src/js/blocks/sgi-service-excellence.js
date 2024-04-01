@@ -36,9 +36,11 @@ import gsap from "gsap"
             el.anims[0] = gsap.timeline({paused: true})
             el.anims[0].from(el.description, {
                 height: 0,
+                marginTop: '0px',
             }, 0)
             el.anims[0].to(el.description, {
                 height: 'auto',
+                marginTop: '8px',
                 duration: animDuration
             }, 0)
 

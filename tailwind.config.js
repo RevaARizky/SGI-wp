@@ -69,7 +69,6 @@ module.exports = {
     fontFamily: {
       serif: ['"Span"', 'serif'],
       sans: ['"Open Sans"', 'sans-serif'],
-      wedding: ['"Open Sans"', 'sans-serif'],
       montserrat: ['"Montserrat"', 'sans-serif'],
     },
     extend: {

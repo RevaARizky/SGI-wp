@@ -1,9 +1,9 @@
 {
-    "key": "group_660576f5da0d5",
-    "title": "Block : Vertical Timeline",
+    "key": "group_660a536572ab1",
+    "title": "Block : Icon Text",
     "fields": [
         {
-            "key": "field_660576fbc89a6",
+            "key": "field_660a5365b0dc1",
             "label": "Content",
             "name": "content",
             "aria-label": "",
@@ -25,9 +25,9 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_660578f6c89a7",
-                    "label": "Text",
-                    "name": "text",
+                    "key": "field_660a5389b0dc2",
+                    "label": "Icon",
+                    "name": "icon",
                     "aria-label": "",
                     "type": "textarea",
                     "instructions": "",
@@ -43,12 +43,12 @@
                     "rows": "",
                     "placeholder": "",
                     "new_lines": "",
-                    "parent_repeater": "field_660576fbc89a6"
+                    "parent_repeater": "field_660a5365b0dc1"
                 },
                 {
-                    "key": "field_660a503fce3ef",
-                    "label": "Additional",
-                    "name": "additional",
+                    "key": "field_660a5391b0dc3",
+                    "label": "Title",
+                    "name": "title",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -64,7 +64,28 @@
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_660576fbc89a6"
+                    "parent_repeater": "field_660a5365b0dc1"
+                },
+                {
+                    "key": "field_660a539db0dc4",
+                    "label": "Description",
+                    "name": "description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_660a5365b0dc1"
                 }
             ]
         }
@@ -74,7 +95,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/sgi-vertical-timeline"
+                "value": "acf\/sgi-icon-text"
             }
         ]
     ],
@@ -87,5 +108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711951942
+    "modified": 1711952814
 }

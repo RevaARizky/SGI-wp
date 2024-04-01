@@ -25,6 +25,7 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-gallery');
     register_block_type($dir . '/blocks/sgi-gallery-v2');
     register_block_type($dir . '/blocks/sgi-blog');
+    register_block_type($dir . '/blocks/sgi-blog-v2');
     register_block_type($dir . '/blocks/sgi-about-logo');
     register_block_type($dir . '/blocks/sgi-icare');
     register_block_type($dir . '/blocks/sgi-icare-v2');
@@ -37,8 +38,15 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-capability');
     register_block_type($dir . '/blocks/sgi-introduction');
     register_block_type($dir . '/blocks/sgi-icon-highlight');
+    register_block_type($dir . '/blocks/sgi-icon-text');
     register_block_type($dir . '/blocks/sgi-service-excellence');
     register_block_type($dir . '/blocks/sgi-vertical-timeline');
+    
+    
+    // Experimental
+    
+    
+    register_block_type($dir . '/blocks/sgi-itrac-icare');
 }, 5);
 
 /**
@@ -66,6 +74,7 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-gallery',
                 'acf/sgi-gallery-v2',
                 'acf/sgi-blog',
+                'acf/sgi-blog-v2',
                 'acf/sgi-about-logo',
                 'acf/sgi-icare',
                 'acf/sgi-icare-v2',
@@ -78,8 +87,13 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-capability',
                 'acf/sgi-introduction',
                 'acf/sgi-icon-highlight',
+                'acf/sgi-icon-text',
                 'acf/sgi-service-excellence',
                 'acf/sgi-vertical-timeline',
+                
+                
+                // Experimental
+                'acf/sgi-itrac-icare',
             ];
             break;
     }

@@ -34,6 +34,11 @@ $content = get_field('content');
         <?php foreach($content as $index => $data) : ?>
             <div class="grid grid-cols-12">
                 <div class="vertical-item flex col-span-6<?= $index % 2 ? " col-start-7 item-right justify-end" : " item-left justify-start" ?>">
+                    <?php if($data['additional']) : ?>
+                    <div class="additional-wrapper absolute text-center text-white">
+                        <p class="font-bold text-lg"><?= $data['additional'] ?></p>
+                    </div>
+                    <?php endif; ?>
                     <div class="text-wrapper p-8 bg-sgi-footer text-white w-3/4">
                         <p class="text-lg font-montserrat text-white"><?= $data['text'] ?></p>
                     </div>

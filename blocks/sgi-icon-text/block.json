@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-icon-text",
+    "title": "SGI - Icon Text",
+    "description": "Icon Text",
+    "category": "SGI",
+    "keywords": ["icon", "text"],
+    "viewScript": ["blocks/sgi-icon-text"],
+    "acf": {
+      "mode": "preview",
+      "renderTemplate": "block.php"
+    }
+}  

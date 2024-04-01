@@ -24,8 +24,10 @@ if ( ! empty( $block['align'] ) ) {
     $classes .= ' align' . $block['align'];
 }
 $bg = get_field('use_bg_footer');
+$bgimage = get_field('bg_image');
 $imageRight = get_field('image_right');
 $image = get_field('image');
+$imageSize = get_field('image_size');
 $subtitle = get_field('subtitle');
 $title = get_field('title');
 $description = get_field('description');
@@ -35,11 +37,16 @@ $icon = get_field('logo');
 
 ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?> <?= $bg ? 'bg-sgi-footer' : '' ?>">
+<div class="inner-wrapper">
+    <div class="bg-overlay">
+        <img src="<?= $bgimage['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
+    </div>
+</div>
     <div class="container">
         <div class="grid grid-cols-12 relative md:gap-x-16 items-center">
             <div class="md:col-span-6 col-span-12<?= $imageRight ? ' md:order-1' : ' md:order-0' ?>">
             <?php if($image) : ?>
-                <div class="image-wrapper relative pt-[60%]" data-speed=".92">
+                <div class="image-wrapper relative <?= $imageSize ? '' : 'pt-[60%]' ?>" style="<?= $imageSize ? 'padding-top: ' . $imageSize : '' ?>" data-speed=".92">
                     <img src="<?= $image['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
                 </div>
             <?php endif; ?>

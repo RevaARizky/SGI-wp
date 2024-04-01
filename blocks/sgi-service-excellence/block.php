@@ -36,7 +36,7 @@ $services = get_field('services');
                 <div class="md:col-span-6 col-span-12">
                     <div class="accordion-wrapper">
                         <?php foreach($services as $index => $service) : ?>
-                            <div class="item relative py-8 [&:not(:first-child)]:border-t-[0.6px] border-b-[0.6px] border-r-[3px] border-y-white cursor-pointer overflow-x-hidden" data-index="<?= $index ?>">
+                            <div class="item relative py-4 [&:not(:first-child)]:border-t-[0.6px] border-b-[0.6px] border-r-[3px] border-y-white cursor-pointer overflow-x-hidden" data-index="<?= $index ?>">
                                 <div class="arrow-wrapper absolute top-1/2 -translate-y-1/2">
                                     <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M-3.49691e-07 7L12 0.0717978L12 13.9282L-3.49691e-07 7Z" fill="#D75C00"/>
@@ -49,7 +49,7 @@ $services = get_field('services');
                                         </div>
                                         <p class="text-3xl font-montserrat capitalize"><?= $service['title'] ?></p>
                                     </div>
-                                    <div class="description-wrapper mt-2 pl-16 pr-12">
+                                    <div class="description-wrapper pl-16 pr-12">
                                         <p class="text-lg"><?= $service['description'] ?></p>
                                     </div>
                                 </div>
