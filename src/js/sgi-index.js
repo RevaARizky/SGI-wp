@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
-(() => {
+import $ from "jquery"
+(($) => {
     document.addEventListener('DOMContentLoaded', function() {
         gsap.registerPlugin(ScrollToPlugin)
         window.isNavOpen = false;
@@ -74,6 +75,18 @@ import ScrollToPlugin from "gsap/ScrollToPlugin";
     document.querySelector('.top-arrow').addEventListener('click', el => {
         gsap.to(window, {scrollTo: 0})
     })
+
     
 })
-})()
+
+var eventName
+if(window.cp_loadingpage) {
+    eventName = 'loadingScreenCompleted'
+} else {
+    eventName = 'DOMContentLoaded'
+}
+$(document).on(eventName, () => {
+    document.documentElement.style.setProperty("--sgi-header", `${document.querySelector('header#header').clientHeight}px`);
+})
+
+})($)

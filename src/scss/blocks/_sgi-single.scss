@@ -1,0 +1,17 @@
+article {
+    padding-top: var(--sgi-header);
+
+    .article-wrapper {
+        margin-top: -54px;
+    }
+
+    .newsletter {
+        input[name="email-newsletter"] {
+            border: 1px solid #fff;
+            background-color: transparent;
+        }
+        input {
+            
+        }
+    }
+}
