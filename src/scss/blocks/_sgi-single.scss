@@ -1,6 +1,11 @@
 article {
     padding-top: var(--sgi-header);
 
+    .article-wrapper h2 {
+        line-height: 1.1!important;
+        font-size: 32px!important;
+    }
+
     .article-wrapper {
         margin-top: -54px;
     }

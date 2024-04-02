@@ -28,14 +28,14 @@
             <div class="newsletter-wrapper newsletter mb-16">
                 <div class="inner bg-sgi-footer py-6 px-5">
                     <div class="title-wrapper mb-3">
-                        <p class="text-4xl">
+                        <p class="text-4xl font-montserrat">
                             Join our newsletter!
                         </p>
                     </div>
                     <div class="form-wrapper mb-4">
                         <form action="#" method="POST">
                             <div class="input-wrapper mb-6">
-                                <input type="text" name="email-newsletter" id="email-newsletter" class="w-full input-newsletter">
+                                <input type="text" name="email-newsletter" placeholder="Your Email" id="email-newsletter" class="w-full input-newsletter">
                             </div>
                             <div class="input-wrapper">
                                 <input type="submit" class="w-full py-4 text-xs bg-sgi-orange" value="Submit">
