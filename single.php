@@ -59,13 +59,19 @@
 
                         <div class="article mb-10">
                             <div class="image-wrapper relative pt-[200px] mb-4">
-                                <img src="<?= get_the_post_thumbnail_url(get_the_id(), 'full') ?>" class="absolute inset-0 object-cover h-full w-full" alt="">
+                                <a href="<?= get_the_permalink() ?>">
+                                    <img src="<?= get_the_post_thumbnail_url(get_the_id(), 'full') ?>" class="absolute inset-0 object-cover h-full w-full" alt="">
+                                </a>
                             </div>
                             <div class="title-wrapper mb-2">
-                                <p class="text-xl font-semibold"><?= get_the_title() ?></p>
+                                <a href="<?= get_the_permalink() ?>">
+                                    <p class="text-xl font-semibold"><?= get_the_title() ?></p>
+                                </a>
                             </div>
                             <div class="description-wrapper">
-                                <p class="text-lg"><?= get_field('short_description', get_the_id()); ?></p>
+                                <a href="<?= get_the_permalink() ?>">
+                                    <p class="text-lg"><?= get_field('short_description', get_the_id()); ?></p>
+                                </a>
                             </div>
                         </div>
 
