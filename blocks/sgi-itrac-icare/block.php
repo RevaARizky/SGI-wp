@@ -32,7 +32,7 @@ if ( ! empty( $block['align'] ) ) {
         </div>
         <div class="inner text-center flex flex-col justify-center items-center relative">
             <div class="main-logo text-center mb-12">
-                <img src="http://localhost/wp-content/uploads/2024/03/itrac____.svg" alt="">
+                <img src="https://sgi.gaiada.com/wp-content/uploads/2023/12/itrac.svg" alt="">
             </div>
             <div class="logos flex items-center gap-x-8">
                 <div class="logo-wrapper" style="height: px;">
