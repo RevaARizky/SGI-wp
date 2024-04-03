@@ -67,9 +67,9 @@ $services = get_field('services');
                                 <!-- <svg viewBox="0 0 120 120" class="absolute top-1/2 left-1/2 -tranlate-x-1/2 -translate-y-1/2"><circle cx="55" cy="55" r="50" class="dashed w-[110%] h-[110%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-decoration" style="stroke-dasharray: 6, 9;fill: transparent;stroke: #fff;stroke-width: 1px;"></circle></svg>
                                 <svg viewBox="0 0 120 120" class="absolute top-1/2 left-1/2 -tranlate-x-1/2 -translate-y-1/2"><circle cx="55" cy="55" r="50" class="dashed w-[125%] h-[125%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-decoration" style="stroke-dasharray: 6, 9;fill: transparent;stroke: #fff;stroke-width: 1px;"></circle></svg>
                                 <svg viewBox="0 0 120 120" class="absolute top-1/2 left-1/2 -tranlate-x-1/2 -translate-y-1/2"><circle cx="55" cy="55" r="50" class="dashed w-[140%] h-[140%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-decoration" style="stroke-dasharray: 6, 9;fill: transparent;stroke: #fff;stroke-width: 1px;"></circle></svg> -->
-                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] pt-[110%] rounded-full border-px border-dashed border-sgi-dark-grey"></div>
-                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[125%] pt-[125%] rounded-full border-px border-dashed border-sgi-dark-grey"></div>
-                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] pt-[140%] rounded-full border-px border-dashed border-sgi-dark-grey"></div>
+                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] pt-[110%] rounded-full border border-dashed border-sgi-dark-grey z-10"></div>
+                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[125%] pt-[125%] rounded-full border border-dashed border-sgi-dark-grey z-10"></div>
+                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] pt-[140%] rounded-full border border-dashed border-sgi-dark-grey z-10"></div>
                             </div>
                         </div>
                     </div>
