@@ -28,7 +28,7 @@ $bg = get_field('bg_image');
 $contents = get_field('content');
 ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
-    <div class="inner" style="background-image: url(<?= $bg['url'] ?>);">
+    <div class="inner bg-white-shade" style="background-image: url(<?= $bg['url'] ?>);">
         <div class="container">
             <div class="py-32 px-14 content-center">
                 <div class="inner grid grid-cols-12 relative md:gap-x-24">
