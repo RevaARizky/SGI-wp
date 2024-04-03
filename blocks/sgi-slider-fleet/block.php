@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-slider-fleet bg-gray-theme text-white';
+$classes = 'acf-block block-slider-fleet bg-gray-theme text-sgi-dark-grey';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -37,7 +37,7 @@ $fleets = get_field('fleet');
                     <div class="image-wrapper relative md:pt-[calc(100vh-130px)] pt-[100%]">
                         <img src="<?= $fleet['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
                         <div class="title-image w-[200px] absolute bottom-12 left-12">
-                            <p class="text-5xl"><?= $fleet['title'] ?></p>
+                            <p class="text-5xl text-white"><?= $fleet['title'] ?></p>
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@ $fleets = get_field('fleet');
                         <?php foreach($fleets as $index=>$fleet) : ?>
                         <div class="swiper-slide !h-auto">
 
-                            <div class="specification-wrapper">
+                            <div class="specification-wrapper text-sgi-dark-grey">
                                 <?= $fleet['spec'] ?>
                             </div>
 

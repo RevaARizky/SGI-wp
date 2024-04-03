@@ -85,13 +85,14 @@ module.exports = {
         'gray-9': '#999',
         'gray-d': '#ddd',
         'gray-f5': '#f5f5f5',
-        primary: '#0069FF',
-        'orange-theme': '#C8B273',
-        'gray-theme': '#636569',
-        'sgi': '#636569',
-        'gray-shade': '#F5F6F6',
+        'sgi-orange-shade': '#FF5700',
         'sgi-orange': '#D75C00',
-        'sgi-footer': '#414A50',
+        'sgi-footer-grey': '#696B6F',
+        'sgi-dark-grey': '#414A50',
+        'sgi-grey': '#636569',
+        'sgi-white': '#E3E3E3',
+        'sgi-white-shade': '#D2D2D2',
+        'sgi-white-alt': '#F5F6F6'
       },
       fontSize: {
         "3xl": "1.625rem"

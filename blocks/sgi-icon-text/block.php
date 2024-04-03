@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-icon-text text-white';
+$classes = 'acf-block block-icon-text text-sgi-dark-grey';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -32,7 +32,7 @@ $contents = get_field('content');
             <div class="grid grid-cols-12 gap-x-10 gap-y-16">
                 <?php foreach($contents as $index=>$content) : ?>
                     <div class="md:col-span-6 col-span-12">
-                        <div class="inner-wrapper item bg-sgi-footer px-20 py-24 text-center">
+                        <div class="inner-wrapper item bg-sgi-white-shade px-20 py-24 text-center">
                             <div class="icon-wrapper mb-7">
                                 <?= $content['icon'] ?>
                             </div>

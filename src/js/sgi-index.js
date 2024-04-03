@@ -77,8 +77,54 @@ import $ from "jquery"
     //     gsap.to(window, {scrollTo: 0})
     // })
 
+        const headerScrollAction = (self) => {
+            this.index = -1
+            this.anim = []
+
+            const generateAnim = (el, from, to) => {
+                this.index += 1
+                this.anim[this.index] = gsap.timeline({paused: true})
+                this.anim[this.index].fromTo(el, {...from, ease: 'power3.inOut'}, {...to, ease: 'power3.inOut', duration: .4}, 0)
+            }
+
+            const playAnim = () => {
+                this.anim.forEach(i => {i.play()})
+            }
+            const reverseAnim = () => {
+                this.anim.forEach(i => {i.reverse()})
+            }
+
+            generateAnim('#header', {
+                paddingTop: '40px',
+                paddingBottom: 0,
+                backgroundColor: 'rgba(105,107,111,0)'
+            }, {
+                paddingTop: '25px',
+                paddingBottom: '15px',
+                backgroundColor: 'rgba(105,107,111,1)'
+            })
+            generateAnim('#header svg.main-logo', {
+                width: '148px',
+                height: '93px'
+            }, {
+                width: '120px',
+                height: '65px'
+            })
     
-})
+            self.addEventListener('scroll', e => {
+                if(window.scrollY > 30) {
+                    playAnim()
+                } else {
+                    reverseAnim()
+                }
+            })
+        }
+
+        headerScrollAction(window)
+
+
+    
+    })
 
 var eventName
 if(window.cp_loadingpage) {

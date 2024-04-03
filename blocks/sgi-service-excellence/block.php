@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-service-excellence text-white';
+$classes = 'acf-block block-service-excellence text-sgi-dark-grey';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -43,7 +43,7 @@ $services = get_field('services');
                                     </svg>
                                 </div>
                                 <div class="content-wrapper overflow-y-hidden">
-                                    <div class="title-wrapper relative pl-16 text-white">
+                                    <div class="title-wrapper relative pl-16 text-sgi-dark-grey">
                                         <div class="counter-wrapper absolute left-0 top-0">
                                             <p class="counter text-3xl font-bold font-montserrat">0<?= $index + 1 ?></p>
                                         </div>
@@ -64,9 +64,12 @@ $services = get_field('services');
                                 <img src="<?= $service['image']['url'] ?>" data-index="<?= $index ?>" class="image-target w-full h-full absolute inset-0 object-cover rounded-full" alt="">
                             <?php endforeach ?>
                             <div class="border-wrapper">
-                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] pt-[110%] rounded-full" style="border: 1px dashed #fff"></div>
-                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[125%] pt-[125%] rounded-full" style="border: 1px dashed #fff"></div>
-                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] pt-[140%] rounded-full" style="border: 1px dashed #fff"></div>
+                                <!-- <svg viewBox="0 0 120 120" class="absolute top-1/2 left-1/2 -tranlate-x-1/2 -translate-y-1/2"><circle cx="55" cy="55" r="50" class="dashed w-[110%] h-[110%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-decoration" style="stroke-dasharray: 6, 9;fill: transparent;stroke: #fff;stroke-width: 1px;"></circle></svg>
+                                <svg viewBox="0 0 120 120" class="absolute top-1/2 left-1/2 -tranlate-x-1/2 -translate-y-1/2"><circle cx="55" cy="55" r="50" class="dashed w-[125%] h-[125%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-decoration" style="stroke-dasharray: 6, 9;fill: transparent;stroke: #fff;stroke-width: 1px;"></circle></svg>
+                                <svg viewBox="0 0 120 120" class="absolute top-1/2 left-1/2 -tranlate-x-1/2 -translate-y-1/2"><circle cx="55" cy="55" r="50" class="dashed w-[140%] h-[140%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-decoration" style="stroke-dasharray: 6, 9;fill: transparent;stroke: #fff;stroke-width: 1px;"></circle></svg> -->
+                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] pt-[110%] rounded-full border-px border-dashed border-dark-grey"></div>
+                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[125%] pt-[125%] rounded-full border-px border-dashed border-dark-grey"></div>
+                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] pt-[140%] rounded-full border-px border-dashed border-dark-grey"></div>
                             </div>
                         </div>
                     </div>

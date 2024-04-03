@@ -36,11 +36,11 @@ $content = get_field('content');
             <div class="grid grid-cols-12">
                 <div class="vertical-item flex py-6 col-span-6<?= $index % 2 ? " col-start-7 item-right justify-end" : " item-left justify-start" ?>">
                     <?php if($data['additional']) : ?>
-                    <div class="additional-wrapper absolute text-center text-white">
+                    <div class="additional-wrapper absolute text-center text-sgi-dark-grey">
                         <p class="font-bold text-lg"><?= $data['additional'] ?></p>
                     </div>
                     <?php endif; ?>
-                    <div class="text-wrapper <?= $data['additional'] ? 'item-trigger ' : '' ?>p-8 bg-sgi-footer text-white w-3/4">
+                    <div class="text-wrapper <?= $data['additional'] ? 'item-trigger ' : '' ?>p-8 bg-sgi-grey text-white w-3/4">
                         <div class="inner overflow-y-hidden">
                             <p class="text-lg font-montserrat text-white"><?= $data['text'] ?></p>
                             <?php if($data['more_text']) : ?>

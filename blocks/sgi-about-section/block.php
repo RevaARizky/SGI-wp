@@ -45,26 +45,26 @@ $cta = get_field('cta');
                 <?php endif; ?>
                 <?php if($title) : ?>
                 <div class="title-wrapper mb-5">
-                    <h5 class="text-desc-small text-white font-sans animate-text" data-text-type="lines"><?= $title ?></h5>
+                    <h5 class="text-desc-small text-sgi-dark-grey font-sans animate-text" data-text-type="lines"><?= $title ?></h5>
                 </div>
                 <?php endif; ?>
                 <?php if($subtitle) : ?>
                 <div class="subtitle-wrapper mb-5">
-                    <h5 class="text-title text-white font-sans animate-text" data-text-type="lines"><?= $subtitle ?></h5>
+                    <h5 class="text-title text-sgi-dark-grey font-sans animate-text" data-text-type="lines"><?= $subtitle ?></h5>
                 </div>
                 <?php endif; ?>
                 <?php if($description) : ?>
                 <div class="description-wrapper">
                     <?php if($descriptionSize) : ?>
-                        <p class="text-white md:leading-relaxed leading-relaxed tracking-wide font-light<?= $isAnimate ? ' animate-text' : '' ?>" data-text-type="lines" style="font-size: <?= $descriptionSize ?>px!important;"><?= $description ?></p>
+                        <p class="text-dark-grey md:leading-relaxed leading-relaxed tracking-wide font-light<?= $isAnimate ? ' animate-text' : '' ?>" data-text-type="lines" style="font-size: <?= $descriptionSize ?>px!important;"><?= $description ?></p>
                     <?php else : ?>
-                        <p class="text-white text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light<?= $isAnimate ? ' animate-text' : '' ?>" data-text-type="lines"><?= $description ?></p>
+                        <p class="text-dark-grey text-desc-big md:leading-relaxed leading-relaxed tracking-wide font-light<?= $isAnimate ? ' animate-text' : '' ?>" data-text-type="lines"><?= $description ?></p>
                     <?php endif; ?>
                 </div>
                 <?php endif; ?>
                 <?php if($cta) : ?>
                 <div class="button-wrapper mt-9">
-                    <a href="<?= $cta['url'] ?>" class="md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-xs text-[12px] text-white"><?= $cta['title'] ?></a>
+                    <a href="<?= $cta['url'] ?>" class="md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-xs text-[12px] text-dark-grey"><?= $cta['title'] ?></a>
                 </div>
                 <?php endif; ?>
             </div>

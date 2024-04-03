@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-icon-highlight text-white';
+$classes = 'acf-block block-icon-highlight text-sgi-dark-grey';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -28,7 +28,7 @@ $bg = get_field('bg_image');
 $contents = get_field('content');
 ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
-    <div class="inner has-bg" style="background-image: url(<?= $bg['url'] ?>);">
+    <div class="inner" style="background-image: url(<?= $bg['url'] ?>);">
         <div class="container">
             <div class="py-32 px-14 content-center">
                 <div class="inner grid grid-cols-12 relative md:gap-x-24">
@@ -38,10 +38,10 @@ $contents = get_field('content');
                                 <img src="<?= $content['icon']['url'] ?>" class="w-full h-auto" alt="">
                             </div>
                             <div class="title-wrapper mb-4">
-                                <p class="text-white text-5xl font-montserrat"><?= $content['title'] ?></p>
+                                <p class="text-sgi-dark-grey text-5xl font-montserrat"><?= $content['title'] ?></p>
                             </div>
                             <div class="description-wrapper">
-                                <p class="text-white capitalize text-lg"><?= $content['description'] ?></p>
+                                <p class="text-sgi-dark-grey capitalize text-lg"><?= $content['description'] ?></p>
                             </div>
                         </div>
                     <?php endforeach; ?>

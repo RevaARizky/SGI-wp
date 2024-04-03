@@ -32,7 +32,7 @@ $scope = get_field('scope');
 <section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?>">
     <div class="container relative">
         <?php if($title) : ?>
-            <div class="title-wrapper mb-16 text-white">
+            <div class="title-wrapper mb-16 text-sgi-dark-grey">
                 <p class="text-4xl font-montserrat"><?= $title ?></p>
             </div>
         <?php endif; ?>

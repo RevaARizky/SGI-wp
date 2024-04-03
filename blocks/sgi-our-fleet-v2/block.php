@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-our-fleet bg-sgi-footer';
+$classes = 'acf-block block-our-fleet bg-sgi-white-shade';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -31,7 +31,7 @@ $slides = get_field('slides');
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="inner relative">
         <div class="container relative overflow-hidden z-20">
-            <div class="title-wrapper text-center text-white mb-10">
+            <div class="title-wrapper text-center text-sgi-dark-grey mb-10">
                 <p class="text-4xl">
                     <?= $title ?>
                 </p>

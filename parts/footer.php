@@ -1,4 +1,4 @@
-<footer class="footer bg-sgi-footer text-white relative overflow-y-hidden">
+<footer class="footer bg-sgi-grey text-white relative overflow-y-hidden">
     <div class="inner-animation" data-speed="0.8">
         <!-- <div class="container md:pt-24 pt-12 md:pb-16 pb-8">
             <div class="grid grid-cols-12 gap-y-10 md:gap-y-0">
@@ -122,19 +122,19 @@
                     <div class="inner pl-8 grid grid-cols-2 pt-8">
                         <div class="col-span-1">
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">About us</a>
+                                <a href="#" class="text-xs opacity-75">About SGi</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">What we do</a>
+                                <a href="#" class="text-xs opacity-75">Our Fleet</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Sub-Business</a>
+                                <a href="#" class="text-xs opacity-75">Gallery</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Fleet</a>
+                                <a href="#" class="text-xs opacity-75">Blog</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Facilities</a>
+                                <a href="#" class="text-xs opacity-75">Contact Us</a>
                             </div>
                         </div>
                         <div class="col-span-1">
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div class="col-span-3 form-wrapper">
-                    <div class="inner bg-[#49545B] p-6">
+                    <div class="inner bg-sgi-footer-grey p-6">
                         <div class="title-wrapper mb-6">
                             <p class="text-lg">Contact Us</p>
                         </div>

@@ -52,7 +52,6 @@ import ScrollTrigger from "gsap/ScrollTrigger"
             start: "top center",
             end: "bottom center",
             onUpdate: self => {
-                console.log(self)
                 if(lastProgress > self.progress) return false
                 lastProgress = self.progress
                 gsap.to(els.line, {

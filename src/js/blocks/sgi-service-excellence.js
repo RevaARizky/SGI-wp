@@ -8,7 +8,8 @@ import gsap from "gsap"
         if(!main) return false
 
         const els = {
-            items: []
+            items: [],
+            borders: main.querySelectorAll('.border-decoration')
         }
 
         main.querySelectorAll('.item').forEach((el, i) => {
@@ -93,6 +94,18 @@ import gsap from "gsap"
                 })
                 playAnim()
                 el.main.classList.add('active')
+            })
+        })
+
+
+        els.borders.forEach((el, i) => {
+            var rotateVal = -360
+            if(i % 2) rotateVal = 360
+            gsap.to(el, {
+                rotate: rotateVal,
+                repeat: -1,
+                duration: 128,
+                ease: 'none'
             })
         })
 

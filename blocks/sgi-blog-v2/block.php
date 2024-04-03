@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-blog-v2 py-12 text-white';
+$classes = 'acf-block block-blog-v2 py-12 text-sgi-dark-grey';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -41,7 +41,7 @@ if ( ! empty( $block['align'] ) ) {
                     <?php $post->the_post(); ?>
 
                     <div class="md:col-span-4 col-span-12 item">
-                        <div class="inner-wrapper bg-sgi-footer relative">
+                        <div class="inner-wrapper bg-sgi-white-shade relative">
                             <a href="<?= get_the_permalink() ?>">
                                 <div class="image-wrapper relative pt-[68%]">
                                     <div class="overlay-image absolute inset-0 bg-[rgba(0,0,0,.4)] z-10" style="opacity: 0;"></div>

@@ -35,7 +35,7 @@ $bg = get_field('use_footer_bg')
 
 ?>
 
-<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?> <?= $space ?> <?= $bg ? 'bg-sgi-footer' : '' ?>">
+<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?> <?= $space ?> <?= $bg ? 'bg-sgi-white-shade' : '' ?>">
     <div class="<?= $container ? 'container' : 'wrapper' ?>">
         <?php if($line) : ?> <div class="spacer <?= $lineWidth ? 'border-sgi-orange' : 'w-full border-white' ?> mx-auto border-b" <?= $lineWidth ? 'style="width: ' . $lineWidth . ';"' : '' ?>></div> <?php endif; ?>
     </div>
