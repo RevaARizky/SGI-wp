@@ -90,8 +90,8 @@ module.exports = {
         'sgi-footer-grey': '#696B6F',
         'sgi-dark-grey': '#414A50',
         'sgi-grey': '#636569',
-        'sgi-white': '#E3E3E3',
-        'sgi-white-shade': '#D2D2D2',
+        'sgi-white': '#fff',
+        'sgi-white-shade': '#EFEFEF',
         'sgi-white-alt': '#F5F6F6'
       },
       fontSize: {
