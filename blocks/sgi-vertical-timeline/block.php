@@ -31,16 +31,24 @@ $content = get_field('content');
 <section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?>">
     <div class="container relative">
         <div class="vertical-line absolute left-1/2 top-0 bottom-0 -translate-x-1/2 w-1"></div>
+        <div class="vertical-line-progress absolute left-1/2 top-0 -translate-x-1/2 w-1"></div>
         <?php foreach($content as $index => $data) : ?>
             <div class="grid grid-cols-12">
-                <div class="vertical-item flex col-span-6<?= $index % 2 ? " col-start-7 item-right justify-end" : " item-left justify-start" ?>">
+                <div class="vertical-item flex py-6 col-span-6<?= $index % 2 ? " col-start-7 item-right justify-end" : " item-left justify-start" ?>">
                     <?php if($data['additional']) : ?>
                     <div class="additional-wrapper absolute text-center text-white">
                         <p class="font-bold text-lg"><?= $data['additional'] ?></p>
                     </div>
                     <?php endif; ?>
-                    <div class="text-wrapper p-8 bg-sgi-footer text-white w-3/4">
-                        <p class="text-lg font-montserrat text-white"><?= $data['text'] ?></p>
+                    <div class="text-wrapper <?= $data['additional'] ? 'item-trigger ' : '' ?>p-8 bg-sgi-footer text-white w-3/4">
+                        <div class="inner overflow-y-hidden">
+                            <p class="text-lg font-montserrat text-white"><?= $data['text'] ?></p>
+                            <?php if($data['more_text']) : ?>
+                                <div class="more-text-wrapper" style="height: 0;">
+                                    <p class="text-lg font-montserrat text-white"><?= $data['more_text'] ?></p>
+                                </div>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
             </div>

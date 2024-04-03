@@ -1,4 +1,5 @@
 import gsap from "gsap"
+import ScrollTrigger from "gsap/ScrollTrigger"
 
 (() => {
 
@@ -30,6 +31,61 @@ import gsap from "gsap"
         calculatePositionAdditional()
 
         
+    })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const main = document.querySelector('.block-vertical-timeline')
+        if(!main) return false
+        gsap.registerPlugin(ScrollTrigger)
+
+        const els = {
+            mainLine: main.querySelector('.vertical-line'),
+            line: main.querySelector('.vertical-line-progress'),
+            items: main.querySelectorAll('.vertical-item')
+        }
+
+
+        gsap.registerPlugin(ScrollTrigger)
+        var lastProgress = 0
+        var tl = gsap.timeline({scrollTrigger: {
+            trigger: els.mainLine,
+            start: "top center",
+            end: "bottom center",
+            markers: true,
+            onUpdate: self => {
+                console.log(self)
+                if(lastProgress > self.progress) return false
+                lastProgress = self.progress
+                gsap.to(els.line, {
+                    height: `${lastProgress * 100}%`
+                })
+            }
+        }})
+
+        els.items.forEach((el, i) => {
+            if(!el.querySelector('.more-text-wrapper')) return false
+
+            function refresh() {
+                tl.scrollTrigger.refresh()
+                els.items.forEach(el => {
+                    el.animTl.scrollTrigger.refresh()
+                })
+            }
+            
+
+            el.animTl = gsap.timeline({
+                onStart: () => {el.classList.add('active')},
+                onComplete: refresh,
+                scrollTrigger: {
+                    trigger: el.querySelector('.item-trigger'),
+                    start: "center center-=20px",
+                }
+            })
+            el.animTl.to(el.querySelector('.more-text-wrapper'), {
+                height: 'auto',
+            })
+        })
+
     })
 
 })()

@@ -36,8 +36,8 @@ $cta = get_field('cta');
 
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="inner-animation">
-        <div class="container md:min-h-screen">
-            <div class="content-wrapper md:py-32 md:mb-32 mb-12 py-12 custom-border-anim border-white<?= $center ? ' text-center' : '' ?>">
+        <div class="container">
+            <div class="content-wrapper custom-border-anim border-white<?= $center ? ' text-center' : '' ?>">
                 <?php if($svg) : ?>
                 <div class="icon-wrapper text-center mb-8">
                     <?= $svg ?>

@@ -21,7 +21,7 @@
         right: 0;
         transform: translateY(-50%);
     }
-    .vertical-item:hover::after {
+    .vertical-item:hover::after, .vertical-item.active::after {
         box-shadow: 0 0 18px 0 #fff;
     }
     .vertical-item::after {
@@ -36,6 +36,10 @@
         background-size: cover;
         width: 70px;
         height: 70px;
+    }
+
+    .vertical-line-progress {
+        box-shadow: 0 0 18px 0 #fff;
     }
 
     .additional-wrapper {

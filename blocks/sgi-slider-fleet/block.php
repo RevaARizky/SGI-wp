@@ -34,7 +34,7 @@ $fleets = get_field('fleet');
             <div class="swiper-wrapper">
                 <?php foreach($fleets as $index=>$fleet) : ?>
                 <div class="swiper-slide">
-                    <div class="image-wrapper relative md:pt-[65%] pt-[100%]">
+                    <div class="image-wrapper relative md:pt-[calc(100vh-130px)] pt-[100%]">
                         <img src="<?= $fleet['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
                         <div class="title-image w-[200px] absolute bottom-12 left-12">
                             <p class="text-5xl"><?= $fleet['title'] ?></p>
@@ -60,7 +60,7 @@ $fleets = get_field('fleet');
                 <div class="content-slider-wrapper swiper">
                     <div class="swiper-wrapper">
                         <?php foreach($fleets as $index=>$fleet) : ?>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide !h-auto">
 
                             <div class="specification-wrapper">
                                 <?= $fleet['spec'] ?>
@@ -78,6 +78,7 @@ $fleets = get_field('fleet');
             <div class="swiper-wrapper">
                 <?php foreach($fleets as $index=>$fleet) : ?>
                     <div class="swiper-slide">
+                        <?php if($fleet['gallery']) : ?>
                         <div class="grid grid-cols-12">
                             <div class="md:col-span-3 col-span-12 md:mb-20">
                                 <div class="title-wrapper pr-[48px]">
@@ -119,6 +120,7 @@ $fleets = get_field('fleet');
                                 <?php endif; ?>
                             <?php endforeach; ?>
                         </div>
+                        <?php endif; ?>
                     </div>
                 <?php endforeach; ?>
             </div>

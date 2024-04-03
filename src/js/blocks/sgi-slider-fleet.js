@@ -19,9 +19,9 @@ import Swiper, {EffectFade} from "swiper"
             prev: document.querySelector('.button-nav-wrapper .prev-btn')
         }
 
-        new Swiper(swiperEl.image, {slidesPerView: 'auto', spaceBetween: 40})
-        new Swiper(swiperEl.content, {slidesPerView: 1, allowTouchMove: false, modules: [EffectFade], effect: "fade", fadeEffect: {crossFade: true}})
-        new Swiper(swiperEl.gallery, {slidesPerView: 1, allowTouchMove: false, modules: [EffectFade], effect: "fade", fadeEffect: {crossFade: true}})
+        new Swiper(swiperEl.image, {slidesPerView: 1, spaceBetween: 40})
+        new Swiper(swiperEl.content, {slidesPerView: 1, allowTouchMove: false, modules: [EffectFade], effect: "fade", fadeEffect: {crossFade: true}, autoHeight: true})
+        new Swiper(swiperEl.gallery, {slidesPerView: 1, allowTouchMove: false, modules: [EffectFade], effect: "fade", fadeEffect: {crossFade: true}, autoHeight: true})
 
         swiperNav.next.addEventListener('click', () => {
             for(const key in swiperEl) {
@@ -34,10 +34,11 @@ import Swiper, {EffectFade} from "swiper"
             }
         })
 
-        swiperEl.image.swiper.on('activeIndexChange', e => {
+        swiperEl.image.swiper.on('slideChange', e => {
+            console.log(e)
             for(const key in swiperEl) {
                 if(key == 'image') {
-                    continue
+                    return false
                 }
                 swiperEl[key].swiper.slideTo(e.activeIndex)
             }
