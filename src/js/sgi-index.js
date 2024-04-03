@@ -2,6 +2,7 @@ import gsap from "gsap";
 import ScrollToPlugin from "gsap/ScrollToPlugin";
 import $ from "jquery"
 (($) => {
+    window.scrollTo(0,0)
     document.addEventListener('DOMContentLoaded', function() {
         gsap.registerPlugin(ScrollToPlugin)
         window.isNavOpen = false;
