@@ -28,7 +28,7 @@ if ( ! empty( $block['align'] ) ) {
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="inner h-[50vh] flex justify-center items-center relative">
         <div class="bg-overlay">
-            <img src="http://localhost/wp-content/uploads/2024/03/33dd881e4e03e1b67a3d8b8da9bb56ab.jpeg" class="absolute inset-0 w-full h-full object-cover" alt="">
+            <img src="https://sgi.gaiada.com/wp-content/uploads/2024/03/33dd881e4e03e1b67a3d8b8da9bb56ab.jpeg" class="absolute inset-0 w-full h-full object-cover" alt="">
         </div>
         <div class="inner text-center flex flex-col justify-center items-center relative">
             <div class="main-logo text-center mb-12">
@@ -136,7 +136,7 @@ if ( ! empty( $block['align'] ) ) {
     </div>
     <div class="inner h-[50vh] flex justify-center items-center relative">
         <div class="bg-overlay">
-            <img src="http://localhost/wp-content/uploads/2024/03/icare_bg__.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
+            <img src="https://sgi.gaiada.com/wp-content/uploads/2024/03/icare_bg__.jpg" class="absolute inset-0 w-full h-full object-cover" alt="">
         </div>
         <div class="container">
             <div class="inner text-center grid grid-cols-12 justify-center items-center">

@@ -1,14 +1,4 @@
-@import 'text';
 @import 'hero';
-@import 'about';
-@import 'image';
-@import 'carousel-text';
-@import 'instagram';
-@import 'room-list';
-@import 'carousel';
-@import 'carousel-full';
-@import 'gallery';
-@import 'testimonials';
 @import 'sgi-home';
 @import 'sgi-header-unit';
 @import 'sgi-slider-unit';
@@ -23,7 +13,6 @@
 @import 'sgi-vertical-timeline';
 @import 'sgi-service-excellence';
 @import 'sgi-single';
-@import 'animation';
 
 .block-contact a {
   @apply underline hover:no-underline;

@@ -65,7 +65,7 @@ if(window.cp_loadingpage) {
 $(document).on(eventName, () => {
     const mm = gsap.matchMedia()
     mm.add('(min-width: 768px)', () => {
-        const smoother = ScrollSmoother.create({
+        window.smoother = ScrollSmoother.create({
             smooth: 1,
             effects: true,
             normalizeScroll: true,

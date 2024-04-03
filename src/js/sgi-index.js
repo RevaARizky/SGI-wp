@@ -73,9 +73,9 @@ import $ from "jquery"
     //         }
     //     };
 
-    document.querySelector('.top-arrow').addEventListener('click', el => {
-        gsap.to(window, {scrollTo: 0})
-    })
+    // document.querySelector('.top-arrow').addEventListener('click', el => {
+    //     gsap.to(window, {scrollTo: 0})
+    // })
 
     
 })

@@ -20,7 +20,7 @@
 <?php get_template_part('parts/header'); ?>
 <main id="primary" class="font-sans">
     <div id="smooth-wrapper">
-        <div id="smooth-content" class="bg-gray-theme md:overflow-visible overflow-hidden">
+        <div id="smooth-content" class="bg-gray-theme md:overflow-visible overflow-hidden" style="will-change: transform;">
 
         <header id="header" class="absolute top-0 left-0 right-0 md:pt-[40px] pt-[20px] z-10">
             <div class="container">
