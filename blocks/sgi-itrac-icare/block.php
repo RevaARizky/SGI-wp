@@ -47,7 +47,6 @@ $icare = get_field('icare');
     </div>
     <div class="inner md:h-[50vh] flex justify-center items-center relative icare">
         <div class="bg-overlay">
-            <?php var_dump($icare); var_dump($itrac); ?>
             <img src="<?= $icare['bg_image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
         </div>
         <div class="container">
