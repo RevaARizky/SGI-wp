@@ -52,8 +52,10 @@ module.exports = {
     // './src/js/*.js',
   ],
   safelist: [
-    'py-24',
-    'py-32',
+    {
+      pattern:  /py-(0|6|10|12|24|32)/,
+      variants: ['md']
+    },
     {
       pattern: /grid-cols-(1|2|3|4)/,
       variants: ['md']

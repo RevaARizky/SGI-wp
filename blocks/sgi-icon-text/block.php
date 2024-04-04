@@ -37,10 +37,10 @@ $contents = get_field('content');
                                 <?= $content['icon'] ?>
                             </div>
                             <div class="title-wrapper mb-6">
-                                <p class="text-2xl"><?= $content['title'] ?></p>
+                                <p class="md:text-2xl text-xl"><?= $content['title'] ?></p>
                             </div>
                             <div class="description-wrapper">
-                                <p class="text-lg"><?= $content['description'] ?></p>
+                                <p class="text-desc-small"><?= $content['description'] ?></p>
                             </div>
                         </div>
                     </div>
