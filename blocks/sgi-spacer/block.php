@@ -9,8 +9,8 @@
  * @param   bool $is_preview True during AJAX preview.
  * @param   (int|string) $post_id The post ID this block is saved to.
  * 
- * { py-6, py-10, py-12, py-16, py-24 }
- * { md:py-6, md:py-12, md:py-16, md:py-24, py-32 }
+ * { py-0, py-6, py-10, py-12, py-16, py-24 }
+ * { md:py-0, md:py-6, md:py-12, md:py-16, md:py-24, py-32 }
  */
 
 
