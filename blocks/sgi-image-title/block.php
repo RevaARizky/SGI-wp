@@ -45,7 +45,7 @@ $content = get_field('content');
                             <?php if($data['description']) : ?>
                             <div class="overlay-bg absolute inset-0"></div>
                             <div class="description-wrapper absolute left-0 right-0 px-8">
-                                <p class="text-lg text-white"><?= $data['description'] ?></p>
+                                <p class="text-desc-small text-white"><?= $data['description'] ?></p>
                             </div>
                             <?php endif; ?>
                         </div>
