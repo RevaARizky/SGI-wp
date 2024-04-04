@@ -16,9 +16,15 @@ import gsap from "gsap"
         }
 
         new Swiper(els.slider, {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
         })
 
         els.nav.next.addEventListener('click', () => {

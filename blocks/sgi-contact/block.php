@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-contact text-sgi-dark-grey md:py-32 relative';
+$classes = 'acf-block block-contact text-sgi-dark-grey relative';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -32,23 +32,23 @@ $form = get_field('contact_form');
 <section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?>">
 
     <div class="container">
-        <div class="grid grid-cols-12">
+        <div class="grid grid-cols-12 gap-y-16">
             <div class="md:col-span-5 col-span-12">
-                <div class="title-wrapper md:mb-20">
-                    <p class="md:text-4xl font-light"><?= $title ?></p>
+                <div class="title-wrapper md:mb-20 mb-8">
+                    <p class="text-title font-light"><?= $title ?></p>
                 </div>
-                <div class="address-wrapper md:mb-12">
-                    <p class="md:text-2xl"><?= $address ?></p>
+                <div class="address-wrapper md:mb-12 mb-6">
+                    <p class="text-subtitle"><?= $address ?></p>
                 </div>
                 <div class="links-wrapper">
                     <?php foreach($links as $index=>$link) : ?>
-                        <div class="link pb-5 md:mb-12">
-                            <a href="<?= $link['url'] ?>"><p class="text-xl"><?= $link['text'] ?></p></a>
+                        <div class="link pb-2 md:mb-12 mb-2">
+                            <a href="<?= $link['url'] ?>"><p class="text-desc-small"><?= $link['text'] ?></p></a>
                         </div>
                     <?php endforeach; ?>
                 </div>
             </div>
-            <div class="md:col-span-7 col-span-12">
+            <div class="md:col-span-7 col-span-12 placeholder-sgi-dark-grey">
                 <?= do_shortcode($form); ?>
             </div>
         </div>

@@ -56,6 +56,55 @@ import $ from "jquery"
             })
         }
 
+        const menuAction = () => {
+            this.menuState = false
+            this.anims = []
+            this.index = 0
+            this.els = {
+                hamburger: document.querySelector('#hamburger'),
+                menuMobile: document.querySelector('#menu-mobile'),
+                closeMenu: document.querySelectorAll('#menu-mobile .close')
+            }
+
+            const generateAnim = (el, from, to) => {
+                this.index += 1
+                this.anims[this.index] = gsap.timeline({paused: true})
+                this.anims[this.index].fromTo(el, {...from, ease: 'power3.Out'}, {...to, ease: 'power3.Out', duration: .4}, 0)
+            }
+            const animHandler = (action = 'play') => {
+                this.anims.forEach(i => {
+                    if(action == 'play') {
+                        i.play()
+                    } else {
+                        i.reverse()
+                    }
+                })
+            }
+            const openMenu = () => {
+                animHandler('play')
+                this.menuState = true
+            }
+
+            const closeMenu = () => {
+                animHandler('reverse')
+                this.menuState = false
+            }
+
+            generateAnim(this.els.menuMobile, {autoAlpha: 0}, {autoAlpha: 1})
+
+            this.els.hamburger.addEventListener('click', (e) => {
+                e.preventDefault()
+                openMenu()
+            })
+            this.els.closeMenu.forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.preventDefault()
+                    closeMenu()
+                })
+            })
+        }
+        menuAction()
+
 
     // let loadingScreen = document.querySelector('#loading-screen')
 

@@ -45,7 +45,7 @@ $icon = get_field('logo');
     <?php endif; ?>
 </div>
     <div class="container">
-        <div class="grid grid-cols-12 relative md:gap-x-16 items-center">
+        <div class="grid grid-cols-12 relative md:gap-x-16 md:gap-y-0 gap-y-6 items-center">
             <div class="md:col-span-6 col-span-12<?= $imageRight ? ' md:order-1' : ' md:order-0' ?>">
             <?php if($image) : ?>
                 <div class="image-wrapper relative <?= $imageSize ? '' : 'pt-[60%]' ?>" style="<?= $imageSize ? 'padding-top: ' . $imageSize : '' ?>" data-speed=".92">

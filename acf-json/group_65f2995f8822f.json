@@ -92,6 +92,35 @@
             "placeholder": ""
         },
         {
+            "key": "field_660e592dc70c2",
+            "label": "Mobile Spacing",
+            "name": "mobile_space",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "py-6": "py-6",
+                "py-10": "py-10",
+                "py-12": "py-12",
+                "py-16": "py-16",
+                "py-24": "py-24"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_660679a250d7a",
             "label": "Use Footer Color",
             "name": "use_footer_bg",
@@ -130,5 +159,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711700405
+    "modified": 1712216409
 }

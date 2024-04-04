@@ -34,12 +34,12 @@ $subtitle = get_field('subtitle');
             <div class="grid grid-cols-12 md:mb-28">
                 <div class="md:col-span-6 col-span-12">
                     <div class="section-title">
-                        <p class="text-5xl font-montserrat tracking-wide"><?= $title ?></p>
+                        <p class="text-title font-montserrat tracking-wide"><?= $title ?></p>
                     </div>
                 </div>
                 <div class="md:col-span-6 col-span-12">
                     <div class="section-subtitle">
-                        <p class="text-lg tracking-wide"><?= $subtitle ?></p>
+                        <p class="text-desc-small tracking-wide"><?= $subtitle ?></p>
                     </div>
                 </div>
             </div>
@@ -53,10 +53,10 @@ $subtitle = get_field('subtitle');
                             <div class="team-wrapper py-10" data-index="<?= $index ?>">
                                 <div class="team-wrapper-inner pb-5 flex justify-between relative">
                                     <div class="col-span-1 team-name">
-                                        <p class="text-2xl font-bold"><?= $team['name'] ?></p>
+                                        <p class="text-subtitle font-bold"><?= $team['name'] ?></p>
                                     </div>
                                     <div class="col-span-1 team-position">
-                                        <p class="text-lg"><?= $team['position'] ?></p>
+                                        <p class="text-desc-small"><?= $team['position'] ?></p>
                                     </div>
                                 </div>
                             </div>

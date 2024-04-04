@@ -9,7 +9,8 @@
  * @param   bool $is_preview True during AJAX preview.
  * @param   (int|string) $post_id The post ID this block is saved to.
  * 
- * { py-6, py-12, py-16, py-24, py-32 }
+ * { py-6, py-10, py-12, py-16, py-24 }
+ * { md:py-6, md:py-12, md:py-16, md:py-24, py-32 }
  */
 
 
@@ -31,11 +32,12 @@ $container = get_field('container');
 $line = get_field('line');
 $lineWidth = get_field('line_width');
 $space = get_field('space');
+$mobileSpace = get_field('mobile_space');
 $bg = get_field('use_footer_bg')
 
 ?>
 
-<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?> <?= $space ?> <?= $bg ? 'bg-sgi-white-shade' : '' ?>">
+<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?> md:<?= $space ?> <?= $mobileSpace ? $mobileSpace : $space ?><?= $bg ? ' bg-sgi-white-shade' : '' ?>">
     <div class="<?= $container ? 'container' : 'wrapper' ?>">
         <?php if($line) : ?> <div class="spacer <?= $lineWidth ? 'border-sgi-orange' : 'w-full border-white' ?> mx-auto border-b" <?= $lineWidth ? 'style="width: ' . $lineWidth . ';"' : '' ?>></div> <?php endif; ?>
     </div>

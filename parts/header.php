@@ -32,9 +32,9 @@
                 </div>
             </div>
         </div> -->
-        <div class="grid grid-cols-3 items-center justify-end">
+        <div class="grid grid-cols-3 items-center justify-end relative">
 
-            <div class="col-span-1">
+            <div class="col-span-1 md:block hidden">
                 <div class="menu-wrapper flex gap-x-14 justify-end">
                     <a href="/about-us">
                         <span class="text-white md:text-lg text-xl font-montserrat ">
@@ -54,7 +54,19 @@
                 </div>
             </div>
 
-            <div class="col-span-1">
+            <div class="col-span-1 md:hidden block">
+                <a href="#" class="hamburger" id="hamburger">
+                    <div class="hamburger-menu flex items-center absolute top-1/2 -translate-y-1/2 left-0 z-[60]">
+                        <div class="hamburger-wrapper">
+                            <span class="hamburger block w-8 mb-1.5 md:h-1 h-[2px] bg-white rounded-2xl"></span>
+                            <span class="hamburger block w-8 mb-1.5 md:h-1 h-[2px] bg-white rounded-2xl"></span>
+                            <span class="hamburger block w-8 md:h-1 h-[2px] bg-white rounded-2xl"></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="md:col-span-1 col-span-3 flex md:block justify-center">
                 <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto main-logo -mt-4" width="148" height="93" viewBox="0 0 118 63" fill="none">
                         <g>
@@ -69,7 +81,7 @@
                 </a>
             </div>
 
-            <div class="col-span-1">
+            <div class="col-span-1 md:block hidden">
                 <div class="menu-wrapper flex gap-x-14 justify-start relative items-center">
                     <a href="/blog">
                         <span class="text-white md:text-lg text-xl font-montserrat ">
@@ -105,3 +117,75 @@
 
     </div>
 </header>
+
+<aside id="menu-mobile" class="fixed inset-0 z-10" style="opacity: 0;">
+    <div class="container">
+        <div class="close-wrapper close relative">
+            <div class="close-menu close absolute top-[40px] left-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="close" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M0.762563 24.7626C0.0791457 25.446 0.0791457 26.554 0.762563 27.2374C1.44598 27.9209 2.55402 27.9209 3.23744 27.2374L0.762563 24.7626ZM15.2374 15.2374C15.9209 14.554 15.9209 13.446 15.2374 12.7626C14.554 12.0791 13.446 12.0791 12.7626 12.7626L15.2374 15.2374ZM12.7626 12.7626C12.0791 13.446 12.0791 14.554 12.7626 15.2374C13.446 15.9209 14.554 15.9209 15.2374 15.2374L12.7626 12.7626ZM27.2374 3.23744C27.9209 2.55402 27.9209 1.44598 27.2374 0.762563C26.554 0.0791457 25.446 0.0791457 24.7626 0.762563L27.2374 3.23744ZM15.2374 12.7626C14.554 12.0791 13.446 12.0791 12.7626 12.7626C12.0791 13.446 12.0791 14.554 12.7626 15.2374L15.2374 12.7626ZM24.7626 27.2374C25.446 27.9209 26.554 27.9209 27.2374 27.2374C27.9209 26.554 27.9209 25.446 27.2374 24.7626L24.7626 27.2374ZM12.7626 15.2374C13.446 15.9209 14.554 15.9209 15.2374 15.2374C15.9209 14.554 15.9209 13.446 15.2374 12.7626L12.7626 15.2374ZM3.23744 0.762563C2.55402 0.0791457 1.44598 0.0791457 0.762563 0.762563C0.0791457 1.44598 0.0791457 2.55402 0.762563 3.23744L3.23744 0.762563ZM3.23744 27.2374L15.2374 15.2374L12.7626 12.7626L0.762563 24.7626L3.23744 27.2374ZM15.2374 15.2374L27.2374 3.23744L24.7626 0.762563L12.7626 12.7626L15.2374 15.2374ZM12.7626 15.2374L24.7626 27.2374L27.2374 24.7626L15.2374 12.7626L12.7626 15.2374ZM15.2374 12.7626L3.23744 0.762563L0.762563 3.23744L12.7626 15.2374L15.2374 12.7626Z" fill="white"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="inner bg-sgi-footer-grey text-white h-full flex justify-center items-center">
+        <div class="container">
+            <div class="menu-wrapper text-center">
+                <div class="menu-link mb-8">
+                    <a href="/about-us">
+                        <span class="text-white md:text-lg text-xl font-montserrat ">
+                            About SGI
+                        </span>
+                    </a>
+                </div>
+                <div class="menu-link mb-8">
+                    <a href="/our-fleet">
+                        <span class="text-white md:text-lg text-xl font-montserrat ">
+                            Our Fleet
+                        </span>
+                    </a>
+                </div>
+                <div class="menu-link mb-8">
+                    <a href="/gallery">
+                        <span class="text-white md:text-lg text-xl font-montserrat ">
+                            Gallery
+                        </span>
+                    </a>
+                </div>
+                <div class="menu-link mb-8">
+                    <a href="/blog">
+                        <span class="text-white md:text-lg text-xl font-montserrat ">
+                            Blog
+                        </span>
+                    </a>
+                </div>
+                <div class="menu-link mb-12">
+                    <a href="/contact" class="md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-xs text-[10px] text-white">
+                        <span class="">
+                            Contact Us
+                        </span>
+                    </a>
+                </div>
+                <div class="menu-link mb-8">
+                    <div class="social-media-wrapper flex gap-x-4 justify-center">
+                        <div class="social">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff" class="w-[1.125rem] h-[1.125rem]"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="#fff" class="w-[1.125rem] h-[1.125rem]"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#fff" class="w-[1.125rem] h-[1.125rem]"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>

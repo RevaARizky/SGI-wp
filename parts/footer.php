@@ -81,8 +81,8 @@
 
         <div class="container md:py-24 py-12">
             <div class="inner-container grid grid-cols-8">
-                <div class="col-span-1 logo-wrapper">
-                    <div class="inner pr-12 pt-8">
+                <div class="md:col-span-1 col-span-8 logo-wrapper">
+                    <div class="inner pr-12 md:pt-8">
                         <svg xmlns="http://www.w3.org/2000/svg" width="173" height="100" viewBox="0 0 173 100" fill="none">
                             <g clip-path="url(#clip0_464_1537)">
                                 <path d="M123.354 64.6158C121.807 65.3366 119.847 65.2336 118.816 64.204C117.681 63.1744 118.094 61.8358 119.332 60.9092C155.946 32.3886 167.189 -0.353516 167.189 -0.353516C173.068 14.1642 183.691 38.0515 123.354 64.6158Z" fill="white"/>
@@ -100,8 +100,8 @@
                         </svg>
                     </div>
                 </div>
-                <div class="col-span-2 contact-info-wrapper relative">
-                    <div class="inner pl-16 pt-8">
+                <div class="md:col-span-2 col-span-8 contact-info-wrapper relative">
+                    <div class="inner md:pl-16 pt-8">
                         <div class="location mb-7">
                             <p class="text-sm">Benoa Heliport Complex</p>
                             <p class="text-sm">Jalan Raya Pelabuhan Benoa</p>
@@ -114,12 +114,12 @@
                             <p class="text-sm">info@sgi-aero.com</p>
                         </div>
                     </div>
-                    <div class="absolute -bottom-6 left-16 w-max">
+                    <div class="absolute md:block hidden -bottom-6 left-16 w-max">
                         <p class="text-sm opacity-75">Copyright © 2023 Sayap Garuda Indah | All Rights Reserved</p>
                     </div>
                 </div>
-                <div class="col-span-2 link-wrapper">
-                    <div class="inner pl-8 grid grid-cols-2 pt-8">
+                <div class="md:col-span-2 col-span-8 link-wrapper">
+                    <div class="inner md:pl-8 grid grid-cols-2 pt-8 md:pb-0 pb-6">
                         <div class="col-span-1">
                             <div class="link md:mb-6 mb-3">
                                 <a href="#" class="text-xs opacity-75">About SGi</a>
@@ -153,7 +153,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-3 form-wrapper">
+                <div class="md:col-span-3 col-span-8 form-wrapper">
                     <div class="inner bg-sgi-footer-grey p-6">
                         <div class="title-wrapper mb-6">
                             <p class="text-lg">Contact Us</p>

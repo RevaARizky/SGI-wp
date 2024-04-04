@@ -8,6 +8,10 @@
     .article-wrapper p {
         font-size: 14px;
     }
+    #header {
+        background-color: rgba(105, 107, 111, 1)!important;
+        padding-top: 20px!important;
+    }
     @media(min-width: 1024px) {
         .article-wrapper h1, .article-wrapper h2, .article-wrapper h3, .article-wrapper h4, .article-wrapper h5, .article-wrapper h6 {
             font-size: 54px;
@@ -19,14 +23,14 @@
     }
 </style>
 
-<article id="article-<?= get_the_id(); ?>" class="container text-white">
+<article id="article-<?= get_the_id(); ?>" class="container text-sgi-dark-grey">
     <div class="inner pt-28 grid grid-cols-12">
         <div class="md:col-start-2 md:col-span-7 col-span-12 article-wrapper">
             <?= get_the_content(); ?>
         </div>
         <div class="md:col-start-10 md:col-span-3 col-span-12">
             <div class="newsletter-wrapper newsletter mb-16">
-                <div class="inner bg-sgi-footer py-6 px-5">
+                <div class="inner bg-sgi-dark-grey py-6 px-5 text-white">
                     <div class="title-wrapper mb-3">
                         <p class="text-4xl font-montserrat">
                             Join our newsletter!
@@ -35,7 +39,7 @@
                     <div class="form-wrapper mb-4">
                         <form action="#" method="POST">
                             <div class="input-wrapper mb-6">
-                                <input type="text" name="email-newsletter" placeholder="Your Email" id="email-newsletter" class="w-full input-newsletter">
+                                <input type="text" name="email-newsletter" placeholder="Your Email" id="email-newsletter" class="w-full input-newsletter placeholder-sgi-dark-grey">
                             </div>
                             <div class="input-wrapper">
                                 <input type="submit" class="w-full py-4 text-xs bg-sgi-orange" value="Submit">

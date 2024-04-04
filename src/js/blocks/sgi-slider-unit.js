@@ -3,7 +3,7 @@ import anim from '@/sgi-anim'
 (() => {
 
     document.querySelectorAll('.block-slider-unit .slider .item-wrapper').forEach(el => {
-        el.addEventListener('mouseover', function(e) {
+        const interactHandler = (e) => {
             e.preventDefault()
             if(el.classList.contains('active')) {
                 return
@@ -23,7 +23,9 @@ import anim from '@/sgi-anim'
             anim.animateText(document.querySelector('.block-slider-unit .hover-target-description'), {
                 baseDelay: 0
             })
-        })
+        }
+        el.addEventListener('click', interactHandler)
+        el.addEventListener('mouseover', interactHandler)
     })
 
     document.querySelectorAll('.block-slider-unit .slider a').forEach(el => {

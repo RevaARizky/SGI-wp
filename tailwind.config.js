@@ -72,6 +72,9 @@ module.exports = {
       montserrat: ['"Montserrat"', 'sans-serif'],
     },
     extend: {
+      inset: {
+        'unset': 'unset'
+      },
       zIndex: {
         header: 999
       },

@@ -57,7 +57,7 @@ import ScrollTrigger from "gsap/ScrollTrigger"
                 gsap.to(els.line, {
                     height: `${lastProgress * 100}%`
                 })
-                if(lastProgress >= 1) {
+                if(lastProgress >= 1 && window.innerWidth > 768) {
                     ScrollTrigger.refresh()
                 }
             }

@@ -66,7 +66,7 @@ $contents = get_field('slider', $option);
                             <!-- <a href="<?= $content['button']['url'] ?>"> -->
                                 <div class="title-wrapper md:py-3.5 pt-3 pb-1 relative inline-block md:block">
                                     <div class="top-line absolute w-full left-0 right-0" style="background-color: <?= $content['color_theme']; ?>;"></div>
-                                    <p class="text-white md:text-2xl text-base"><?= $content['title'] ?></p>
+                                    <p class="text-white text-subtitle"><?= $content['title'] ?></p>
                                 </div>
                                 <div class="logo-wrapper overflow-hidden md:hidden block">
                                     <img src="<?= $content['logo']['url'] ?>" class="mb-3 md:mb-0">
@@ -75,8 +75,8 @@ $contents = get_field('slider', $option);
                                     <p class="text-white text-lg text-animate"><?= $content['brief'] ?></p>
                                 </div>
                                 <div class="active-wrapper overflow-hidden md:hidden mb-4 md:mb-0">
-                                    <div class="description-wrapper">
-                                        <p class="text-white md:text-lg text-xs leading-8 hover-target hover-target-description"><?= $content['description'] ?></p>
+                                    <div class="description-wrapper mb-4 md:mb-0">
+                                        <p class="text-white md:text-lg text-xs md:leading-8 leading-6 hover-target hover-target-description"><?= $content['description'] ?></p>
                                     </div>
                                     <div class="button-wrapper">
                                         <a href="<?= $content['button']['url'] ?>" class="md:px-9 px-4 py-2 md:py-4 text-[8px] bg-sgi-orange text-white inline-block hover-target hover-target-button button-link"><?= $content['button']['text'] ?></a>

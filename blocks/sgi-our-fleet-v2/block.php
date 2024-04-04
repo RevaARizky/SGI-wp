@@ -43,7 +43,7 @@ $slides = get_field('slides');
                             <div class="swiper-wrapper">
                         <?php foreach($slides as $slide) : ?>
                             <div class="swiper-slide !h-auto">
-                                <div class="image-wrapper px-32 h-full">
+                                <div class="image-wrapper md:px-32 h-full">
                                     <img src="<?= $slide['image']['url'] ?>" class="object-cover w-full h-full mx-auto" alt="">
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ $slides = get_field('slides');
                         </div>
                     </div>
             
-                    <div class="fleet-options flex justify-center items-center md:gap-x-14 gap-x-8 md:gap-y-0 gap-y-4 md:flex-nowrap flex-wrap relative z-40">
+                    <div class="fleet-options flex justify-center items-center md:gap-x-14 gap-x-6 md:gap-y-0 gap-y-4 md:flex-nowrap flex-wrap relative z-40 px-8">
                         <?php $i = 0 ?>
                         <?php foreach($slides as $slide) : $i++ ?>
                             <div class="item cursor-pointer md:px-5 px-2 md:py-2 py-3 rounded-2xl md:rounded-3xl<?= $i == 1 ? ' active' : '' ?>" data-index="<?= $i ?>">

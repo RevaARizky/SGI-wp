@@ -37,7 +37,7 @@ $fleets = get_field('fleet');
                     <div class="image-wrapper relative md:pt-[calc(100vh-130px)] pt-[100%]">
                         <img src="<?= $fleet['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
                         <div class="title-image w-[200px] absolute bottom-12 left-12">
-                            <p class="text-5xl text-white"><?= $fleet['title'] ?></p>
+                            <p class="text-hero text-white"><?= $fleet['title'] ?></p>
                         </div>
                     </div>
                 </div>
@@ -45,9 +45,9 @@ $fleets = get_field('fleet');
             </div>
         </div>
 
-        <div class="grid grid-cols-12">
-            <div class="col-span-4">
-                <div class="button-nav-wrapper flex gap-x-4">
+        <div class="grid grid-cols-12 gap-y-8 md:gap-y-0">
+            <div class="md:col-span-4 col-span-12">
+                <div class="button-nav-wrapper flex gap-x-4 justify-center md:justify-start">
                     <div class="btn prev-btn cursor-pointer">
                         <img src="<?= assets_url('/dist/images/left-arrow.svg') ?>" class="w-full" alt="">
                     </div>
@@ -56,13 +56,13 @@ $fleets = get_field('fleet');
                     </div>
                 </div>
             </div>
-            <div class="col-span-8">
+            <div class="md:col-span-8 col-span-12">
                 <div class="content-slider-wrapper swiper">
                     <div class="swiper-wrapper">
                         <?php foreach($fleets as $index=>$fleet) : ?>
                         <div class="swiper-slide !h-auto">
 
-                            <div class="specification-wrapper text-sgi-dark-grey">
+                            <div class="specification-wrapper text-sgi-dark-grey text-subtitle">
                                 <?= $fleet['spec'] ?>
                             </div>
 
@@ -80,40 +80,40 @@ $fleets = get_field('fleet');
                     <div class="swiper-slide">
                         <?php if($fleet['gallery']) : ?>
                         <div class="grid grid-cols-12">
-                            <div class="md:col-span-3 col-span-12 md:mb-20">
-                                <div class="title-wrapper pr-[48px]">
-                                    <div class="title text-5xl"><?= $fleet['title'] ?> Gallery</div>
+                            <div class="md:col-span-3 col-span-12 md:mb-20 mb-4">
+                                <div class="title-wrapper md:pr-[48px]">
+                                    <div class="title text-hero"><?= $fleet['title'] ?> Gallery</div>
                                 </div>
                             </div>
-                            <div class="md:col-span-9 col-span-12 md:mb-20 self-end">
+                            <div class="md:col-span-9 col-span-12 md:mb-20 mb-6 self-end">
                                 <hr class="line"></hr>
                             </div>
                             <?php foreach($fleet['gallery'] as $gallery) : ?>
                                 <?php if($gallery['type'] == 'full') : ?>
-                                    <div class="col-span-12 md:mb-10">
+                                    <div class="col-span-12 md:mb-10 mb-4">
                                         <div class="image-wrapper pt-[450px] relative">
                                             <img src="<?= $gallery['image_1']['url'] ?>" alt="" class="absolute inset-0 w-full h-full object-cover">
                                         </div>
                                     </div>
                                 <?php elseif($gallery['type'] == 'left-bigger') : ?>
-                                    <div class="md:col-span-8 col-span-12 md:mb-10 md:mr-10">
+                                    <div class="md:col-span-8 col-span-12 md:mb-10 mb-4 md:mr-10">
                                         <div class="image-wrapper pt-[450px] relative">
                                             <img src="<?= $gallery['image_1']['url'] ?>" alt="" class="absolute inset-0 w-full h-full object-cover">
                                         </div>
                                     </div>
-                                    <div class="md:col-span-4 col-span-12">
-                                        <div class="image-wrapper pt-[450px] relative">
+                                    <div class="md:col-span-4 col-span-12 md:mb-10 mb-4">
+                                        <div class="image-wrapper pt-[450px] relative mb-4 md:mb-10">
                                             <img src="<?= $gallery['image_2']['url'] ?>" alt="" class="absolute inset-0 w-full h-full object-cover">
                                         </div>
                                     </div>
                                 <?php else : ?>
-                                    <div class="md:col-span-4 col-span-12 md:mb-10 md:mr-10">
+                                    <div class="md:col-span-4 col-span-12 md:mb-10 mb-4 md:mr-10">
                                         <div class="image-wrapper pt-[450px] relative">
                                             <img src="<?= $gallery['image_1']['url'] ?>" alt="" class="absolute inset-0 w-full h-full object-cover">
                                         </div>
                                     </div>
-                                    <div class="md:col-span-8 col-span-12">
-                                        <div class="image-wrapper pt-[450px] relative">
+                                    <div class="md:col-span-8 col-span-12 md:mb-10 mb-4">
+                                        <div class="image-wrapper pt-[450px] relative mb-4 md:mb-10">
                                             <img src="<?= $gallery['image_2']['url'] ?>" alt="" class="absolute inset-0 w-full h-full object-cover">
                                         </div>
                                     </div>

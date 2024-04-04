@@ -33,7 +33,7 @@ $scope = get_field('scope');
     <div class="container relative">
         <?php if($title) : ?>
             <div class="title-wrapper mb-16 text-sgi-dark-grey">
-                <p class="text-4xl font-montserrat"><?= $title ?></p>
+                <p class="text-title font-montserrat"><?= $title ?></p>
             </div>
         <?php endif; ?>
         <div class="slider-wrapper relative">
@@ -47,7 +47,7 @@ $scope = get_field('scope');
                                     <img src="<?= $content['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
                                 </div>
                                 <div class="text-wrapper absolute bottom-12 left-0 right-0 px-8 z-10">
-                                    <p class="text-2xl font-montserrat text-white"><?= $content['text'] ?></p>
+                                    <p class="text-subtitle font-montserrat text-white"><?= $content['text'] ?></p>
                                 </div>
                                 <div class="overlay-bg absolute top-[calc(100%-8rem)] bottom-0 w-full left-0 right-0"></div>
                             </div>
@@ -58,15 +58,15 @@ $scope = get_field('scope');
             </div>
             <div class="custom-nav absolute -top-14 right-0 flex gap-x-5 -translate-y-1/2">
                 <div class="prev-btn cursor-pointer">
-                    <svg width="71" height="65" viewBox="0 0 71 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="69" height="63" rx="12.6" transform="matrix(-1 0 0 1 70 1)" stroke="white" stroke-width="0.4" stroke-linejoin="bevel"/>
-                        <path d="M38.5 26.5L32.5 32.5L38.5 38.5" stroke="white" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="67" height="65" viewBox="0 0 67 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="65" height="63" rx="31.5" transform="matrix(-1 0 0 1 66 1)" stroke="#414A50" stroke-width="0.4" stroke-linejoin="bevel"/>
+                        <path d="M36.5 26.5L30.5 32.5L36.5 38.5" stroke="#414A50" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="next-btn cursor-pointer">
-                    <svg width="71" height="65" viewBox="0 0 71 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="1" width="69" height="63" rx="12.6" stroke="white" stroke-width="0.4" stroke-linejoin="bevel"/>
-                        <path d="M32.5 26.5L38.5 32.5L32.5 38.5" stroke="white" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="63" height="63" rx="31.5" stroke="#414A50" stroke-width="0.4" stroke-linejoin="bevel"/>
+                        <path d="M29.5 26.5L35.5 32.5L29.5 38.5" stroke="#414A50" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
             </div>

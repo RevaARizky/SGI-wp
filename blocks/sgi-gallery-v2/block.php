@@ -10,7 +10,7 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-// {col-span-12, col-span-6, col-span-4, col-span-3}
+// {md:col-span-12, md:col-span-6, md:col-span-4, md:col-span-3}
 
 // Create id attribute allowing for custom "anchor" value.
 $id = 'gallery-v2-' . $block['id'];
@@ -41,21 +41,21 @@ $mediaClasses = 'absolute inset-0 w-full h-full object-cover';
                     if(count($row['media']) == 2) {
                         switch ($row['file_width']) {
                             case 'left':
-                                $colSpan = array('col-span-8', 'col-span-4');
+                                $colSpan = array('md:col-span-8', 'md:col-span-4');
                                 break;
                                 
                             case 'right':
-                                $colSpan = array('col-span-4', 'col-span-8');
+                                $colSpan = array('md:col-span-4', 'md:col-span-8');
                                 break;
                             
                             case 'equal':
-                                $colSpan = array('col-span-6', 'col-span-6');
+                                $colSpan = array('md:col-span-6', 'md:col-span-6');
                                 break;
                         }
                     }
                     ?>
                     <?php foreach($row['media'] as $index => $media) : ?>
-                        <div class="item <?= $colSpan ? $colSpan[$index] : 'col-span-' . 12 / count($row['media']) ?>">
+                        <div class="item col-span-12 <?= $colSpan ? $colSpan[$index] : 'md:col-span-' . 12 / count($row['media']) ?>">
                             <div class="media-wrapper relative md:pt-[600px] pt-[400px] mb-5">
                                 <?php if($media['file']['type'] == 'image') : ?>
                                     <img src="<?= $media['file']['url'] ?>" class="<?= $mediaClasses ?>" alt="">

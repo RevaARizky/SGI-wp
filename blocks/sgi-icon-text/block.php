@@ -29,10 +29,10 @@ $contents = get_field('content');
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="inner">
         <div class="container">
-            <div class="grid grid-cols-12 gap-x-10 gap-y-16">
+            <div class="grid grid-cols-12 md:gap-x-10 gap-y-16">
                 <?php foreach($contents as $index=>$content) : ?>
                     <div class="md:col-span-6 col-span-12">
-                        <div class="inner-wrapper item bg-sgi-white-shade px-20 py-24 text-center">
+                        <div class="inner-wrapper item bg-sgi-white-shade md:px-20 px-10 md:py-24 py-12 text-center">
                             <div class="icon-wrapper mb-7">
                                 <?= $content['icon'] ?>
                             </div>
