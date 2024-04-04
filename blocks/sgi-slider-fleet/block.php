@@ -36,7 +36,7 @@ $fleets = get_field('fleet');
                 <div class="swiper-slide">
                     <div class="image-wrapper relative md:pt-[calc(100vh-130px)] pt-[100%]">
                         <img src="<?= $fleet['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
-                        <div class="title-image w-[200px] absolute bottom-12 left-12">
+                        <div class="title-image md:w-[200px] w-full absolute md:bottom-12 md:left-12 bottom-6 left-6">
                             <p class="text-hero text-white"><?= $fleet['title'] ?></p>
                         </div>
                     </div>
