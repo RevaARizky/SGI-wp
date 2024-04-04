@@ -154,13 +154,13 @@
                 </div>
                 <div class="menu-link mb-8">
                     <a href="/blog">
-                        <span class="text-white md:text-lg text-xl font-montserrat ">
+                        <span class="text-white md:text-lg text-xl font-montserrat">
                             Blog
                         </span>
                     </a>
                 </div>
                 <div class="menu-link mb-12">
-                    <a href="/contact" class="md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-xs text-[10px] text-white">
+                    <a href="/contact" class="md:px-8 px-8 md:py-4 py-2 bg-sgi-orange md:text-xs text-xl text-white">
                         <span class="">
                             Contact Us
                         </span>
