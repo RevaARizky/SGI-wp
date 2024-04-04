@@ -59,7 +59,7 @@ $subtitle = get_field('subtitle');
                                         <p class="text-desc-small"><?= $team['position'] ?></p>
                                     </div>
                                 </div>
-                                <div class="image-wrapper block md:hidden">
+                                <div class="image-mobile-wrapper block md:hidden">
                                     <img src="<?= $team['image']['url'] ?>" class="w-full" alt="">
                                 </div>
                             </div>
