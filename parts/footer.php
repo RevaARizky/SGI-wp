@@ -102,18 +102,24 @@
                 </div>
                 <div class="md:col-span-2 col-span-8 contact-info-wrapper relative">
                     <div class="inner md:pl-16 pt-8">
-                        <div class="location mb-7 inline-block pb-2 border-b border-sgi-orange">
-                            <a href="https://www.google.com/maps/place/SGi/@-8.72614,115.2161026,15z/data=!4m2!3m1!1s0x0:0xbd8952932f150ff9?sa=X&ved=1t:2428&ictx=111">
-                                <p class="text-sm">Benoa Heliport Complex</p>
-                                <p class="text-sm">Jalan Raya Pelabuhan Benoa</p>
-                                <p class="text-sm">Pesanggaran, Denpasar 80222</p>
-                            </a>
+                        <div class="location mb-7">
+                            <div class="inner inline-block pb-2 border-b border-sgi-orange">
+                                <a href="https://www.google.com/maps/place/SGi/@-8.72614,115.2161026,15z/data=!4m2!3m1!1s0x0:0xbd8952932f150ff9?sa=X&ved=1t:2428&ictx=111">
+                                    <p class="text-sm">Benoa Heliport Complex</p>
+                                    <p class="text-sm">Jalan Raya Pelabuhan Benoa</p>
+                                    <p class="text-sm">Pesanggaran, Denpasar 80222</p>
+                                </a>
+                            </div>
                         </div>
-                        <div class="contact-number mb-7 inline-block pb-2 border-b border-sgi-orange">
-                            <a href="tel:+623618468955" class="text-sm">+62 361 846 8955</a>
+                        <div class="contact-number mb-7">
+                            <div class="inner inline-block pb-2 border-b border-sgi-orange">
+                                <a href="tel:+623618468955" class="text-sm">+62 361 846 8955</a>
+                            </div>
                         </div>
-                        <div class="email inline-block pb-2 border-b border-sgi-orange">
-                            <a href="mailto:info@sgi-aero.com" class="text-sm">info@sgi-aero.com</a>
+                        <div class="email">
+                            <div class="inner inline-block pb-2 border-b border-sgi-orange">
+                                <a href="mailto:info@sgi-aero.com" class="text-sm">info@sgi-aero.com</a>
+                            </div>
                         </div>
                     </div>
                     <div class="absolute md:block hidden -bottom-6 left-16 w-max">
