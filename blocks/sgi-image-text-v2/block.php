@@ -58,17 +58,17 @@ $icon = get_field('logo');
                 <div class="text-wrapper mb-6">
                     <?php if($subtitle) : ?>
                         <div class="subtitle-wrapper mb-8">
-                            <p class="text-lg"><?= $subtitle ?></p>
+                            <p class="text-desc-small"><?= $subtitle ?></p>
                         </div>
                     <?php endif; ?>
                     <?php if($title) : ?>
                     <div class="title-wrapper mb-9">
-                        <p class="text-5xl"><?= $title ?></p>
+                        <p class="text-hero"><?= $title ?></p>
                     </div>
                     <?php endif; ?>
                     <?php if($description) : ?>
                     <div class="description-wrapper">
-                        <p class="text-lg"><?= $description ?></p>
+                        <p class="text-desc-small"><?= $description ?></p>
                     </div>
                     <?php endif; ?>
                     <?php if($buttonLink && $buttonText) : ?>
