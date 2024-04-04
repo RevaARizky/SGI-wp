@@ -30,7 +30,7 @@ $services = get_field('services');
     <div class="inner">
         <div class="container">
             <div class="title-wrapper mb-16">
-                <p class="text-4xl font-montserrat"><?= $title ?></p>
+                <p class="text-title md:text-left text-center font-montserrat"><?= $title ?></p>
             </div>
             <div class="grid grid-cols-12 relative">
                 <div class="md:col-span-6 col-span-12 order-1 md:order-0">

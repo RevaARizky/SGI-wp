@@ -59,13 +59,16 @@ $subtitle = get_field('subtitle');
                                         <p class="text-desc-small"><?= $team['position'] ?></p>
                                     </div>
                                 </div>
+                                <div class="image-wrapper block md:hidden">
+                                    <img src="<?= $team['image']['url'] ?>" class="w-full" alt="">
+                                </div>
                             </div>
     
                         <?php endforeach; ?>
                     </div>
                 </div>
     
-                <div class="md:col-span-5 md:col-start-8 col-span-12">
+                <div class="md:col-span-5 md:col-start-8 col-span-12 md:block hidden">
                     <div class="image-box-wrapper">
                         <?php foreach($teams as $index=>$team) : ?>
                             <div class="image-wrapper fixed top-0" data-index="<?= $index ?>">
