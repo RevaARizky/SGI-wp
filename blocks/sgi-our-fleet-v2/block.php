@@ -56,7 +56,7 @@ $slides = get_field('slides');
                         <?php $i = 0 ?>
                         <?php foreach($slides as $slide) : $i++ ?>
                             <div class="item cursor-pointer md:px-5 px-2 md:py-2 py-3 rounded-2xl md:rounded-3xl<?= $i == 1 ? ' active' : '' ?>" data-index="<?= $i ?>">
-                                <p class="text-[10px] md:text-sm<?= $i == 1 ? ' active' : '' ?>"><?= $slide['title'] ?></p>
+                                <p class="text-desc-small<?= $i == 1 ? ' active' : '' ?>"><?= $slide['title'] ?></p>
                             </div>
                         <?php endforeach; ?>
                     </div>

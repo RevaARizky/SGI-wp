@@ -33,7 +33,7 @@ $scope = get_field('scope');
     <div class="container relative">
         <?php if($title) : ?>
             <div class="title-wrapper mb-16 text-sgi-dark-grey">
-                <p class="text-title font-montserrat"><?= $title ?></p>
+                <p class="text-subtitle font-montserrat"><?= $title ?></p>
             </div>
         <?php endif; ?>
         <div class="slider-wrapper relative">
@@ -56,15 +56,16 @@ $scope = get_field('scope');
                     <?php endforeach; ?>
                 </div>
             </div>
-            <div class="custom-nav absolute -top-14 right-0 flex gap-x-5 -translate-y-1/2">
+            <!-- closer to text and size reduce -->
+            <div class="custom-nav absolute -top-[-5.25rem] left-[8.5rem] flex gap-x-5 -translate-y-1/2">
                 <div class="prev-btn cursor-pointer">
-                    <svg width="67" height="65" viewBox="0 0 67 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="37" height="35" viewBox="0 0 67 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="65" height="63" rx="31.5" transform="matrix(-1 0 0 1 66 1)" stroke="#414A50" stroke-width="0.4" stroke-linejoin="bevel"/>
                         <path d="M36.5 26.5L30.5 32.5L36.5 38.5" stroke="#414A50" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="next-btn cursor-pointer">
-                    <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="35" height="35" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="1" y="1" width="63" height="63" rx="31.5" stroke="#414A50" stroke-width="0.4" stroke-linejoin="bevel"/>
                         <path d="M29.5 26.5L35.5 32.5L29.5 38.5" stroke="#414A50" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>

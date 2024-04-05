@@ -38,7 +38,7 @@ $contents = get_field('content');
                                 <img src="<?= $content['icon']['url'] ?>" class="md:w-full w-3/4 mx-auto h-auto" alt="">
                             </div>
                             <div class="title-wrapper md:mb-4 mb-2">
-                                <p class="text-sgi-dark-grey text-title font-montserrat"><?= $content['title'] ?></p>
+                                <p class="text-sgi-dark-grey text-subtitle font-montserrat"><?= $content['title'] ?></p>
                             </div>
                             <div class="description-wrapper">
                                 <p class="text-sgi-dark-grey capitalize text-desc-small"><?= $content['description'] ?></p>

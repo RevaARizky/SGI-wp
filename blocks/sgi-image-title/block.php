@@ -38,7 +38,7 @@ $content = get_field('content');
                 <div class="md:col-span-4 col-span-12">
                     <div class="content-wrapper<?= $data['description'] ? ' has-desc' : '' ?>">
                         <div class="title-wrapper pb-8 pl-5 border-l border-l-sgi-orange">
-                            <p class="text-desc-small font-montserrat text-sgi-dark-grey"><?= $data['title'] ?></p>
+                            <p class="text-subtitle font-montserrat text-sgi-dark-grey"><?= $data['title'] ?></p>
                         </div>
                         <div class="image-wrapper pt-[77%] w-full relative overflow-y-hidden">
                             <img src="<?= $data['image']['url'] ?>" class="absolute inset-0 object-cover w-full h-full" alt="">
