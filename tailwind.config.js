@@ -53,7 +53,7 @@ module.exports = {
   ],
   safelist: [
     {
-      pattern:  /py-(0|6|10|12|24|32)/,
+      pattern:  /py-(0|6|8|10|12|24|32)/,
       variants: ['md']
     },
     {

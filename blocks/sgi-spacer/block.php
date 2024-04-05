@@ -31,7 +31,10 @@ $line = get_field('line');
 $lineWidth = get_field('line_width');
 $space = get_field('space');
 $mobileSpace = get_field('mobile_space');
-$bg = get_field('use_footer_bg')
+$bg = get_field('use_footer_bg');
+if($space == 'py-6') {
+    $space = 'py-8';
+}
 
 ?>
 
