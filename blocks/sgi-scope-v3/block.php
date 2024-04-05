@@ -57,7 +57,7 @@ $scope = get_field('scope');
                 </div>
             </div>
             <!-- closer to text and size reduce -->
-            <div class="custom-nav absolute -top-[5.25rem] left-[8.5rem] flex gap-x-5 -translate-y-1/2">
+            <div class="custom-nav absolute -top-[5.25rem] left-[8.5rem] flex gap-x-4 -translate-y-1/2">
                 <div class="prev-btn cursor-pointer">
                     <svg width="37" height="35" viewBox="0 0 67 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="65" height="63" rx="31.5" transform="matrix(-1 0 0 1 66 1)" stroke="#414A50" stroke-width="0.4" stroke-linejoin="bevel"/>
