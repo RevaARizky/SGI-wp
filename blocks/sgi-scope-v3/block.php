@@ -47,7 +47,7 @@ $scope = get_field('scope');
                                     <img src="<?= $content['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
                                 </div>
                                 <div class="text-wrapper absolute bottom-12 left-0 right-0 px-8 z-10">
-                                    <p class="text-subtitle font-montserrat text-white"><?= $content['text'] ?></p>
+                                    <p class="text-desc-small font-montserrat text-white"><?= $content['text'] ?></p>
                                 </div>
                                 <div class="overlay-bg absolute top-[calc(100%-8rem)] bottom-0 w-full left-0 right-0"></div>
                             </div>
