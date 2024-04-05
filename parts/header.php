@@ -38,7 +38,7 @@
                 <div class="menu-wrapper flex gap-x-14 justify-end">
                     <a href="/about-us">
                         <span class="text-white md:text-lg text-xl font-montserrat ">
-                            About SGI
+                            About Us
                         </span>
                     </a>
                     <a href="/our-fleet">
@@ -88,7 +88,7 @@
                             Blog
                         </span>
                     </a>
-                    <a href="/contact" class="md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-xs text-[10px] text-white">
+                    <a href="/contact" class="md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-lg text-xl text-white" style="border-radius: 6px;">
                         <span class="">
                             Contact Us
                         </span>
