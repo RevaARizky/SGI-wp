@@ -63,7 +63,7 @@ $icon = get_field('logo');
                     <?php endif; ?>
                     <?php if($title) : ?>
                     <div class="title-wrapper md:mb-9 mb-4">
-                        <p class="text-title"><?= $title ?></p>
+                        <p class="text-subtitle"><?= $title ?></p>
                     </div>
                     <?php endif; ?>
                     <?php if($description) : ?>
