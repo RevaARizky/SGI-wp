@@ -76,7 +76,7 @@ $fleets = get_field('fleet');
             </div>
         </div>
 
-        <div class="gallery-slider-wrapper px-24">
+        <div class="gallery-slider-wrapper">
             <div class="swiper-wrapper">
                 <?php foreach($fleets as $index=>$fleet) : ?>
                     <div class="swiper-slide">
