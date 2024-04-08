@@ -52,6 +52,14 @@ module.exports = {
     // './src/js/*.js',
   ],
   safelist: [
+    'w-1/2',
+    'h-1/2',
+    'w-3/5',
+    'h-3/5',
+    'w-3/4',
+    'h-3/4',
+    'w-4/5',
+    'h-4/5',
     {
       pattern:  /py-(0|6|8|10|12|24|32)/,
       variants: ['md']

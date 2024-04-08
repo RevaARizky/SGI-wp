@@ -30,14 +30,16 @@ $fleets = get_field('fleet');
 
     <div class="container">
 
-        <div class="image-slider-wrapper swiper mb-10 !overflow-visible">
+        <div class="image-slider-wrapper swiper mb-10">
             <div class="swiper-wrapper">
                 <?php foreach($fleets as $index=>$fleet) : ?>
                 <div class="swiper-slide">
-                    <div class="image-wrapper relative md:pt-[calc(100vh-130px)] pt-[100%]">
-                        <img src="<?= $fleet['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
-                        <div class="title-image md:w-[200px] w-full absolute md:bottom-12 md:left-12 bottom-6 left-6">
-                            <p class="text-hero text-white"><?= $fleet['title'] ?></p>
+                    <div class="inner-slide">
+                        <div class="image-wrapper relative md:pt-[calc(100vh-130px)] pt-[100%]">
+                            <img src="<?= $fleet['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
+                            <div class="title-image md:w-[200px] w-full absolute md:bottom-12 md:left-12 bottom-6 left-6">
+                                <p class="text-hero text-white"><?= $fleet['title'] ?></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -47,12 +49,12 @@ $fleets = get_field('fleet');
 
         <div class="grid grid-cols-12 gap-y-8 md:gap-y-0">
             <div class="md:col-span-4 col-span-12">
-                <div class="button-nav-wrapper flex gap-x-4 justify-center md:justify-start">
+                <div class="button-nav-wrapper flex gap-x-2 justify-center md:justify-start">
                     <div class="btn prev-btn cursor-pointer">
-                        <img src="<?= assets_url('/dist/images/left-arrow.svg') ?>" class="w-full" alt="">
+                        <img src="<?= assets_url('/dist/images/left-arrow.svg') ?>" class="w-[35px] h-[35px]" alt="">
                     </div>
                     <div class="btn next-btn cursor-pointer">
-                        <img src="<?= assets_url('/dist/images/right-arrow.svg') ?>" class="w-full" alt="">
+                        <img src="<?= assets_url('/dist/images/right-arrow.svg') ?>" class="w-[35px] h-[35px]" alt="">
                     </div>
                 </div>
             </div>
@@ -62,7 +64,7 @@ $fleets = get_field('fleet');
                         <?php foreach($fleets as $index=>$fleet) : ?>
                         <div class="swiper-slide !h-auto">
 
-                            <div class="specification-wrapper text-sgi-dark-grey text-subtitle">
+                            <div class="specification-wrapper text-sgi-dark-grey text-desc-small">
                                 <?= $fleet['spec'] ?>
                             </div>
 

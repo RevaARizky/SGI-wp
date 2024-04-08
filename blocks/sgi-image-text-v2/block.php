@@ -28,13 +28,19 @@ $bgimage = get_field('bg_image');
 $imageRight = get_field('image_right');
 $image = get_field('image');
 $imageRadius = get_field('image_radius');
-$imageSize = get_field('image_size');
+$ratio = get_field('image_size');
+$imageSize = get_field('image_width_height');
 $subtitle = get_field('subtitle');
 $title = get_field('title');
 $description = get_field('description');
 $buttonLink = get_field('btn_link');
 $buttonText = get_field('btn_text');
 $icon = get_field('logo');
+
+$imagePos = '';
+if($imageSize != 'full') {
+    $imagePos = 'md:top-1/2 md:left-1/2 md:right-unset md:bottom-unset md:-translate-y-1/2 md:-translate-x-1/2';
+}
 
 ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?> <?= $bg ? 'bg-sgi-white-shade' : '' ?>">
@@ -49,8 +55,8 @@ $icon = get_field('logo');
         <div class="grid grid-cols-12 relative md:gap-x-16 md:gap-y-0 gap-y-6 items-center">
             <div class="md:col-span-6 col-span-12<?= $imageRight ? ' md:order-1' : ' md:order-0' ?>">
             <?php if($image) : ?>
-                <div class="image-wrapper relative <?= $imageSize ? '' : 'pt-[60%]' ?>" style="<?= $imageSize ? 'padding-top: ' . $imageSize : '' ?>" data-speed=".92">
-                    <img src="<?= $image['url'] ?>" class="absolute inset-0 w-full h-full object-cover" style="<?= $imageRadius ? 'border-radius: ' . $imageRadius . ';' : '' ?>" alt="">
+                <div class="image-wrapper relative <?= $ratio ? '' : 'pt-[60%]' ?>" style="<?= $ratio ? 'padding-top: ' . $ratio : '' ?>" data-speed=".92">
+                    <img src="<?= $image['url'] ?>" class="absolute inset-0 <?= $imagePos ?> w-<?= $imageSize ?> h-<?= $imageSize ?> object-cover" style="<?= $imageRadius ? 'border-radius: ' . $imageRadius . ';' : '' ?>" alt="">
                 </div>
             <?php endif; ?>
             </div>

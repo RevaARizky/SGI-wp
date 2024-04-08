@@ -118,6 +118,26 @@
                     "parent_repeater": "field_6604f0a419e3e"
                 }
             ]
+        },
+        {
+            "key": "field_6613dd8ffb0e0",
+            "label": "Use Shades Background color",
+            "name": "use_footer",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -138,5 +158,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1711599853
+    "modified": 1712577971
 }

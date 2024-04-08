@@ -53,7 +53,7 @@ $subtitle = get_field('subtitle');
                             <div class="team-wrapper py-10" data-index="<?= $index ?>">
                                 <div class="team-wrapper-inner pb-5 flex justify-between relative">
                                     <div class="col-span-1 team-name">
-                                        <p class="text-subtitle font-bold"><?= $team['name'] ?></p>
+                                        <p class="text-subtitle"><?= $team['name'] ?></p>
                                     </div>
                                     <div class="col-span-1 team-position">
                                         <p class="text-desc-small"><?= $team['position'] ?></p>
@@ -71,8 +71,10 @@ $subtitle = get_field('subtitle');
                 <div class="md:col-span-5 md:col-start-8 col-span-12 md:block hidden">
                     <div class="image-box-wrapper">
                         <?php foreach($teams as $index=>$team) : ?>
-                            <div class="image-wrapper fixed top-0" data-index="<?= $index ?>">
-                                <img src="<?= $team['image']['url'] ?>" class="w-full" alt="">
+                            <div class="image-wrapper fixed top-0" style="width: inherit;" data-index="<?= $index ?>">
+                                <div class="inner relative w-full pt-[100%]">
+                                    <img src="<?= $team['image']['url'] ?>" class="absolute inset-0 w-3/4 h-3/4 rounded-full object-cover" alt="">
+                                </div>
                             </div>
                         <?php endforeach; ?>
                     </div>

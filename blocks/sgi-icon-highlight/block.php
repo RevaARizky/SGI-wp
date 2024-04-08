@@ -26,9 +26,10 @@ if ( ! empty( $block['align'] ) ) {
 
 $bg = get_field('bg_image');
 $contents = get_field('content');
+$useFooter = get_field('use_footer');
 ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
-    <div class="inner bg-sgi-white-shade" style="background-image: url(<?= $bg['url'] ?>);">
+    <div class="inner<?= $useFooter ? ' bg-sgi-white-shade' : '' ?>" style="background-image: url(<?= $bg['url'] ?>);">
         <div class="container">
             <div class="md:py-32 py-16 md:px-14 content-center">
                 <div class="inner grid grid-cols-12 relative md:gap-x-24 gap-y-12">

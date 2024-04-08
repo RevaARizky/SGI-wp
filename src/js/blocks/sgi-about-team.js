@@ -52,6 +52,18 @@ import gsap from "gsap"
                 })
             })
         })
+
+        const setWidth = () => {
+            images.forEach(el => {
+                gsap.to(el, {
+                    width: block.querySelector('.image-box-wrapper').clientWidth
+                })
+            })
+        }
+        setWidth()
+        window.addEventListener('resize', setWidth)
+
+
     })
 
 })()
