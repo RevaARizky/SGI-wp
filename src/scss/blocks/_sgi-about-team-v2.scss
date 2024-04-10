@@ -1,0 +1,33 @@
+.block-about-team-v2 {
+    .image-wrapper {
+        opacity: 0;
+        transition: opacity .4s ease;
+        // display: none;
+    }
+    .image-wrapper.active {
+        opacity: 1;
+    }
+
+    .team-wrapper .team-wrapper-inner::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        height: 1px;
+        z-index: 1;
+    }
+    .team-wrapper .team-wrapper-inner::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        width: 0;
+        background-color: #D75C00;
+        height: 3px;
+        z-index: 3;
+        transition: all .2s ease;
+    }
+    .team-wrapper.active .team-wrapper-inner::after {
+        width: 100%;
+    }
+}

@@ -20,6 +20,7 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-image-text-v2');
     register_block_type($dir . '/blocks/sgi-image-title');
     register_block_type($dir . '/blocks/sgi-about-team');
+    register_block_type($dir . '/blocks/sgi-about-team-v2');
     register_block_type($dir . '/blocks/sgi-slider-fleet');
     register_block_type($dir . '/blocks/sgi-slider-fleet-v2');
     register_block_type($dir . '/blocks/sgi-contact');
@@ -70,6 +71,7 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-image-text-v2',
                 'acf/sgi-image-title',
                 'acf/sgi-about-team',
+                'acf/sgi-about-team-v2',
                 'acf/sgi-slider-fleet',
                 'acf/sgi-slider-fleet-v2',
                 'acf/sgi-contact',

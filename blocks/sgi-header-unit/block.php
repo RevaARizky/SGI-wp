@@ -24,14 +24,16 @@ if ( ! empty( $block['align'] ) ) {
     $classes .= ' align' . $block['align'];
 }
 $bgImage = get_field('bg_image');
+$bgImageGradient = get_field('bg_gradient');
+$textShadow = get_field('text_shadow');
 $title = get_field('title');
 $logo = get_field('logo');
 ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="inner-animation" data-speed="0.9">
-        <div class="outer-wrapper relative md:h-screen py-60 md:py-0 w-full parallax-bg" style="background-image: url(<?= $bgImage['url'] ?>); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
+        <div class="outer-wrapper relative md:h-screen py-60 md:py-0 w-full parallax-bg" style="background-image: <?= $bgImageGradient ? $bgImageGradient . ',' : '' ?>url(<?= $bgImage['url'] ?>); background-size: cover; background-repeat: no-repeat; background-position: center; background-attachment: fixed;">
             <div class="text-wrapper absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-auto w-full">
-                <h3 class="text-hero text-sgi-white-alt font-montserrat text-center" data-speed="1.3"><?= $title ?></h3>
+                <h3 class="text-hero text-sgi-white-alt font-montserrat text-center" data-speed="1.3" style="<?= $textShadow ? "text-shadow:" . $textShadow . ";" : "" ?>"><?= $title ?></h3>
             </div>
             <div class="scroll-wrapper absolute left-1/2 -translate-x-1/2 bottom-8">
                 <a href="#" class="relative scroll-trigger">
