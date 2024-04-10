@@ -3,6 +3,26 @@
     "title": "Block: Slider Fleet",
     "fields": [
         {
+            "key": "field_66165cef4b0e2",
+            "label": "Title",
+            "name": "title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6576b67c1f5be",
             "label": "Fleets",
             "name": "fleet",
@@ -222,6 +242,13 @@
                 "operator": "==",
                 "value": "acf\/sgi-slider-fleet-v2"
             }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/sgi-slider-fleet-v3"
+            }
         ]
     ],
     "menu_order": 0,
@@ -233,5 +260,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712579502
+    "modified": 1712741629
 }
