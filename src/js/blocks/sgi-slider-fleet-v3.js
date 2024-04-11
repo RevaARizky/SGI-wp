@@ -1,13 +1,11 @@
-import Swiper, {EffectFade} from "swiper"
+import Swiper from "swiper"
 import gsap from "gsap"
 
 (() => {
 
     document.addEventListener('DOMContentLoaded', function() {
-        let block = document.querySelector('.block-slider-fleet-v2')
-        if(!block) {
-            return false
-        }
+        let block = document.querySelector('.block-slider-fleet-v3')
+        if(!block) return false
         
         
         const els = {
@@ -20,7 +18,7 @@ import gsap from "gsap"
 
         const calculateTitle = () => {
             gsap.to(block.querySelector('.calculate-target'), {
-                left: `${block.querySelector('.calculate-width').clientWidth + 20}px`
+                left: `${block.querySelector('.calculate-width').clientWidth + 40}px`
             })
         }
 

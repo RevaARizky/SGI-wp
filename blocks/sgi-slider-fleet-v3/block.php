@@ -9,9 +9,10 @@
  * @param   bool $is_preview True during AJAX preview.
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
+// {py-1}
 
 // Create id attribute allowing for custom "anchor" value.
-$id = 'slider-fleet-v3' . $block['id'];
+$id = 'slider-fleet-v3-' . $block['id'];
 if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
@@ -55,12 +56,12 @@ $fleets = get_field('fleet');
                 <?php foreach($fleets as $index => $fleet) :  ?>
                     <div class="swiper-slide">
                         <div class="inner">
-                            <div class="grid grid-cols-12">
+                            <div class="grid grid-cols-12 gap-x-14">
                                 <div class="col-span-12 md:col-span-7">
                                     <div class="image-wrapper relative pt-[68%]">
                                         <img src="<?= $fleet['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
-                                        <div class="title-wrapper absolute bottom-4 left-4 w-[200px]">
-                                            <p class="text-subtitle !text-white"><?= $fleet['title'] ?></p>
+                                        <div class="title-wrapper absolute bottom-6 left-6 w-[166px]">
+                                            <p class="text-title !text-white"><?= $fleet['title'] ?></p>
                                         </div>
                                     </div>
                                 </div>

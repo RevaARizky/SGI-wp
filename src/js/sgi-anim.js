@@ -55,30 +55,22 @@ const animateText = (el) => {
         )
     }
 }
-var eventName
-if(window.cp_loadingpage) {
-    eventName = 'loadingScreenCompleted'
-} else {
-    eventName = 'DOMContentLoaded'
-}
-
-$(document).on(eventName, () => {
-    const mm = gsap.matchMedia()
-    mm.add('(min-width: 768px)', () => {
-        window.smoother = ScrollSmoother.create({
-            smooth: 1,
-            effects: true,
-            normalizeScroll: true,
-        });
-        smoother
-    })
+const mm = gsap.matchMedia()
+mm.add('(min-width: 768px)', () => {
+    window.smoother = ScrollSmoother.create({
+        smooth: 1,
+        effects: true,
+        normalizeScroll: true,
+    });
+    smoother
 })
-
+window.scrollSmoother = ScrollSmoother
 
 window.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.animate-text').forEach(el => {
         animateText(el)
     })
+    window.scrollTrigger = ScrollTrigger
     const borderEl = gsap.utils.toArray('.custom-border-anim')
     // borderEl.forEach(el => {
     //     const bordertl = gsap.timeline({
