@@ -74,8 +74,8 @@ $fleets = get_field('fleet');
                                             <div class="line-animation-bar"></div>
                                         </div>
                                         <?php foreach($fleet['content'] as $index => $content) : ?>
-                                            <div class="inner navigation-target" style="display: <?= !$index ? 'block' : 'hidden' ?>;" data-index="<?= $index ?>">
-                                                <div class="description-wrapper calculate-height grid grid-cols-2 gap-x-6 gap-y-7">
+                                            <div class="inner navigation-target calculate-height" style="display: <?= !$index ? 'block' : 'hidden' ?>;" data-index="<?= $index ?>">
+                                                <div class="description-wrapper grid grid-cols-2 gap-x-6 gap-y-7">
                                                     <?php foreach($content['item'] as $item) : ?>
                                                     <div class="content">
                                                         <div class="title mb-0.5">
