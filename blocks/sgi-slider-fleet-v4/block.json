@@ -1,0 +1,12 @@
+{
+    "name": "acf/sgi-slider-fleet-v4",
+    "title": "SGI - Slider Fleet V4",
+    "description": "Our fleet section for unit page",
+    "category": "SGI",
+    "keywords": ["our", "fleet"],
+    "viewScript": ["blocks/sgi-slider-fleet-v4"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    }
+}

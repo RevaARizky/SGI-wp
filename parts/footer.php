@@ -130,33 +130,33 @@
                     <div class="inner md:pl-8 grid grid-cols-2 pt-8 md:pb-0 pb-6">
                         <div class="col-span-1">
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">About SGi</a>
+                                <a href="/about-us" class="text-xs opacity-75">About SGi</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Our Fleet</a>
+                                <a href="/our-fleet" class="text-xs opacity-75">Our Fleet</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Gallery</a>
+                                <a href="/gallery" class="text-xs opacity-75">Gallery</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Blog</a>
+                                <a href="/blog" class="text-xs opacity-75">Blog</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Contact Us</a>
+                                <a href="/contact-us" class="text-xs opacity-75">Contact Us</a>
                             </div>
                         </div>
                         <div class="col-span-1">
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Facebook</a>
+                                <a href="#" target="_blank" class="text-xs opacity-75">Facebook</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Twitter</a>
+                                <a href="#" target="_blank" class="text-xs opacity-75">Twitter</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Linkedin</a>
+                                <a href="#" target="_blank" class="text-xs opacity-75">Linkedin</a>
                             </div>
                             <div class="link md:mb-6 mb-3">
-                                <a href="#" class="text-xs opacity-75">Instagram</a>
+                                <a href="#" target="_blank" class="text-xs opacity-75">Instagram</a>
                             </div>
                         </div>
                     </div>

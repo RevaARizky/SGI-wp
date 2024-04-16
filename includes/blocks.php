@@ -24,6 +24,8 @@ add_action('init', function () {
     register_block_type($dir . '/blocks/sgi-slider-fleet');
     register_block_type($dir . '/blocks/sgi-slider-fleet-v2');
     register_block_type($dir . '/blocks/sgi-slider-fleet-v3');
+    register_block_type($dir . '/blocks/sgi-slider-fleet-v4');
+    register_block_type($dir . '/blocks/sgi-slider-fleet-v5');
     register_block_type($dir . '/blocks/sgi-contact');
     register_block_type($dir . '/blocks/sgi-gallery');
     register_block_type($dir . '/blocks/sgi-gallery-v2');
@@ -76,6 +78,8 @@ add_filter('allowed_block_types_all', function($allowed_blocks, $editor_context)
                 'acf/sgi-slider-fleet',
                 'acf/sgi-slider-fleet-v2',
                 'acf/sgi-slider-fleet-v3',
+                'acf/sgi-slider-fleet-v4',
+                'acf/sgi-slider-fleet-v5',
                 'acf/sgi-contact',
                 'acf/sgi-gallery',
                 'acf/sgi-gallery-v2',
