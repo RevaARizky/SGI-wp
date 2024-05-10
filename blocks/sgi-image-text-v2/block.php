@@ -56,7 +56,7 @@ if($imageSize != 'full') {
             <div class="md:col-span-6 col-span-12<?= $imageRight ? ' md:order-1' : ' md:order-0' ?>">
             <?php if($image) : ?>
                 <div class="image-wrapper relative <?= $ratio ? '' : 'pt-[60%]' ?>" style="<?= $ratio ? 'padding-top: ' . $ratio : '' ?>" data-speed=".92">
-                    <img src="<?= $image['url'] ?>" class="absolute inset-0 <?= $imagePos ?> w-<?= $imageSize ?> h-<?= $imageSize ?> object-cover" style="<?= $imageRadius ? 'border-radius: ' . $imageRadius . ';' : '' ?>" alt="">
+                    <img src="<?= $image['url'] ?>" class="absolute inset-0 <?= $imagePos ?> md:w-<?= $imageSize ?> md:h-<?= $imageSize ?> w-full h-full object-cover" style="<?= $imageRadius ? 'border-radius: ' . $imageRadius . ';' : '' ?>" alt="">
                 </div>
             <?php endif; ?>
             </div>
