@@ -30,7 +30,7 @@ $icare = get_field('icare');
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="inner md:h-[50vh] flex justify-center items-center relative itrac">
         <div class="bg-overlay">
-            <img src="<?= $itrac['bg_image']['url'] ?>" class="absolute inset-0 md:w-full w-3/4 h-full object-cover" alt="">
+            <img src="<?= $itrac['bg_image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
         </div>
         <div class="inner text-center flex flex-col justify-center items-center relative py-14 md:py-0">
             <div class="main-logo text-center mb-12">
