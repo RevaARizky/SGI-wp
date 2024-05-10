@@ -107,6 +107,27 @@
                     "parent_repeater": "field_65766a4833544"
                 },
                 {
+                    "key": "field_663d97ab010e7",
+                    "label": "Description",
+                    "name": "description",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_65766a4833544"
+                },
+                {
                     "key": "field_65766a6f33547",
                     "label": "Image",
                     "name": "image",
@@ -160,5 +181,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1712728492
+    "modified": 1715312569
 }

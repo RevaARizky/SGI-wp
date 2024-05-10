@@ -11,6 +11,16 @@ import gsap from "gsap"
         var images = gsap.utils.toArray('.block-about-team .image-box-wrapper .image-wrapper')
         var teams = gsap.utils.toArray('.block-about-team .team-wrapper')
         teams.forEach( el => {
+            el.anim = gsap.timeline({paused: true})
+            el.anim.fromTo(el.querySelector('.team-description'), {
+                height: '0px',
+                duration: .4,
+                ease: 'power3.inOut'
+            }, {
+                height: 'auto',
+                duration: .4,
+                ease: 'power3.inOut'
+            }, 0)
             el.addEventListener('mouseover', e => {
                 images.forEach(image => {
                     if(image.dataset.index == el.dataset.index) {
@@ -22,8 +32,10 @@ import gsap from "gsap"
                 teams.forEach(team => {
                     if(team.dataset.index == el.dataset.index) {
                         team.classList.add('active')
+                        team.anim.play()
                         return false
                     }
+                    team.anim.reverse()
                     team.classList.remove('active')
                 })
             })

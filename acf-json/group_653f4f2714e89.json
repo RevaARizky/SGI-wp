@@ -16,7 +16,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
+            "layout": "block",
             "pagination": 0,
             "min": 0,
             "max": 0,
@@ -154,6 +154,7 @@
                         "id": ""
                     },
                     "layout": "block",
+                    "parent_repeater": "field_653f4f27abc47",
                     "sub_fields": [
                         {
                             "key": "field_653f4f5babc4a",
@@ -195,8 +196,7 @@
                             "prepend": "",
                             "append": ""
                         }
-                    ],
-                    "parent_repeater": "field_653f4f27abc47"
+                    ]
                 },
                 {
                     "key": "field_653f541d8b658",
@@ -215,6 +215,52 @@
                     "default_value": "",
                     "enable_opacity": 0,
                     "return_format": "string",
+                    "parent_repeater": "field_653f4f27abc47"
+                },
+                {
+                    "key": "field_663d7c683cf9e",
+                    "label": "Description List",
+                    "name": "description_list",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_663d7c843cf9f",
+                            "label": "List",
+                            "name": "list",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_663d7c683cf9e"
+                        }
+                    ],
                     "parent_repeater": "field_653f4f27abc47"
                 }
             ]
@@ -238,5 +284,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1698649133
+    "modified": 1715305615
 }

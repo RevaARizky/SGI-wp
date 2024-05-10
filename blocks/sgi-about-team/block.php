@@ -51,12 +51,15 @@ $subtitle = get_field('subtitle');
                         <?php foreach($teams as $index=>$team) : ?>
                             
                             <div class="team-wrapper py-10" data-index="<?= $index ?>">
-                                <div class="team-wrapper-inner pb-5 flex justify-between relative">
+                                <div class="team-wrapper-inner pb-5 grid grid-cols-2 justify-between relative">
                                     <div class="col-span-1 team-name">
                                         <p class="text-subtitle"><?= $team['name'] ?></p>
                                     </div>
-                                    <div class="col-span-1 team-position">
+                                    <div class="col-span-1 team-position text-end">
                                         <p class="text-desc-small"><?= $team['position'] ?></p>
+                                    </div>
+                                    <div class="col-span-2 team-description overflow-hidden" style="height: 0;">
+                                        <p class="text-desc-small"><?= $team['description'] ?></p>
                                     </div>
                                 </div>
                                 <div class="image-mobile-wrapper block md:hidden">
