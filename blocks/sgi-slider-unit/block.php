@@ -41,8 +41,8 @@ $contents = get_field('slider', $option);
                         <img src="<?= $contents[0]['logo']['url'] ?>" class="hover-target hover-target-logo h-24" alt="">
                     </div>
                     <div class="description-wrapper md:w-5/12 mb-7">
-                        <p class="text-white md:text-lg text-xs leading-8 hover-target hover-target-description animate-text" data-text-type="lines"><?php if($content['description_list']) : ?>
-                                                <?php foreach($content['description_list'] as $list) : ?>
+                        <p class="text-white md:text-lg text-xs leading-8 hover-target hover-target-description animate-text" data-text-type="lines"><?php if($contents[0]['description_list']) : ?>
+                                                <?php foreach($contents[0]['description_list'] as $list) : ?>
                                                 <div class="flex items-center mb-3">
                                                 <div class="icon-wrapper mr-3"><svg width="20" height="35" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M7.00854 37.7283C6.12197 38.1326 5.02048 38.1056 4.37571 37.5127C3.73093 36.9199 3.97273 36.1383 4.67123 35.5724C25.8413 18.9989 32.3428 0 32.3428 0C35.6741 8.46192 41.8263 22.2867 7.00854 37.7283Z" fill="<?= $content['color_theme'] ? $content['color_theme'] : '#fff' ?>"/>
@@ -53,11 +53,11 @@ $contents = get_field('slider', $option);
                                                 </div>
                                                 <?php endforeach; ?>
                                             <?php else : ?>
-                                                <?= $content['description'] ?>
+                                                <?= $contents[0]['description'] ?>
                                             <?php endif; ?></p>
                     </div>
                     <div class="button-wrapper">
-                    <?php if($content['button']['url'] && $content['button']['text']) : ?>
+                    <?php if($contents[0]['button']['url'] && $contents[0]['button']['text']) : ?>
                         <a href="<?= $contents[0]['button']['url'] ?>" class="px-9 bg-sgi-orange py-4 text-white inline-block hover-target hover-target-button button-link"><?= $contents[0]['button']['text'] ?></a>
                     <?php endif; ?>
                     </div>
