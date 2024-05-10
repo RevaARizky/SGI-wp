@@ -35,7 +35,7 @@ $contents = get_field('slider', $option);
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
     <div class="inner-animation">
         <div class="outer-wrapper slider-wrapper hover-target hover-target-image py-16 md:py-0" style="background-image: url('<?=  $contents[0]['image']['url'] ?>'); background-position: center; background-size: cover; background-repeat: no-repeat;">
-            <div class="container md:pt-16 md:pb-24 md:flex md:flex-col justify-between md:min-h-screen">
+            <div class="container md:pt-8 md:pb-16 md:flex md:flex-col justify-between md:min-h-screen">
                 <div class="content-wrapper hidden md:block">
                     <div class="logo-wrapper mb-4">
                         <img src="<?= $contents[0]['logo']['url'] ?>" class="hover-target hover-target-logo h-24" alt="">
@@ -47,7 +47,7 @@ $contents = get_field('slider', $option);
                         <a href="<?= $contents[0]['button']['url'] ?>" class="px-9 bg-sgi-orange py-4 text-white inline-block hover-target hover-target-button button-link"><?= $contents[0]['button']['text'] ?></a>
                     </div>
                 </div>
-                <div class="spacer md:py-16"></div>
+                <!-- <div class="spacer md:py-16"></div> -->
                 <div class="slider flex flex-wrap md:flex-nowrap">
                     <?php $i = 0; ?>
                     <?php foreach($contents as $content) : $i++; ?>

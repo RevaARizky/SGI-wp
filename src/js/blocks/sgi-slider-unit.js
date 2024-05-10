@@ -24,8 +24,15 @@ import anim from '@/sgi-anim'
             // document.querySelector('.block-slider .hover-target-description').style.visibility = 'hidden';
             document.querySelector('.block-slider-unit .hover-target-image').style.backgroundImage = 'url(' + content.image.url + ')';
             document.querySelector('.block-slider-unit .hover-target-logo').src = content.logo.url
-            document.querySelector('.block-slider-unit .hover-target-button').innerText = content.button.text
-            document.querySelector('.block-slider-unit .hover-target-button').href = content.button.url
+            if(content.button.text && content.button.url) {
+                document.querySelector('.block-slider-unit .hover-target-button').innerText = content.button.text
+                document.querySelector('.block-slider-unit .hover-target-button').href = content.button.url
+                document.querySelector('.block-slider-unit .hover-target-button').classList.remove('hidden')
+            } else {
+                document.querySelector('.block-slider-unit .hover-target-button').classList.add('hidden')
+                document.querySelector('.block-slider-unit .hover-target-button').innerText = ''
+                document.querySelector('.block-slider-unit .hover-target-button').href = ''
+            }
             if(content.description_list) {
                 document.querySelector('.block-slider-unit .hover-target-description').innerHTML = ''
                 content.description_list.forEach(text => {
