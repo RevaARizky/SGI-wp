@@ -76,7 +76,22 @@ $contents = get_field('slider', $option);
                                 </div>
                                 <div class="active-wrapper overflow-hidden md:hidden mb-4 md:mb-0">
                                     <div class="description-wrapper mb-4 md:mb-0">
-                                        <p class="text-white md:text-lg text-xs md:leading-8 leading-6 hover-target hover-target-description"><?= $content['description'] ?></p>
+                                        <p class="text-white md:text-lg text-xs md:leading-8 leading-6 hover-target hover-target-description">
+                                            <?php if($content['description_list']) : ?>
+                                                <?php foreach($content['description_list'] as $list) : ?>
+                                                <div class="flex items-center mb-3">
+                                                <div class="icon-wrapper mr-3"><svg width="20" height="35" viewBox="0 0 35 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.00854 37.7283C6.12197 38.1326 5.02048 38.1056 4.37571 37.5127C3.73093 36.9199 3.97273 36.1383 4.67123 35.5724C25.8413 18.9989 32.3428 0 32.3428 0C35.6741 8.46192 41.8263 22.2867 7.00854 37.7283Z" fill="<?= $content['color_theme'] ? $content['color_theme'] : '#fff' ?>"/>
+                                                <path d="M4.46914 44.9974C3.41444 45.0255 2.41383 44.8291 2.08931 44.0995C1.76479 43.3418 2.35975 42.6403 3.30627 42.3036C16.9632 37.0842 23.5618 33.773 33 26C30.4579 39.9184 13.5287 44.7168 4.46914 44.9974Z" fill="<?= $content['color_theme'] ? $content['color_theme'] : '#fff' ?>"/>
+                                                <path d="M1.90476 49.6497C0.870748 49.5465 0 49.0563 0 48.334C0 47.6117 0.843537 47.0183 1.90476 47.0183C11.4286 46.9151 18.7755 45.6252 24 44C19.3469 48.1018 14.585 51.0427 1.90476 49.6497Z" fill="<?= $content['color_theme'] ? $content['color_theme'] : '#fff' ?>"/>
+                                                </svg></div>
+                                                <?= $list['list'] ?>    
+                                                </div>
+                                                <?php endforeach; ?>
+                                            <?php else : ?>
+                                                <?= $content['description'] ?>
+                                            <?php endif; ?>
+                                        </p>
                                     </div>
                                     <div class="button-wrapper">
                                         <a href="<?= $content['button']['url'] ?>" class="md:px-9 px-4 py-2 md:py-4 text-[8px] bg-sgi-orange text-white inline-block hover-target hover-target-button button-link"><?= $content['button']['text'] ?></a>
