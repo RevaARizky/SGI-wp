@@ -94,7 +94,9 @@ $contents = get_field('slider', $option);
                                         </p>
                                     </div>
                                     <div class="button-wrapper">
+                                        <?php if($content['button']['url'] && $content['button']['text']) : ?>
                                         <a href="<?= $content['button']['url'] ?>" class="md:px-9 px-4 py-2 md:py-4 text-[8px] bg-sgi-orange text-white inline-block hover-target hover-target-button button-link"><?= $content['button']['text'] ?></a>
+                                        <?php endif; ?>
                                     </div>
                                 </div>
                                 <!-- </a> -->
