@@ -30,4 +30,9 @@
     .team-wrapper.active .team-wrapper-inner::after {
         width: 100%;
     }
+    @media(max-width: 768px) {
+        .team-description {
+            height: auto!important;
+        }
+    }
 }
