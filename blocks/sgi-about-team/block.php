@@ -52,7 +52,7 @@ $subtitle = get_field('subtitle');
                             
                             <div class="team-wrapper py-10" data-index="<?= $index ?>">
                                 <div class="team-wrapper-inner pb-5 relative">
-                                    <div class="inner flex justify-between relative">
+                                    <div class="inner flex justify-between relative items-center">
                                         <div class="col-span-2 team-name">
                                             <p class="text-subtitle"><?= $team['name'] ?></p>
                                         </div>
@@ -61,7 +61,7 @@ $subtitle = get_field('subtitle');
                                         </div>
                                     </div>
                                     <div class="col-span-3 team-description overflow-hidden" style="height: 0;">
-                                        <p class="text-desc-small pt-4"><?= $team['description'] ?></p>
+                                        <p class="text-desc-small" style="padding-top: 1rem;"><?= $team['description'] ?></p>
                                     </div>
                                 </div>
                                 <div class="image-mobile-wrapper block md:hidden">
