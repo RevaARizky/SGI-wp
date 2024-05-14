@@ -42,7 +42,7 @@
                                 <input type="text" name="email-newsletter" placeholder="Your Email" id="email-newsletter" class="w-full input-newsletter placeholder-white text-white">
                             </div>
                             <div class="input-wrapper">
-                                <input type="submit" class="w-full py-4 text-xs bg-sgi-orange" value="Submit">
+                                <input type="submit" class="w-full py-4 text-xs bg-sgi-orange" value="Submit" style="border-radius: 6px;">
                             </div>
                         </form>
                     </div>

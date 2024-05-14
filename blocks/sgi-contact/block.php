@@ -35,10 +35,10 @@ $form = get_field('contact_form');
         <div class="grid grid-cols-12 gap-y-16">
             <div class="md:col-span-5 col-span-12">
                 <div class="title-wrapper md:mb-20 mb-8">
-                    <p class="text-title font-light"><?= $title ?></p>
+                    <p class="text-title text-sgi-orange font-light"><?= $title ?></p>
                 </div>
                 <div class="address-wrapper md:mb-12 mb-6">
-                    <p class="text-subtitle"><?= $address ?></p>
+                    <p class="text-desc-small"><?= $address ?></p>
                 </div>
                 <div class="links-wrapper">
                     <?php foreach($links as $index=>$link) : ?>
