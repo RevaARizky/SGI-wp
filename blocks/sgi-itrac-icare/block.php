@@ -28,7 +28,7 @@ $icare = get_field('icare');
 ?>
 
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
-    <div class="inner md:h-[50vh] flex justify-center items-center relative itrac">
+    <div class="inner md:h-[75vh] flex justify-center items-center relative itrac">
         <div class="bg-overlay">
             <img src="<?= $itrac['bg_image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
         </div>
@@ -45,7 +45,7 @@ $icare = get_field('icare');
             </div>
         </div>
     </div>
-    <div class="inner md:h-[50vh] flex justify-center items-center relative icare">
+    <div class="inner md:h-[75vh] flex justify-center items-center relative icare">
         <div class="bg-overlay">
             <img src="<?= $icare['bg_image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover" alt="">
         </div>
