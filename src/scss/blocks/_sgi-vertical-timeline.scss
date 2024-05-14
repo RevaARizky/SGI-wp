@@ -6,7 +6,7 @@
     }
 
     .vertical-item::before {
-        @apply bg-sgi-orange;
+        @apply bg-sgi-secondary;
         content: "";
         position: absolute;
         z-index: 1;
@@ -18,7 +18,7 @@
         transform: translateY(-50%);
     }
     .vertical-item:hover::after, .vertical-item.active::after {
-        box-shadow: 0 0 18px 0 var(--sgi-orange);
+        box-shadow: 0 0 18px 0 #013c58;
     }
     .vertical-item::after {
         content: "";
@@ -30,14 +30,14 @@
         right: -35px;
         transform: translateY(-50%);
         background-image: url('/wp-content/themes/sgi/dist/images/vertical-timeline-icon.png');
-        border: 1px solid var(--sgi-orange);
+        border: 1px solid #013c58;
         background-size: cover;
         width: 70px;
         height: 70px;
     }
 
     .vertical-line-progress {
-        box-shadow: 0 0 18px 0 var(--sgi-orange);
+        box-shadow: 0 0 18px 0 #013c58;
     }
 
     .additional-wrapper {

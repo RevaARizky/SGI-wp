@@ -1,6 +1,6 @@
 .block-contact {
     input::placeholder, textarea::placeholder, input::-moz-placeholder, textarea::-moz-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-        @apply text-sgi-dark-grey
+        @apply text-white
     }
     .form-wrapper .input-wrapper label {
         font-size: 20px;
@@ -11,7 +11,7 @@
     }
     .form-wrapper .input-wrapper input, .form-wrapper .input-wrapper textarea {
         border: 0;
-        border-bottom: 1px solid var(--sgi-dark-grey);
+        border-bottom: 1px solid #fff;
         background-color: transparent;   
     }
     .form-wrapper .input-wrapper {

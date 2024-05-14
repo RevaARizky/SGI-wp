@@ -20,4 +20,4 @@
 <?php get_template_part('parts/header'); ?>
 <main id="primary" class="font-sans">
     <div id="smooth-wrapper">
-        <div id="smooth-content" class="bg-gray-theme md:overflow-visible overflow-hidden" style="will-change: transform;">
+        <div id="smooth-content" class="bg-sgi-primary md:overflow-visible overflow-hidden" style="will-change: transform;">

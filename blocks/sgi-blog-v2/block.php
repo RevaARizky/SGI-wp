@@ -41,14 +41,14 @@ if ( ! empty( $block['align'] ) ) {
                     <?php $post->the_post(); ?>
 
                     <div class="md:col-span-4 col-span-12 item">
-                        <div class="inner-wrapper bg-sgi-white-shade relative">
+                        <div class="inner-wrapper bg-sgi-secondary relative">
                             <a href="<?= get_the_permalink() ?>">
                                 <div class="image-wrapper relative pt-[68%]">
                                     <div class="overlay-image absolute inset-0 bg-[rgba(0,0,0,.4)] z-10" style="opacity: 0;"></div>
                                     <img src="<?= get_the_post_thumbnail_url(get_the_id(), 'full') ?>" class="absolute inset-0 object-cover w-full h-full" alt="">
                                     <div class="btn md:px-8 px-4 md:py-4 py-2 bg-sgi-orange md:text-xs text-[10px] text-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20" style="opacity: 0;">Read More</div>
                                 </div>
-                                <div class="text-wrapper px-7 py-10">
+                                <div class="text-wrapper px-7 py-10 text-white">
                                     <div class="date-wrapper mb-1.5 md:mb-2.5">
                                         <p class="md:text-base text-desc-small font-medium"><?= get_the_date("F j, Y", get_the_id()) ?></p>
                                     </div>
