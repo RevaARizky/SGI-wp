@@ -43,7 +43,7 @@ if($imageSize != 'full') {
 }
 
 ?>
-<section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?> <?= $bg ? 'bg-sgi-white-shade' : '' ?>">
+<section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?> <?= $bg ? 'bg-sgi-secondary' : '' ?>">
 <div class="inner-wrapper">
     <?php if($bgimage) : ?>
     <div class="bg-overlay">
@@ -60,7 +60,7 @@ if($imageSize != 'full') {
                 </div>
             <?php endif; ?>
             </div>
-            <div class="md:col-span-6 col-span-12<?= $imageRight ? ' md:order-0' : ' md:order-1' ?>">
+            <div class="text-white md:col-span-6 col-span-12<?= $imageRight ? ' md:order-0' : ' md:order-1' ?>">
                 <?php if($title || $description || $subtitle) : ?>
                 <div class="text-wrapper mb-6">
                     <?php if($subtitle) : ?>

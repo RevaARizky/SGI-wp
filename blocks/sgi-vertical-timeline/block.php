@@ -38,10 +38,10 @@ $content = get_field('content');
                     <div class="vertical-item md:relative flex py-6 col-span-10 md:col-span-6<?= $index % 2 ? " md:col-start-7 item-right md:justify-end" : " item-left md:justify-start" ?>">
                         <?php if($data['additional']) : ?>
                         <div class="additional-wrapper absolute text-center hidden md:block">
-                            <p class="font-bold text-desc-small text-sgi-orange"><?= $data['additional'] ?></p>
+                            <p class="font-bold text-desc-small text-white"><?= $data['additional'] ?></p>
                         </div>
                         <?php endif; ?>
-                        <div class="text-wrapper <?= $data['additional'] ? 'item-trigger ' : '' ?>p-8 bg-sgi-grey text-white md:w-3/4">
+                        <div class="text-wrapper <?= $data['additional'] ? 'item-trigger ' : '' ?>p-8 bg-sgi-shade text-white md:w-3/4">
                             <div class="inner overflow-y-hidden">
                                 <?php if($data['additional']) : ?>
                                     <p class="text-title font-montserrat text-white mb-4 block md:hidden"><?= $data['additional'] ?></p>

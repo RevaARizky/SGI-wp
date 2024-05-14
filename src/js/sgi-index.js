@@ -146,11 +146,11 @@ import $ from "jquery"
             generateAnim('#header', {
                 paddingTop: '40px',
                 paddingBottom: 0,
-                backgroundColor: 'rgba(105,107,111,0)'
+                backgroundColor: 'rgba(52,99,121,0)'
             }, {
                 paddingTop: '25px',
                 paddingBottom: '15px',
-                backgroundColor: 'rgba(105,107,111,1)'
+                backgroundColor: 'rgba(52,99,121,1)'
             })
             generateAnim('#header svg.main-logo', {
                 width: '148px',

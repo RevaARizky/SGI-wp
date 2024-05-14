@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-about-team bg-sgi-white-shade text-sgi-dark-grey no-anim z-10';
+$classes = 'acf-block block-about-team bg-sgi-secondary text-white z-10';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -29,17 +29,17 @@ $subtitle = get_field('subtitle');
 ?>
 
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
-    <div class="inner bg-white-shade">
+    <div class="inner bg-sgi-secondary">
         <div class="container">
             <div class="grid grid-cols-12 md:mb-28">
                 <div class="md:col-span-6 col-span-12">
                     <div class="section-title">
-                        <p class="text-title font-montserrat tracking-wide"><?= $title ?></p>
+                        <p class="text-title text-white font-montserrat tracking-wide"><?= $title ?></p>
                     </div>
                 </div>
                 <div class="md:col-span-6 col-span-12">
                     <div class="section-subtitle">
-                        <p class="text-desc-small tracking-wide"><?= $subtitle ?></p>
+                        <p class="text-desc-small text-white tracking-wide"><?= $subtitle ?></p>
                     </div>
                 </div>
             </div>
@@ -57,11 +57,11 @@ $subtitle = get_field('subtitle');
                                             <p class="text-subtitle"><?= $team['name'] ?></p>
                                         </div>
                                         <div class="col-span-1 team-position text-end">
-                                            <p class="text-desc-small"><?= $team['position'] ?></p>
+                                            <p class="text-desc-small text-white"><?= $team['position'] ?></p>
                                         </div>
                                     </div>
                                     <div class="col-span-3 team-description overflow-hidden" style="height: 0;">
-                                        <p class="text-desc-small" style="padding-top: 1rem;"><?= $team['description'] ?></p>
+                                        <p class="text-desc-small text-white" style="padding-top: 1rem;"><?= $team['description'] ?></p>
                                     </div>
                                 </div>
                                 <div class="image-mobile-wrapper block md:hidden">

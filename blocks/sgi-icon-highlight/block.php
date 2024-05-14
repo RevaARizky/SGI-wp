@@ -16,7 +16,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-icon-highlight text-sgi-dark-grey';
+$classes = 'acf-block block-icon-highlight text-white';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -29,7 +29,7 @@ $contents = get_field('content');
 $useFooter = get_field('use_footer');
 ?>
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
-    <div class="inner<?= $useFooter ? ' bg-sgi-white-shade' : '' ?>" style="background-image: url(<?= $bg['url'] ?>);">
+    <div class="inner<?= $useFooter ? ' bg-sgi-secondary' : '' ?>" style="background-image: url(<?= $bg['url'] ?>);">
         <div class="container">
             <div class="md:py-32 py-16 md:px-14 content-center">
                 <div class="inner grid grid-cols-12 relative md:gap-x-24 gap-y-12">
@@ -39,10 +39,10 @@ $useFooter = get_field('use_footer');
                                 <img src="<?= $content['icon']['url'] ?>" class="md:w-full w-3/4 mx-auto h-auto" alt="">
                             </div>
                             <div class="title-wrapper md:mb-4 mb-2">
-                                <p class="text-sgi-dark-grey text-subtitle font-montserrat"><?= $content['title'] ?></p>
+                                <p class="text-sgi-orange text-subtitle font-montserrat"><?= $content['title'] ?></p>
                             </div>
                             <div class="description-wrapper">
-                                <p class="text-sgi-dark-grey capitalize text-desc-small"><?= $content['description'] ?></p>
+                                <p class="text-white capitalize text-desc-small"><?= $content['description'] ?></p>
                             </div>
                         </div>
                     <?php endforeach; ?>

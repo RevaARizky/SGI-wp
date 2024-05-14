@@ -1,4 +1,4 @@
-<footer class="footer bg-sgi-grey text-white relative overflow-y-hidden">
+<footer class="footer bg-sgi-footer text-white relative overflow-y-hidden">
     <div class="inner-animation" data-speed="0.8">
         <!-- <div class="container md:pt-24 pt-12 md:pb-16 pb-8">
             <div class="grid grid-cols-12 gap-y-10 md:gap-y-0">
@@ -162,7 +162,7 @@
                     </div>
                 </div>
                 <div class="md:col-span-3 col-span-8 form-wrapper">
-                    <div class="inner bg-sgi-footer-grey p-6">
+                    <div class="inner bg-sgi-footer-secondary p-6">
                         <div class="title-wrapper mb-6">
                             <p class="text-lg">Contact Us</p>
                         </div>
@@ -181,7 +181,7 @@
                                     <input type="text" class="bg-transparent w-full border-0 border-b border-white" id="message-footer" name="message-footer">
                                 </div>
                                 <div class="input-wrapper col-span-2">
-                                    <input type="submit" name="submit-footer" value="Submit" class="bg-sgi-orange py-4 w-full text-white">
+                                    <input type="submit" name="submit-footer" value="Submit" class="bg-sgi-orange py-4 w-full text-white" style="border-radius: 6px;">
                                 </div>
                             </div>
                         </form>

@@ -32,7 +32,7 @@ $subtitle = get_field('subtitle');
 
 <section id="<?= esc_attr($id) ?>" class="<?= esc_attr($classes) ?>">
 
-    <div class="container text-sgi-dark-grey text-center">
+    <div class="container text-white text-center">
         <?php if($subtitle) : ?>
         <div class="subtitle-wrapper md:w-3/4 mx-auto">
             <p class="text-title leading-snug tracking-wider font-montserrat"><?= $subtitle; ?></p>

@@ -48,7 +48,7 @@ import gsap from "gsap"
             // Border Animation
             el.anims[1] = gsap.timeline({paused: true})
             el.anims[1].fromTo(el.main, {
-                borderRightColor: '#636569'
+                borderRightColor: '#fff'
             }, {borderRightColor: '#D75C00', duration: animDuration}, 0)
 
             // Image transition

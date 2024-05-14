@@ -106,14 +106,25 @@ module.exports = {
         'gray-9': '#999',
         'gray-d': '#ddd',
         'gray-f5': '#f5f5f5',
-        'sgi-orange-shade': '#FF5700',
+        // Custom coloring
+        // 'sgi-orange-shade': '#FF5700',
+        // 'sgi-orange': '#D75C00',
+        // 'sgi-footer-grey': '#696B6F',
+        // 'sgi-dark-grey': '#414A50',
+        // 'sgi-grey': '#636569',
+        // 'sgi-white': '#fff',
+        // 'sgi-white-shade': '#EFEFEF',
+        // 'sgi-white-alt': '#F5F6F6'
+
+        // custom Coloring v2
+        'sgi-footer': '#013C58',
+        'sgi-footer-secondary': '#346379',
+        'sgi-primary': '#99B1BC',
+        'sgi-secondary': '#678A9B',
+        'sgi-shade': '#013C58',
         'sgi-orange': '#D75C00',
-        'sgi-footer-grey': '#696B6F',
         'sgi-dark-grey': '#414A50',
-        'sgi-grey': '#636569',
-        'sgi-white': '#fff',
-        'sgi-white-shade': '#EFEFEF',
-        'sgi-white-alt': '#F5F6F6'
+
       },
       fontSize: {
         "3xl": "1.625rem"

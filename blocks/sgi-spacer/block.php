@@ -38,7 +38,7 @@ if($space == 'py-6') {
 
 ?>
 
-<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?> md:<?= $space ?> <?= $mobileSpace ? $mobileSpace : $space ?><?= $bg ? ' bg-sgi-white-shade' : '' ?>">
+<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($classes); ?> md:<?= $space ?> <?= $mobileSpace ? $mobileSpace : $space ?><?= $bg ? ' bg-sgi-secondary' : '' ?>">
     <div class="<?= $container ? 'container' : 'wrapper' ?>">
         <?php if($line) : ?> <div class="spacer <?= $lineWidth ? 'border-sgi-orange' : 'w-full border-white' ?> mx-auto border-b" <?= $lineWidth ? 'style="width: ' . $lineWidth . ';"' : '' ?>></div> <?php endif; ?>
     </div>

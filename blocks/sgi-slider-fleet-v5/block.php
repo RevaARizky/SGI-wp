@@ -17,7 +17,7 @@ if ( ! empty($block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 // Create class attribute allowing for custom "className" and "align" values.
-$classes = 'acf-block block-slider-fleet-v5 bg-gray-theme text-sgi-dark-grey';
+$classes = 'acf-block block-slider-fleet-v5 bg-gray-theme text-white';
 if ( ! empty( $block['className'] ) ) {
     $classes .= ' ' . $block['className'];
 }
@@ -65,7 +65,7 @@ $fleets = get_field('fleet');
                                 <div class="col-span-12 md:col-span-6 specification-wrapper">
                                     <div class="content-wrapper text-sgi-grey text-desc-small">
                                         <div class="title-wrapper mb-9">
-                                            <p class="text-subtitle"><?= $fleet['title'] ?></p>
+                                            <p class="text-subtitle text-sgi-orange"><?= $fleet['title'] ?></p>
                                         </div>
                                         <div class="navigation-bar mb-9 pb-3 flex w-full justify-between relative">
                                             <?php foreach($fleet['content'] as $index => $content) : ?>

@@ -30,27 +30,27 @@ $services = get_field('services');
     <div class="inner">
         <div class="container">
             <div class="title-wrapper mb-16">
-                <p class="text-title md:text-left text-center font-montserrat"><?= $title ?></p>
+                <p class="text-title md:text-left text-center text-white font-montserrat"><?= $title ?></p>
             </div>
             <div class="grid grid-cols-12 relative">
                 <div class="md:col-span-6 col-span-12 order-1 md:order-0">
                     <div class="accordion-wrapper">
                         <?php foreach($services as $index => $service) : ?>
-                            <div class="item relative py-4 [&:not(:first-child)]:border-t-[0.6px] border-b-[0.6px] border-r-[3px] border-y-sgi-dark-grey cursor-pointer overflow-x-hidden" data-index="<?= $index ?>">
+                            <div class="item relative py-4 [&:not(:first-child)]:border-t-[0.6px] border-b-[0.6px] border-r-[3px] border-y-white cursor-pointer overflow-x-hidden" data-index="<?= $index ?>">
                                 <div class="arrow-wrapper absolute top-1/2 -translate-y-1/2">
                                     <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M-3.49691e-07 7L12 0.0717978L12 13.9282L-3.49691e-07 7Z" fill="#D75C00"/>
                                     </svg>
                                 </div>
                                 <div class="content-wrapper overflow-y-hidden">
-                                    <div class="title-wrapper relative pl-16 text-sgi-dark-grey">
+                                    <div class="title-wrapper relative pl-16 text-white">
                                         <div class="counter-wrapper absolute left-0 top-0">
                                             <p class="counter text-subtitle font-bold font-montserrat">0<?= $index + 1 ?></p>
                                         </div>
-                                        <p class="text-subtitle font-montserrat capitalize"><?= $service['title'] ?></p>
+                                        <p class="text-subtitle text-white font-montserrat capitalize"><?= $service['title'] ?></p>
                                     </div>
                                     <div class="description-wrapper pl-16 pr-12">
-                                        <p class="text-desc-small"><?= $service['description'] ?></p>
+                                        <p class="text-desc-small text-white"><?= $service['description'] ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -67,9 +67,9 @@ $services = get_field('services');
                                 <!-- <svg viewBox="0 0 120 120" class="absolute top-1/2 left-1/2 -tranlate-x-1/2 -translate-y-1/2"><circle cx="55" cy="55" r="50" class="dashed w-[110%] h-[110%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-decoration" style="stroke-dasharray: 6, 9;fill: transparent;stroke: #fff;stroke-width: 1px;"></circle></svg>
                                 <svg viewBox="0 0 120 120" class="absolute top-1/2 left-1/2 -tranlate-x-1/2 -translate-y-1/2"><circle cx="55" cy="55" r="50" class="dashed w-[125%] h-[125%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-decoration" style="stroke-dasharray: 6, 9;fill: transparent;stroke: #fff;stroke-width: 1px;"></circle></svg>
                                 <svg viewBox="0 0 120 120" class="absolute top-1/2 left-1/2 -tranlate-x-1/2 -translate-y-1/2"><circle cx="55" cy="55" r="50" class="dashed w-[140%] h-[140%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border-decoration" style="stroke-dasharray: 6, 9;fill: transparent;stroke: #fff;stroke-width: 1px;"></circle></svg> -->
-                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] pt-[110%] rounded-full border border-dashed border-sgi-dark-grey z-10"></div>
-                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[125%] pt-[125%] rounded-full border border-dashed border-sgi-dark-grey z-10"></div>
-                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] pt-[140%] rounded-full border border-dashed border-sgi-dark-grey z-10"></div>
+                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] pt-[110%] rounded-full border border-dashed border-white z-10"></div>
+                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[125%] pt-[125%] rounded-full border border-dashed border-white z-10"></div>
+                                <div class="border-decoration absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[140%] pt-[140%] rounded-full border border-dashed border-white z-10"></div>
                             </div>
                         </div>
                     </div>
