@@ -38,14 +38,14 @@ $fleets = get_field('fleet');
             <div class="custom-nav absolute top-1/2 calculate-target flex gap-x-4 -translate-y-1/2">
                 <div class="prev-btn cursor-pointer">
                     <svg width="37" height="35" viewBox="0 0 67 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="65" height="63" rx="31.5" transform="matrix(-1 0 0 1 66 1)" stroke="#414A50" stroke-width="0.4" stroke-linejoin="bevel"></rect>
-                        <path d="M36.5 26.5L30.5 32.5L36.5 38.5" stroke="#414A50" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <rect width="65" height="63" rx="31.5" transform="matrix(-1 0 0 1 66 1)" stroke="#fff" stroke-width="0.4" stroke-linejoin="bevel"></rect>
+                        <path d="M36.5 26.5L30.5 32.5L36.5 38.5" stroke="#fff" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </div>
                 <div class="next-btn cursor-pointer">
                     <svg width="35" height="35" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="1" width="63" height="63" rx="31.5" stroke="#414A50" stroke-width="0.4" stroke-linejoin="bevel"></rect>
-                        <path d="M29.5 26.5L35.5 32.5L29.5 38.5" stroke="#414A50" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <rect x="1" y="1" width="63" height="63" rx="31.5" stroke="#fff" stroke-width="0.4" stroke-linejoin="bevel"></rect>
+                        <path d="M29.5 26.5L35.5 32.5L29.5 38.5" stroke="#fff" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
                 </div>
             </div>
