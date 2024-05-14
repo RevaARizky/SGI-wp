@@ -43,11 +43,11 @@ $services = get_field('services');
                                     </svg>
                                 </div>
                                 <div class="content-wrapper overflow-y-hidden">
-                                    <div class="title-wrapper relative pl-16 text-white">
+                                    <div class="title-wrapper relative pl-16">
                                         <div class="counter-wrapper absolute left-0 top-0">
-                                            <p class="counter text-subtitle font-bold font-montserrat">0<?= $index + 1 ?></p>
+                                            <p class="counter text-subtitle text-sgi-orange font-bold font-montserrat">0<?= $index + 1 ?></p>
                                         </div>
-                                        <p class="text-subtitle text-white font-montserrat capitalize"><?= $service['title'] ?></p>
+                                        <p class="text-subtitle text-sgi-orange font-montserrat capitalize"><?= $service['title'] ?></p>
                                     </div>
                                     <div class="description-wrapper pl-16 pr-12">
                                         <p class="text-desc-small text-white"><?= $service['description'] ?></p>

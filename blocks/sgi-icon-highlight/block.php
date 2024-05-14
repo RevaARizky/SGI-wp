@@ -39,7 +39,7 @@ $useFooter = get_field('use_footer');
                                 <img src="<?= $content['icon']['url'] ?>" class="md:w-full w-3/4 mx-auto h-auto" alt="">
                             </div>
                             <div class="title-wrapper md:mb-4 mb-2">
-                                <p class="text-sgi-orange text-subtitle font-montserrat"><?= $content['title'] ?></p>
+                                <p class="text-white text-subtitle font-montserrat" style="font-weight: 600;"><?= $content['title'] ?></p>
                             </div>
                             <div class="description-wrapper">
                                 <p class="text-white capitalize text-desc-small"><?= $content['description'] ?></p>
