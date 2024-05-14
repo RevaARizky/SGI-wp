@@ -6,7 +6,7 @@
     }
 
     .vertical-item::before {
-        @apply bg-sgi-secondary;
+        @apply bg-sgi-shade;
         content: "";
         position: absolute;
         z-index: 1;
