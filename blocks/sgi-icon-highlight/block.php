@@ -46,7 +46,7 @@ $useFooter = get_field('use_footer');
                             </div>
                         </div>
                     <?php endforeach; ?>
-                    <div class="line absolute left-[34px] right-[34px] top-[82px] h-[0.6px] bg-sgi-orange md:block hidden"></div>
+                    <div class="line absolute left-[34px] right-[34px] top-[82px] h-[0.6px] bg-white md:block hidden"></div>
                 </div>
             </div>
         </div>
