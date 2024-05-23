@@ -56,7 +56,7 @@
                 "class": "",
                 "id": ""
             },
-            "layout": "table",
+            "layout": "block",
             "pagination": 0,
             "min": 0,
             "max": 0,
@@ -128,6 +128,45 @@
                     "parent_repeater": "field_65766a4833544"
                 },
                 {
+                    "key": "field_664ee3c17f251",
+                    "label": "Social Media",
+                    "name": "social_media",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_664ee3db7f252",
+                            "label": "Linkedin URL",
+                            "name": "linkedin_url",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "parent_repeater": "field_65766a4833544"
+                },
+                {
                     "key": "field_65766a6f33547",
                     "label": "Image",
                     "name": "image",
@@ -181,5 +220,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1715312569
+    "modified": 1716446515
 }
