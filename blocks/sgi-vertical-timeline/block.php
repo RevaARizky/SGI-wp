@@ -47,11 +47,11 @@ $content = get_field('content');
                                     <p class="text-title font-montserrat text-white mb-4 block md:hidden"><?= $data['additional'] ?></p>
                                 <?php endif; ?>
                                 <p class="text-desc-small font-montserrat text-white"><?= $data['text'] ?></p>
-                                <?php if($data['more_text']) : ?>
+                                
                                     <div class="more-text-wrapper" style="height: 0;">
                                         <p class="text-desc-small font-montserrat text-white"><?= $data['more_text'] ?></p>
                                     </div>
-                                <?php endif; ?>
+                                
                             </div>
                         </div>
                         <div class="icon h-[70px] w-[70px] justify-center items-center flex">
