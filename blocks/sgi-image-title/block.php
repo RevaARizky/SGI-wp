@@ -44,7 +44,7 @@ $content = get_field('content');
                             <img src="<?= $data['image']['url'] ?>" class="absolute inset-0 object-cover w-full h-full" alt="">
                             <?php if($data['description']) : ?>
                             <div class="overlay-bg absolute inset-0"></div>
-                            <div class="description-wrapper absolute left-0 right-0 px-8">
+                            <div class="description-wrapper absolute left-0 right-0 px-8 flex justify-center items-center h-full">
                                 <p class="text-desc-small text-white"><?= $data['description'] ?></p>
                             </div>
                             <?php endif; ?>

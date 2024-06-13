@@ -26,10 +26,10 @@ import gsap from "gsap"
 
                 el.anims[0] = gsap.timeline({paused: true})
                 el.anims[0].fromTo(el.querySelector('.description-wrapper'), {
-                    bottom: '-100%',
+                    bottom: '-110%',
                     ease: 'power3.out'
                 }, {
-                    bottom: '3rem',
+                    bottom: '0',
                     ease: 'power3.out',
                     duration: .4,
                 },0)
