@@ -42,7 +42,7 @@ $useFooter = get_field('use_footer');
                                 <p class="text-white text-subtitle font-montserrat" style="font-weight: 600;"><?= $content['title'] ?></p>
                             </div>
                             <div class="description-wrapper">
-                                <p class="text-white capitalize text-desc-small"><?= $content['description'] ?></p>
+                                <p class="text-white text-desc-small"><?= $content['description'] ?></p>
                             </div>
                         </div>
                     <?php endforeach; ?>
