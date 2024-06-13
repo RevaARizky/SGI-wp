@@ -52,7 +52,7 @@ $icare = get_field('icare');
         <div class="container">
             <div class="inner text-center grid grid-cols-12 justify-center items-center gap-y-12 md:gap-y-0 py-14 md:py-0">
                 <?php foreach($icare['logos'] as $index => $logo) : ?>
-                <div class="item md:col-span-4 col-span-12 relative px-6 h-full justify-center flex flex-col">
+                <div class="item md:col-span-4 col-span-12 relative px-6 h-full flex flex-col">
                     <div class="logo-wrapper mb-10 text-center flex items-center">
                         <?= $logo['logo'] ?>
                     </div>
