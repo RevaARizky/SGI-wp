@@ -35,7 +35,7 @@ $content = get_field('content');
     <div class="container">
         <div class="grid grid-cols-12 gap-y-14">
             <?php foreach($content as $index => $data) : ?>
-                <div class="md:col-span-4 col-span-12">
+                <div class="md:col-span-6 lg:col-span-4 col-span-12">
                     <div class="content-wrapper<?= $data['description'] ? ' has-desc' : '' ?>">
                         <div class="title-wrapper pb-8 pl-5 border-l border-l-white">
                             <p class="text-subtitle font-montserrat text-sgi-orange"><?= $data['title'] ?></p>

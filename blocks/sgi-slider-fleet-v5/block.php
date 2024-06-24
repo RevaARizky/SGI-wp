@@ -56,7 +56,7 @@ $fleets = get_field('fleet');
                 <?php foreach($fleets as $index => $fleet) :  ?>
                     <div class="swiper-slide">
                         <div class="inner fleet-parent" data-index="<?= $index ?>">
-                            <div class="grid grid-cols-12 gap-x-14 items-center">
+                            <div class="grid grid-cols-12 md:gap-x-14 items-center">
                                 <div class="col-span-12 md:col-span-6">
                                     <div class="image-wrapper main-image-wrapper relative pt-[100%]">
                                         <img src="<?= $fleet['image']['url'] ?>" class="absolute inset-0 w-full h-full object-cover rounded-full" alt="">

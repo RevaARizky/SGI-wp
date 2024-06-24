@@ -93,6 +93,9 @@ module.exports = {
       inset: {
         'unset': 'unset'
       },
+      screens: {
+        lg: "1025px"
+      },
       zIndex: {
         header: 999
       },

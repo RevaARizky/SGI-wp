@@ -65,7 +65,7 @@ $contents = get_field('slider', $option);
                     </div>
                 </div>
                 <!-- <div class="spacer md:py-16"></div> -->
-                <div class="slider flex flex-wrap md:flex-nowrap">
+                <div class="slider md:flex flex-wrap md:flex-nowrap">
                     <?php $i = 0; ?>
                     <?php foreach($contents as $content) : $i++; ?>
                     <?php 

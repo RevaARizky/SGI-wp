@@ -69,3 +69,8 @@
     width: 120px!important;
   }
 }
+
+
+body {
+  @apply overflow-x-hidden;
+}

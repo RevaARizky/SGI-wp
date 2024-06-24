@@ -32,11 +32,11 @@ $useFooter = get_field('use_footer');
     <div class="inner<?= $useFooter ? ' bg-sgi-secondary' : '' ?>" style="background-image: url(<?= $bg['url'] ?>);">
         <div class="container">
             <div class="md:py-32 py-16 md:px-14 content-center">
-                <div class="inner grid grid-cols-12 relative md:gap-x-20 gap-y-12">
+                <div class="inner grid grid-cols-12 relative md:gap-x-20 gap-x-4 gap-y-12">
                     <?php foreach($contents as $content) : ?>
-                        <div class="item md:col-span-3 col-span-12 text-center relative z-10 px-2">
+                        <div class="item md:col-span-3 col-span-6 text-center relative z-10 px-2">
                             <div class="icon-wrapper md:mb-8 mb-4 text-center relative">
-                                <img src="<?= $content['icon']['url'] ?>" class="md:w-full w-3/4 mx-auto h-auto" alt="">
+                                <img src="<?= $content['icon']['url'] ?>" class="md:w-full w-full mx-auto h-auto" alt="">
                             </div>
                             <div class="title-wrapper md:mb-4 mb-2">
                                 <p class="text-white text-subtitle font-montserrat" style="font-weight: 600;"><?= $content['title'] ?></p>

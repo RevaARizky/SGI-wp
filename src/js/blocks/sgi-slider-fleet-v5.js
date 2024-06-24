@@ -53,6 +53,7 @@ import Swiper from "swiper"
 
         new Swiper(els.slider, {
             slidesPerView: 1,
+            loop: true,
         })
 
         els.slider = els.slider.swiper

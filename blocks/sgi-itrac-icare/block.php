@@ -36,7 +36,7 @@ $icare = get_field('icare');
             <div class="main-logo text-center mb-12">
                 <img src="<?= $itrac['main_logo']['url'] ?>" alt="">
             </div>
-            <div class="logos flex items-center gap-x-8 md:flex-row flex-col gap-y-4 md:gap-y-0">
+            <div class="logos flex items-center gap-x-8 lg:flex-row flex-col gap-y-4 lg:gap-y-0">
                 <?php foreach($itrac['logos'] as $index => $content) : ?>
                 <div class="logo-wrapper" style="height: px;">
                     <?= $content['logo'] ?>

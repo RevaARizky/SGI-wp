@@ -34,7 +34,7 @@
         </div> -->
         <div class="grid grid-cols-3 items-center justify-end relative">
 
-            <div class="col-span-1 md:block hidden">
+            <div class="col-span-1 lg:block hidden">
                 <div class="menu-wrapper flex gap-x-14 justify-end">
                     <a href="/about-us">
                         <span class="text-white md:text-lg text-xl font-montserrat ">
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="col-span-1 md:hidden block">
+            <div class="col-span-1 lg:hidden block">
                 <a href="#" class="hamburger" id="hamburger">
                     <div class="hamburger-menu flex items-center absolute top-1/2 -translate-y-1/2 left-0 z-[60]">
                         <div class="hamburger-wrapper">
@@ -66,7 +66,7 @@
                 </a>
             </div>
 
-            <div class="md:col-span-1 col-span-3 flex md:block justify-center">
+            <div class="lg:col-span-1 col-span-3 flex md:block justify-center">
                 <a href="/">
                     <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto main-logo -mt-4" width="148" height="93" viewBox="0 0 118 63" fill="none">
                         <g>
@@ -81,7 +81,7 @@
                 </a>
             </div>
 
-            <div class="col-span-1 md:block hidden">
+            <div class="col-span-1 lg:block hidden">
                 <div class="menu-wrapper flex gap-x-14 justify-start relative items-center">
                     <a href="/blog">
                         <span class="text-white md:text-lg text-xl font-montserrat ">
@@ -128,7 +128,7 @@
             </div>
         </div>
     </div>
-    <div class="inner bg-sgi-footer-grey text-white h-full flex justify-center items-center">
+    <div class="inner bg-sgi-footer-secondary text-white h-full flex justify-center items-center">
         <div class="container">
             <div class="menu-wrapper text-center">
                 <div class="menu-link mb-8">
