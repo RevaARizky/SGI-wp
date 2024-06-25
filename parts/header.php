@@ -160,7 +160,7 @@
                     </a>
                 </div>
                 <div class="menu-link mb-12">
-                    <a href="/contact" class="md:px-8 px-8 md:py-4 py-2 bg-sgi-orange md:text-xs text-xl text-white">
+                    <a href="/contact" class="md:px-8 px-8 md:py-4 py-2 bg-sgi-orange md:text-xs text-xl text-white" style="border-radius: 6px;">
                         <span class="">
                             Contact Us
                         </span>
