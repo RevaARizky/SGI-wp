@@ -52,12 +52,16 @@ $slides = get_field('slides');
                         </div>
                     </div>
             
-                    <div class="fleet-options flex justify-center items-center md:gap-x-14 gap-x-4 lg:gap-y-0 gap-y-4 lg:flex-nowrap flex-wrap relative z-40 md:px-8">
+                    <div class="fleet-options flex justify-center items-center md:gap-x-14 gap-x-4 lg:gap-y-3 gap-y-4 lg:flex-nowrap flex-wrap relative z-40 md:px-8">
                         <?php $i = 0 ?>
                         <?php foreach($slides as $slide) : $i++ ?>
-                            <div class="item cursor-pointer lg:px-5 px-4 lg:py-2 py-2 rounded-2xl md:rounded-3xl<?= $i == 1 ? ' active' : '' ?>" data-index="<?= $i ?>">
-                                <p class="text-desc-small<?= $i == 1 ? ' active' : '' ?>"><?= $slide['title'] ?></p>
-                            </div>
+                            <?php if($slide['break']) : ?>
+                                <div class="w-full"></div>
+                            <?php else : ?>
+                                <div class="item cursor-pointer lg:px-5 px-4 lg:py-2 py-2 rounded-2xl md:rounded-3xl<?= $i == 1 ? ' active' : '' ?>" data-index="<?= $i ?>">
+                                    <p class="text-desc-small<?= $i == 1 ? ' active' : '' ?>"><?= $slide['title'] ?></p>
+                                </div>
+                            <?php endif; ?>
                         <?php endforeach; ?>
                     </div>
                 </div>
