@@ -36,7 +36,7 @@ $slides = get_field('slides');
                     <?= $title ?>
                 </p>
             </div>
-            <div class="content-wrapper flex flex-wrap justify-center items-center">
+            <div class="content-wrapper flex md:flex-nowrap flex-wrap justify-center items-center">
                 <div class="slider-outer w-full relative">
                     <div class="slider-wrapper fleet-slider md:mb-16 mb-8">
                         <div class="swiper-container">
@@ -52,7 +52,7 @@ $slides = get_field('slides');
                         </div>
                     </div>
             
-                    <div class="fleet-options flex justify-center items-center md:gap-x-14 gap-x-4 lg:gap-y-3 gap-y-4 lg:flex-nowrap flex-wrap relative z-40 md:px-8">
+                    <div class="fleet-options flex justify-center items-center md:gap-x-14 gap-x-4 lg:gap-y-3 gap-y-4 flex-wrap relative z-40 md:px-8">
                         <?php $i = 0 ?>
                         <?php foreach($slides as $slide) : $i++ ?>
                             <?php if($slide['break']) : ?>
