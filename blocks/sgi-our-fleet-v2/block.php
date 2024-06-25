@@ -36,7 +36,7 @@ $slides = get_field('slides');
                     <?= $title ?>
                 </p>
             </div>
-            <div class="content-wrapper flex md:flex-nowrap flex-wrap justify-center items-center">
+            <div class="content-wrapper flex flex-wrap justify-center items-center">
                 <div class="slider-outer w-full relative">
                     <div class="slider-wrapper fleet-slider md:mb-16 mb-8">
                         <div class="swiper-container">
