@@ -63,13 +63,13 @@ $fleets = get_field('fleet');
                                     </div>
                                 </div>
                                 <div class="col-span-12 md:col-span-6 specification-wrapper">
-
+                                    <!-- Mobile -->
                                     <div class="content-wrapper md:hidden block pb-12">
                                         <div class="title-wrapper text-center my-8">
-                                            <p class="text-subtitle text-sgi-orange"><?= $fleet['title'] ?></p>
+                                            <p class="text-title text-sgi-orange"><?= $fleet['title'] ?></p>
                                         </div>
                                         <?php foreach($fleet['content'] as $index => $content) : ?>
-                                            <div class="subtitle-wrapper text-center mt-8 mb-6">
+                                            <div class="subtitle-wrapper text-center<?= $index ? "" : " mt-8 " ?> mb-6">
                                                 <p class="font-medium uppercase">
                                                     <?= $content['title'] ?>
                                                 </p>
@@ -86,9 +86,13 @@ $fleets = get_field('fleet');
                                                     </div>
                                                 <?php endforeach; ?>
                                             </div>
+                                            <?php if(++$index != count($fleet['content'])) : ?>
+                                                <div class="spacer border-sgi-orange mx-auto border-b mt-8 mb-6" style="width: 168px;"></div>
+                                            <?php endif; ?>
                                         <?php endforeach; ?>
                                     </div>
-
+                                    <!-- End mobile -->
+                                    <!-- Desktop -->
                                     <div class="content-wrapper text-sgi-grey text-desc-small hidden md:block">
                                         <div class="title-wrapper mb-9">
                                             <p class="text-subtitle text-sgi-orange"><?= $fleet['title'] ?></p>
