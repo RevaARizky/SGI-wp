@@ -63,7 +63,33 @@ $fleets = get_field('fleet');
                                     </div>
                                 </div>
                                 <div class="col-span-12 md:col-span-6 specification-wrapper">
-                                    <div class="content-wrapper text-sgi-grey text-desc-small">
+
+                                    <div class="content-wrapper md:hidden block pb-12">
+                                        <div class="title-wrapper text-center my-8">
+                                            <p class="text-subtitle text-sgi-orange"><?= $fleet['title'] ?></p>
+                                        </div>
+                                        <?php foreach($fleet['content'] as $index => $content) : ?>
+                                            <div class="subtitle-wrapper text-center mt-8 mb-6">
+                                                <p class="font-medium uppercase">
+                                                    <?= $content['title'] ?>
+                                                </p>
+                                            </div>
+                                            <div class="grid grid-cols-2 gap-x-4 gap-y-6">
+                                                <?php foreach($content['item'] as $item) : ?>
+                                                    <div class="content">
+                                                        <div class="title mb-0.5">
+                                                            <p><?= $item['title'] ?></p>
+                                                        </div>
+                                                        <div class="description">
+                                                            <p class="font-bold"><?= $item['description'] ?></p>
+                                                        </div>
+                                                    </div>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        <?php endforeach; ?>
+                                    </div>
+
+                                    <div class="content-wrapper text-sgi-grey text-desc-small hidden md:block">
                                         <div class="title-wrapper mb-9">
                                             <p class="text-subtitle text-sgi-orange"><?= $fleet['title'] ?></p>
                                         </div>
